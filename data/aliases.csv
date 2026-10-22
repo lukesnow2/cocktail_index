@@ -1,0 +1,1012 @@
+raw,node,prep,suggest
+# Maps each normalized source ingredient string (uppercase; "X, Y" rewritten as "X (Y)")
+# to taxonomy ids. node syntax:
+#   a          requires a
+#   a|b        requires a OR b
+#   a+b        requires a AND b (a known mix spelled out; parts may use |)
+#   a&q        requires a, and the SAME bottle must also be q (origin / white / overproof),
+#              e.g. jamaican-rum&overproof-rum. With @notes, a named bottle's class replaces
+#              the base and only these qualifiers carry over.
+# suggest: for lines that name no bottle, Smuggler's Cove-style picks shown as a hint
+#   (never used for matching).
+#   @notes:f   source category is too coarse; resolve from the row's notes via
+#              products.csv (comma-separated products = all required), else f
+#   @any:f     like @notes but comma-separated products are alternatives
+#   -          not an ingredient; skip
+7-UP,lemon-lime-soda,
+ABSINTHE,absinthe,
+ABSINTHE (BLANC),absinthe,
+ABSINTHE (DUPLAIS),absinthe,
+ABSINTHE (HERBSAINT),absinthe|herbsaint,
+ABSINTHE (LA CLANDESTINE),absinthe,
+ABSINTHE (PERNOD),absinthe,
+ABSINTHE (ST. GEORGE),absinthe,
+ABSINTHE (VIEUX PONTARLIER),absinthe,
+AGAVE (MEZCAL),mezcal,
+AGAVE (TEQUILA BLANCO),tequila-blanco,
+"AGAVE (TEQUILA BLANCO, JALAPENO INFUSED)",tequila-blanco,jalapeño-infused
+AGAVE (TEQUILA REPOSADO),tequila-reposado,
+AGAVE (TEQUILA),tequila,
+ALLSPICE DRAM,allspice-dram,
+ALLSPICE/PIMENTO DRAM,allspice-dram,
+AMARETTO,amaretto,
+AMARO (ABANO),amaro-abano,
+AMARO (APEROL),aperol,
+AMARO (AVERNA),averna,
+AMARO (BITTER TRUTH),bitter-truth-amaro,
+AMARO (CAMPARI),campari,
+AMARO (CARDAMARO),cardamaro,
+AMARO (CIOCIARO),amaro-ciociaro,
+AMARO (CYNAR),cynar,
+AMARO (DI ANGOSTURA),amaro-di-angostura,
+AMARO (FERNET-BRANCA),fernet-branca,
+AMARO (LUCANO),amaro-lucano,
+AMARO (MELETTI),amaro-meletti,
+AMARO (MONTENEGRO),amaro-montenegro,
+AMARO (NARDINI),amaro-nardini,
+AMARO (NONINO),amaro-nonino,
+AMARO (RAMAZZOTTI),amaro-ramazzotti,
+AMARO (SIBILLA),amaro-sibilla,
+AMARO (ZUCCA),zucca,
+AMARO CIOCIARO,amaro-ciociaro,
+AMARO CORA,amaro-cora,
+AMER PICON,amer-picon,
+ANGOSTURA BITTERS,angostura-bitters,
+APERITIF (AMER BOUDREAU),amer-picon,
+APERITIF (AMER NOUVELLE),amer-nouvelle,
+APERITIF (AMER PICON),amer-picon,
+APERITIF (APEROL),aperol,
+APERITIF (BONAL),bonal,
+APERITIF (BYRRH),byrrh,
+APERITIF (CAMPARI),campari,
+APERITIF (CASONI 1814),casoni-1814,
+APERITIF (CHINA CHINA),china-china,
+APERITIF (COCCHI AMERICANO),cocchi-americano,
+APERITIF (DUBONNET),dubonnet,
+APERITIF (GENTIANE-QUINA),bonal,
+APERITIF (LILLET BLANC),lillet-blanc,
+APERITIF (LILLET ROSE),lillet-rose,
+APERITIF (RASPBERRY),raspberry-liqueur,
+APERITIF (SALERS GENTIAN),salers,
+APERITIF (SALERS),salers,
+APEROL,aperol,
+APPERITIF (LILLET BLANC),lillet-blanc,
+APPERITIF (LILLET ROSÉ),lillet-rose,
+APPERITIF (LILLET ROUGE),lillet-rouge,
+APPLE JUICE,apple-juice,
+APPLEJACK,applejack,
+APRICOT BRANDY,apricot-liqueur,
+APRICOT LIQUEUR,apricot-liqueur,
+APÉRITIF (???),pineau-des-charentes,
+AQUAVIT,aquavit,
+ASCORBIC ACID,acid-powder,
+AU CHOIX,@any:whiskey,
+AVERNA AMARO,averna,
+BANANA LIQUEUR,banana-liqueur,
+BATAVIA ARRACK,batavia-arrack,
+BEER (ABBEY ALE),ale,
+BEER (APPLE CIDER),hard-cider,
+BEER (CASK ALE),ale,
+BEER (DARK ALE),ale,
+BEER (DOUBLE/IMPERIAL IPA),ipa,
+BEER (GINGER),ginger-beer,
+BEER (GRAPEFRUIT),fruit-beer,
+BEER (IPA),ipa,
+BEER (PEAR CIDER),pear-cider,
+BEER (PILSNER),lager,
+BEER (PORTER),stout,
+BEER (PUMPKIN),ale,
+BEER (RASPBERRY),fruit-beer,
+BEER (SCHWARZBIER),lager,
+BEER (STOUT),stout,
+BEER (SWEET/MILK STOUT),stout,
+BEER (VIENNA LAGER),lager,
+BEER (WHITE),wheat-beer,
+BEER (WITBIER),wheat-beer,
+BENEDICTINE,benedictine,
+BITTER LEMON,flavored-soda,
+BITTERS (ABBOTT'S),abbotts-bitters,
+BITTERS (ABBOTT),abbotts-bitters,
+BITTERS (ABSINTHE),absinthe-bitters,
+BITTERS (ANGOSTURA),angostura-bitters,
+BITTERS (APPLE),apple-bitters,
+BITTERS (AROMATIC),aromatic-bitters,
+BITTERS (BARREL-AGED),barrel-aged-bitters,
+BITTERS (BECHEROVKA),becherovka,
+BITTERS (BITTERMENS BURLESQUE),burlesque-bitters,
+BITTERS (BOKER'S),bokers-bitters,
+BITTERS (BOSTON),boston-bitters,
+BITTERS (BURLESQUE),burlesque-bitters,
+BITTERS (CELERY),celery-bitters,
+BITTERS (CHERRY BARK AND VANILLA),cherry-bitters,
+BITTERS (CHOCOLATE),chocolate-bitters,
+BITTERS (CREOLE),peychauds-bitters,
+BITTERS (DANDELION AND BURDOCK),dandelion-burdock-bitters,
+BITTERS (GRAN CLASSICO),gran-classico,
+BITTERS (GRAPEFRUIT),grapefruit-bitters,
+BITTERS (HELLFIRE),hellfire-bitters,
+BITTERS (HERBSTURA),herbstura,
+BITTERS (HOPPED GRAPEFRUIT),grapefruit-bitters,
+BITTERS (JERRY THOMAS),jerry-thomas-bitters,
+BITTERS (LAVENDER),lavender-bitters,
+BITTERS (LEMON),lemon-bitters,
+BITTERS (LIME),lime-bitters,
+BITTERS (MOLE),chocolate-bitters,
+BITTERS (OLD FASHION),aromatic-bitters,
+BITTERS (ORANGE),orange-bitters,
+BITTERS (PEACH),peach-bitters,
+BITTERS (PERUVIAN AMARGO),amargo-bitters,
+BITTERS (PEYCHAUD'S),peychauds-bitters,
+BITTERS (PIMENTO),pimento-bitters,
+BITTERS (RHUBARB),rhubarb-bitters,
+BITTERS (TIKI),tiki-bitters,
+BITTERS (VERBENA),verbena-bitters,
+BITTERS (WHISKEY BARREL AGED),barrel-aged-bitters,
+BITTERS (XOCOLATL MOLE),chocolate-bitters,
+BLACK POT STILL RUM,black-pot-still-rum,,
+BLACKBERRY LIQUEUR,blackberry-liqueur,
+BLENDED WHISKEY,whiskey,
+BLOOD ORANGE LIQUEUR,blood-orange-liqueur,
+BLUE CURACAO,blue-curacao,
+BOKER'S BITTERS,bokers-bitters,
+BOURBON,bourbon,
+BRANDY,brandy,
+BRANDY (APPLE),apple-brandy,
+"BRANDY (APPLE, STRAWBERRY INFUSED)",apple-brandy,strawberry-infused
+BRANDY (CHERRY),kirsch,
+BRANDY (COGNAC),cognac,
+BRANDY (GRAPE),brandy,
+"BRANDY (GRAPE, ROSE HIP INFUSED)",brandy,rose hip-infused
+BRANDY (JEREZ),brandy-de-jerez,
+BRANDY (PEAR),pear-eau-de-vie,
+BRANDY (PISCO),pisco,
+"BRANDY (PISCO, PINEAPPLE INFUSED)",pisco,pineapple-infused
+BRANDY (PLUM),plum-brandy,
+BRANDY (VANILLA),brandy,vanilla-infused
+BRINE (PICKLED RAMP),vinegar,pickled ramp brine
+BUTTER (APPLE),preserves,apple butter
+BUTTER (PUMPKIN),preserves,pumpkin butter
+BUTTER (VANILLA),butter-batter,vanilla butter
+BÄRENJÄGER HONEY LIQUEUR,honey-liqueur,
+BÉNÉDICTINE,benedictine,
+CABONATED CHAI TEA,tea,carbonated chai
+CACHACA,cachaca,
+CACHAÇA,cachaca,
+CALVADOS,calvados,
+CAMPARI,campari,
+CHAMPAGNE,sparkling-wine,
+CHARTRESUE (GREEN),green-chartreuse,
+CHARTREUSE,green-chartreuse|yellow-chartreuse,
+CHARTREUSE (GREEN),green-chartreuse,
+CHARTREUSE (ICE CREAM),ice-cream,Chartreuse ice cream
+CHARTREUSE (YELLOW),yellow-chartreuse,
+CHERRY BRANDY,cherry-liqueur,
+CHERRY HEERING,cherry-heering,
+CIDER (APPLE),hard-cider,
+CIDER (PEAR),pear-cider,
+CLUB SODA,soda-water,
+COCA-COLA,cola,
+COCCHI AMERICANO,cocchi-americano,
+COCONUT LIQUEUR,coconut-liqueur,
+COCONUT MILK,coconut-cream,
+COCONUT WATER,coconut-water,
+COFFEE,coffee,
+COFFEE (ESPRESSO),coffee,
+COGNAC,cognac,
+COINTREAU,triple-sec,
+CORDIAL (BLACK CURRANT),cordial,black currant
+CORDIAL (CELERY),cordial,celery
+CORDIAL (GRAPEFRUIT),cordial,grapefruit
+CORDIAL (HIBISCUS),cordial,hibiscus
+CORDIAL (KUMQUAT),cordial,kumquat
+CORDIAL (LIME),lime-cordial,
+CORDIAL (PINEAPPLE),cordial,pineapple
+CORDIAL (QUININE),cordial,quinine
+CORDIAL (RASPBERRY),cordial,raspberry
+CORDIAL (STRAWBERRY),cordial,strawberry
+CORDIAL (WILD STRAWBERRY),cordial,wild strawberry
+CORIDAL (LIME),lime-cordial,
+CREAM,heavy-cream,
+CREAM (2%MILK),milk,
+CREAM (BREAKFAST),half-and-half,
+CREAM (COCONUT),coconut-cream,
+CREAM (HALF AND HALF),half-and-half,
+CREAM (HEAVY WHIPPING),heavy-cream,
+CREAM (HEAVY),heavy-cream,
+CREAM (MILK),milk,
+CREAM (SWEET),heavy-cream,
+CREAM (WHOLE MILK),milk,
+CREAM HEAVY,heavy-cream,
+CREME DE CACAO,creme-de-cacao,
+CREME DE NOYEAUX,creme-de-noyaux,
+CREME DE VIOLETTE,creme-de-violette,
+CREME YVETTE,creme-yvette,
+CRÈME DE BANANE,banana-liqueur,
+CRÈME DE CACAO,creme-de-cacao,
+CRÈME DE CACAO (WHITE),creme-de-cacao-white,
+CRÈME DE CASSIS,creme-de-cassis,
+CRÈME DE MANDARINE,mandarine-liqueur,
+CRÈME DE MENTHE,creme-de-menthe,
+CRÈME DE VIOLETTE,creme-de-violette,
+CRÈME YVETTE,creme-yvette,
+CURAÇAO (ORANGE),orange-curacao,
+CYNAR,cynar,
+DISTILLED WATER,water,
+DRAMBUIE,drambuie,
+DRY GIN,london-dry-gin,
+DRY VERMOUTH,dry-vermouth,
+DUBONNET ROUGE,dubonnet,
+EAU DE VIE,eau-de-vie,
+EAU DE VIE (APRICOT),apricot-eau-de-vie,
+EAU DE VIE (DOUGLAS FIR),douglas-fir-eau-de-vie,
+EAU DE VIE (FRAMBOISE),framboise,
+EAU DE VIE (KIRSCH),kirsch,
+EAU DE VIE (MIRABELLE),mirabelle,
+EAU DE VIE (PEAR),pear-eau-de-vie,
+EGG,egg,
+EGG (ITALIAN MERIGNUE WHITES),egg-white,Italian meringue
+EGG (WHITE),egg-white,
+EGG (WHOLE),egg,
+EGG (WHOLE?),egg,
+EGG (YOLK),egg-yolk,
+EGG MEDIUM,egg,
+EGG WHITE,egg-white,
+ELDERFLOWER LIQUEUR,elderflower-liqueur,
+ENGLISH BISHOP,house-mix,English Bishop (mulled port)
+ESPRESSO,coffee,
+ESPRESSO LIQUEUR,coffee-liqueur,
+ESSENCE (BERGAMOT),extract,bergamot
+ESSENCE (CLOVE),extract,clove
+ESSENCE (TOBACCO),extract,tobacco
+EXTRACT (ALMOND),extract,almond
+EXTRACT (GINGER),extract,ginger
+EXTRACT (SPRUCE BEER SODA),extract,spruce beer
+EXTRACT (VANILLA),vanilla,
+FALERNUM,falernum,
+FERNET (BRANCA MENTA),branca-menta,
+FERNET (BRANCA),fernet-branca,
+FERNET BRANCA,fernet-branca,
+FERNET-BRANCA,fernet-branca,
+FOAM (CANON),foam,
+FOAM (HONEY),foam,honey
+FOOD COLORING (RED),food-coloring,
+FRUIT (APPLE),apple,
+FRUIT (BARTLETT PEAR),pear,
+FRUIT (BLACKBERRY),berries,
+FRUIT (CANTALOUPE),melon,
+FRUIT (CHERRY TOMATO),tomato,
+FRUIT (CHERRY),cherries,
+FRUIT (CLEMENTINE),citrus-other,
+FRUIT (CRANBERRY),berries,
+FRUIT (FROZEN GRAPES),grapes,
+FRUIT (FROZEN RASPBERRY),berries,
+FRUIT (FROZEN STRAWBERRY),berries,
+FRUIT (FUJI APPLE),apple,
+FRUIT (GRAPE),grapes,
+FRUIT (GREEN GRAPE),grapes,
+FRUIT (GRIOTTINES CHERRY),cherries,
+FRUIT (HONEYDEW MELON),melon,
+FRUIT (KUMQUAT),citrus-other,
+FRUIT (LEMON),lemon,
+FRUIT (LEMONS),lemon,
+FRUIT (LIME),lime,
+FRUIT (MELON),melon,
+FRUIT (NAVEL ORANGE),orange,
+FRUIT (NECTARINE),peach,
+FRUIT (ORANGE),orange,
+FRUIT (PEACH),peach,
+FRUIT (PEAR),pear,
+FRUIT (PINEAPPLE),pineapple,
+FRUIT (PRICKLY PEAR),fruit-other,
+FRUIT (RASPBERRIES),berries,
+FRUIT (RASPBERRY),berries,
+FRUIT (RED GRAPE),grapes,
+FRUIT (SEASONAL FRUIT),fruit-other,
+FRUIT (STRAWBERRY),berries,
+FRUIT (TANGERINE),citrus-other,
+FRUIT (TOMATO),tomato,
+FRUIT (WATERMELON),melon,
+GALLIANO,galliano,
+GALLIANO L'AUTENTICO,galliano,
+GARNISH (BANANA SLICE),garnish-other,
+GARNISH (BISCOTTI),garnish-other,
+GARNISH (BLOOD ORANGE WEDGE),citrus-wheel,
+GARNISH (BLOOD ORANGE WHEELS),citrus-wheel,
+GARNISH (BLUEBERRY),garnish-other,
+GARNISH (BRANDIED CHERRY),cocktail-cherry,
+GARNISH (CANDIED GINGER),garnish-other,
+GARNISH (CELERY STALK),garnish-other,
+GARNISH (CHERRY TOMATO),garnish-other,
+GARNISH (CHERRY),cocktail-cherry,
+GARNISH (CIRTUS SLICES),citrus-wheel,
+GARNISH (CITRUS SLICES),citrus-wheel,
+GARNISH (CUCUMBER WHEEL),garnish-other,
+GARNISH (CUCUMBER),garnish-other,
+GARNISH (DEHYDRATED GRAPEFRUIT WHEEL),citrus-wheel,
+GARNISH (DRIED APRICOT),garnish-other,
+GARNISH (EDIBLE FLOWER),garnish-other,
+GARNISH (FIG),garnish-other,
+GARNISH (GRAPE TOMATO),garnish-other,
+GARNISH (GRAPEFRUIT WEDGE),citrus-wheel,
+GARNISH (GRAPES),garnish-other,
+GARNISH (GREEN OLIVE),olive,
+GARNISH (HALF LIME),citrus-wheel,
+GARNISH (HALF STRAWBERRY),garnish-other,
+GARNISH (LAVENDER),garnish-other,
+GARNISH (LEMON VERBENA),garnish-other,
+GARNISH (LEMON WEDGE),citrus-wheel,
+GARNISH (LEMON WHEEL),citrus-wheel,
+GARNISH (LEMON),citrus-wheel,
+GARNISH (LICORICE TWIST),garnish-other,
+GARNISH (LIME WEDGE),citrus-wheel,
+GARNISH (LIME WHEEL),citrus-wheel,
+GARNISH (MACE),garnish-other,
+GARNISH (MINT),garnish-other,
+GARNISH (NUTMEG),garnish-other,
+GARNISH (OLIVE),olive,
+GARNISH (ORANGE HALF WHEEL),citrus-wheel,
+GARNISH (ORANGE SLICE),citrus-wheel,
+GARNISH (PEAR SLICE),garnish-other,
+GARNISH (PEPPERMINT),garnish-other,
+GARNISH (PICKLED ASPARAGUS),garnish-other,
+GARNISH (PICKLED ONION),garnish-other,
+GARNISH (PINEAPPLE CHUNKS),garnish-other,
+GARNISH (PINEAPPLE LEAF),garnish-other,
+GARNISH (PINEAPPLE SAGE LEAF),garnish-other,
+GARNISH (PINEAPPLE SLICE),garnish-other,
+GARNISH (PINEAPPLE WEDGE),garnish-other,
+GARNISH (RASPBERRIES),garnish-other,
+GARNISH (RASPBERRY),garnish-other,
+GARNISH (ROSE BUD),garnish-other,
+GARNISH (RUBY RED GRAPEFRUIT QUARTER WHEEL),citrus-wheel,
+GARNISH (SEASONAL BERRIES),garnish-other,
+GARNISH (SIDEWINDER'S FANG PEEL),citrus-twist,
+GARNISH (SLICE OF LIME),citrus-wheel,
+GARNISH (STRAWBERRY),garnish-other,
+GARNISH (THAI BASIL),garnish-other,
+GARNISH (VIOLET BLOSSOM),garnish-other,
+GARNISH (WATERMELON SLICE),garnish-other,
+GENEVER,genever,
+GENEVER (BARREL-AGED),aged-genever,
+GIN,gin,
+GIN (100 PROOF),gin,
+GIN (AMERICAN),contemporary-gin,
+GIN (BROKER'S),london-dry-gin,
+GIN (DRY),london-dry-gin,
+GIN (EARL GREY),london-dry-gin,Earl Grey-infused
+GIN (GENEVER),genever,
+GIN (LONDON DRY GIN),london-dry-gin,
+GIN (LONDON DRY),london-dry-gin,
+"GIN (LONDON DRY, GREEN TEA INFUSED)",london-dry-gin,green tea-infused
+"GIN (LONDON DRY, HIBISCUS INFUSED)",london-dry-gin,hibiscus-infused
+"GIN (LONDON DRY, LAVENDER INFUSED)",london-dry-gin,lavender-infused
+GIN (MALACCA),gin,
+GIN (NAVY),navy-strength-gin,
+GIN (OLD TOM),old-tom-gin,
+GIN (PLYMOUTH),plymouth-gin,
+GIN (SLOE),sloe-gin,
+GIN (TURMERIC INFUSED),gin,turmeric-infused
+GINGER ALE,ginger-ale,
+GINGER BEER,ginger-beer,
+GINGER LIQUEUR,ginger-liqueur,
+GODIVA ORIGINAL LIQUEUR,chocolate-liqueur,
+GOMME SYRUP,gum-syrup,
+GRAN CLASSICO BITTER,gran-classico,
+GRAND MARNIER,grand-marnier,
+GRAPEFRUIT JUICE,grapefruit-juice,
+GREEN CHARTREUSE,green-chartreuse,
+GREEN TEA,tea,green tea
+GRENADINE,grenadine,
+HELLFIRE TINCTURE,hellfire-bitters,
+HONEY,honey,
+HORCHATA,horchata,
+HOT BUTTERED RUM BATTER,butter-batter,
+ICE CREAM (POPCORN),ice-cream,popcorn ice cream
+JASPER'S SECRET MIX,house-mix,Jasper's Secret Mix
+JELLY (QUINCE),preserves,quince
+JELLY (REDCURRANT),preserves,redcurrant
+JUCIE (LEMON),lemon-juice,
+JUICE (AGAR-CLARIFIED GRAPEFRUIT),grapefruit-juice,clarified
+JUICE (APPLE),apple-juice,
+JUICE (BLOOD ORANGE),blood-orange-juice,
+JUICE (CANTALOUPE),other-juice,cantaloupe
+JUICE (CELERY),celery-juice,
+JUICE (CENTRIFUGE-CLARIFIED GRAPEFRUIT),grapefruit-juice,clarified
+JUICE (CLARIFIED ASHMEAD'S KERNEL),apple-juice,clarified Ashmead's Kernel
+JUICE (CLARIFIED GRAPEFRUIT),grapefruit-juice,clarified
+JUICE (CLARIFIED LEMON),lemon-juice,clarified
+JUICE (CLARIFIED LIME),lime-juice,clarified
+JUICE (CLARIFIED WICKSON CRABAPPLE),apple-juice,clarified Wickson crabapple
+JUICE (CLEMENTINE),tangerine-juice,
+JUICE (CRANBERRY),cranberry-juice,
+JUICE (CUCUMBER),cucumber-juice,
+JUICE (GRAPEFRUIT),grapefruit-juice,
+JUICE (GRAPEFRUIT) (WHITE OR PINK),grapefruit-juice,
+JUICE (HONEYDEW MELON),other-juice,honeydew
+JUICE (LEMON),lemon-juice,
+JUICE (LEMONADE),lemonade,
+JUICE (LIME),lime-juice,
+JUICE (MANGO-PEACH),other-juice,mango-peach
+JUICE (ORANGE),orange-juice,
+"JUICE (ORANGE, LIME STRENGTH)",orange-juice,acid-adjusted to lime strength
+JUICE (PINEAPPLE),pineapple-juice,
+JUICE (POMEGRANATE),pomegranate-juice,
+JUICE (TANGERINE),tangerine-juice,
+JUICE (UNCLARIFIED HONEYCRISP APPLE),apple-juice,Honeycrisp
+JUICE (WATERMELON),watermelon-juice,
+KAHLÚA,coffee-liqueur,
+KINA LILLET,cocchi-americano|lillet-blanc,
+KIRSCHWASSER,kirsch,
+KOLA TONIC,flavored-syrup,kola tonic
+KUMMEL,kummel,
+LEAF (BASIL),basil,
+LEAF (CURRY),herbs-other,curry leaf
+LEAF (KAFFIR LIME),herbs-other,makrut lime leaf
+LEAF (SAGE),herbs-other,sage
+LEAVES (MINT),mint,
+LEMON,lemon,
+LEMON JUICE,lemon-juice,
+LEMON PEEL,citrus-twist,
+LEMON SORBET,ice-cream,lemon sorbet
+LEMON SYRUP,flavored-syrup,lemon
+LEMONADE,lemonade,
+LI HING MUI POWDER,li-hing-mui,
+LICOR 43,licor-43,
+LILLET BLANC,lillet-blanc,
+LILLET ROUGE,lillet-rouge,
+LIME JUICE,lime-juice,
+LIQUER (CHERRY),cherry-liqueur,
+LIQUER (CREME DE VIOLETTE),creme-de-violette,
+LIQUEUR,@notes:herbal-liqueur,
+LIQUEUR (ALLSPICE DRAM),allspice-dram,
+LIQUEUR (AMARETTO),amaretto,
+LIQUEUR (ANISE),anise-liqueur,
+LIQUEUR (ANISETTE),anisette,
+LIQUEUR (APPLE),apple-liqueur,
+LIQUEUR (APRICOT),apricot-liqueur,
+LIQUEUR (AVEZE),gentian-liqueur,
+LIQUEUR (BANANA),banana-liqueur,
+LIQUEUR (BENEDICTINE),benedictine,
+LIQUEUR (BLACKBERRY),blackberry-liqueur,
+LIQUEUR (BLOOD ORANGE),blood-orange-liqueur,
+LIQUEUR (CHARTREUSE GREEN),green-chartreuse,
+LIQUEUR (CHERRY HEERING),cherry-heering,
+LIQUEUR (CHERRY),@notes:cherry-liqueur,
+LIQUEUR (CHILE),chile-liqueur,
+LIQUEUR (COFFEE),coffee-liqueur,
+LIQUEUR (CRANBERRY),cranberry-liqueur,
+LIQUEUR (CREME DE CACAO BLANC),creme-de-cacao-white,
+LIQUEUR (CREME DE CACAO),creme-de-cacao,
+LIQUEUR (CREME DE CASSIS),creme-de-cassis,
+LIQUEUR (CREME DE FRAISE),strawberry-liqueur,
+LIQUEUR (CREME DE FRAMBOISE),raspberry-liqueur,
+LIQUEUR (CREME DE MENTHE),creme-de-menthe,
+LIQUEUR (CREME DE MURE),blackberry-liqueur,
+LIQUEUR (CREME DE PECHE),peach-liqueur,
+LIQUEUR (CREME DE POIRE),pear-liqueur,
+LIQUEUR (CREME YVETTE),creme-yvette,
+LIQUEUR (CRÈME DE CASSIS),creme-de-cassis,
+LIQUEUR (CURACAO),orange-curacao,
+LIQUEUR (DIMMI),dimmi,
+LIQUEUR (DRAMBUIE),drambuie,
+LIQUEUR (ELDERFLOWER),elderflower-liqueur,
+LIQUEUR (FALERNUM),falernum,
+LIQUEUR (GALLIANO RISTRETTO),galliano-ristretto,
+LIQUEUR (GALLIANO),galliano,
+LIQUEUR (GINGER),ginger-liqueur,
+LIQUEUR (GOLDWASSER),goldwasser,
+LIQUEUR (GRAPEFRUIT),grapefruit-liqueur,
+LIQUEUR (GRAPPA),grappa,
+LIQUEUR (HERBAL),@notes:herbal-liqueur,
+LIQUEUR (HIBISCUS),hibiscus-liqueur,
+LIQUEUR (KAHLUA),coffee-liqueur,
+LIQUEUR (KUMMEL),kummel,
+LIQUEUR (LICOR 43),licor-43,
+LIQUEUR (MARASCHINO),maraschino,
+LIQUEUR (ORANGE BLUE),blue-curacao,
+LIQUEUR (ORANGE CURACAO),orange-curacao,
+LIQUEUR (ORANGE),@notes:orange-liqueur,
+LIQUEUR (PARFAIT AMOUR),parfait-amour,
+LIQUEUR (PASTIS),pastis,
+LIQUEUR (PATXARAN),pacharan,
+LIQUEUR (PEACH),peach-liqueur,
+LIQUEUR (PEAR),pear-liqueur,
+LIQUEUR (PIMM'S),pimms,
+LIQUEUR (PINE),pine-liqueur,
+LIQUEUR (POMEGRANATE),pomegranate-liqueur,
+LIQUEUR (RASPBERRY),raspberry-liqueur,
+LIQUEUR (ROSE),rose-liqueur,
+LIQUEUR (STRAWBERRY),strawberry-liqueur,
+LIQUEUR (STREGA),strega,
+LIQUEUR (SUZE),suze,
+LIQUEUR (TUACA),tuaca,
+LIQUEUR (VANILLA),vanilla-liqueur,
+LIQUEUR (VERVEIN DU VELAY),verveine,
+LIQUEUR (VIOLET),creme-de-violette,
+LIQUEUR (YELLOW CHARTREUSE),yellow-chartreuse,
+LIQUID NITROGEN,liquid-nitrogen,
+LUXARDO AMARETTO,amaretto,
+LUXARDO BITTER,luxardo-bitter,
+LUXARDO MARASCHINO,maraschino,
+MADEIRA,madeira,
+MARASCHINO LIQUEUR,maraschino,
+MARASCHINO/CHERRY LIQUEUR,@notes:maraschino,
+MARMALADE (CITRUS),preserves,citrus marmalade
+MARMALADE (GRAPEFRUIT),preserves,grapefruit marmalade
+MARMALADE (ORANGE),preserves,orange marmalade
+MEZCAL,mezcal,
+MILK (WHOLE),milk,
+MINT,mint,
+MINT LEAVES,mint,
+MIX (ALYMETH),house-mix,Alymeth mix
+MIX (ARCHBISHOP),house-mix,Archbishop mix
+MIX (BANKSY SCOTCH),house-mix,Banksy Scotch mix
+MIX (BERGERAC MIX),house-mix,Bergerac mix
+MIX (BLOODY MARY),clamato,Bloody Mary mix
+MIX (CLAMATO),clamato,
+MIX (DONN),grapefruit-juice+cinnamon-syrup,Donn's Mix
+MIX (DONN’S MIX #1),grapefruit-juice+cinnamon-syrup,Donn's Mix
+MIX (DONN’S SPICES #2),vanilla-syrup+allspice-dram,Donn's Spices #2
+MIX (EXCELLENT NEGUS),house-mix,Excellent Negus mix
+MIX (LAWN SLEEVES),house-mix,Lawn Sleeves mix
+MIX (PENDENNIS MIX),house-mix,Pendennis mix
+MIX (SPICE),house-mix,spice mix
+MIX (TOUCAN),house-mix,Toucan mix
+MIX (WATERMELON),house-mix,watermelon mix
+MIX (ZOMBIE MIX),house-mix,Zombie mix
+MOLASSES,molasses,
+MONTEVERDI NOCINO,nocino,
+NECTAR (TAMARIND),fruit-puree,tamarind
+NONINO AMARO,amaro-nonino,
+NONINO GIOIELLO,grappa,
+NUTMEG,nutmeg,
+ORANGE BITTERS,orange-bitters,
+ORANGE CURACAO,orange-curacao,
+ORANGE FLOWER WATER,orange-flower-water,
+ORANGE GIN,orange-gin,
+ORANGE JUICE,orange-juice,
+ORANGE LIQUEUR,@notes:orange-liqueur,
+ORANGE SLICE,citrus-wheel,
+ORGEAT,orgeat,
+ORGEAT SYRUP,orgeat,
+OTHER (ACID PHOSPHATE),acid-phosphate,
+OTHER (BECHEROVKA),becherovka,
+OTHER (BUTTER),butter,
+OTHER (CAFFEINE PILL),caffeine,
+OTHER (CHAMPAGNE ACID),acid-powder,champagne acid
+OTHER (CILANTRO),herbs-other,cilantro
+OTHER (CUCUMBER),cucumber,
+OTHER (HORCHATA),horchata,
+OTHER (HOT CHOCOLATE),hot-chocolate,
+OTHER (HOT PEPPER),chile-pepper,
+OTHER (HOT SAUCE),hot-sauce,
+OTHER (JALAPENO),chile-pepper,
+OTHER (KIRSCH),kirsch,
+OTHER (LEMON CURD),preserves,lemon curd
+OTHER (MARMALADE (ORANGE)),preserves,orange marmalade
+OTHER (ORANGE BLOSSOM WATER),orange-flower-water,
+OTHER (ORANGE FLOWER WATER),orange-flower-water,
+OTHER (PUNCH GRANITA),house-mix,punch granita
+OTHER (ROSE WATER),rose-water,
+OTHER (SALINE),saline,
+OTHER (VERJUS),verjus,
+OTHER (VINEGAR),vinegar,
+OTHER (WORCHESTERSHIRE SAUCE),worcestershire,
+OTHER (YOGURT),yogurt,
+PACKED GOLDEN BROWN SUGAR,brown-sugar,
+PAMPLEMOUSSE,grapefruit-liqueur,
+PARFAIT AMOUR,parfait-amour,
+PASSION FRUIT JUICE,other-juice,passion fruit
+PASSION FRUIT SYRUP,passion-fruit-syrup,
+PASTIS,pastis,
+PEACH BRANDY,peach-brandy,
+PEACH LIQUEUR,peach-liqueur,
+PEAR LIQUEUR,pear-liqueur,
+PERNOD,absinthe|pastis,
+PEYCHAUD'S BITTERS,peychauds-bitters,
+PHILADELPHIA FISH HOUSE MIXTURE,house-mix,Fish House mixture
+PIMM'S #1 GIN SLING,pimms,
+PIMMS #1,pimms,
+PINE LIQUEUR,pine-liqueur,
+PINEAPPLE (WHOLE),pineapple,
+PINEAPPLE JUICE,pineapple-juice,
+PINEAPPLE SLICE,garnish-other,
+PINEAPPLE SYRUP,flavored-syrup,pineapple
+PISCO BRANDY,pisco,
+POMEGRANATE GRENADINE,grenadine,
+POMEGRANATE MOLASSES,pomegranate-molasses,
+POMOGRANATE LIQUEUR,pomegranate-liqueur,
+PORT,@notes:port,
+PORT (TAWNY),tawny-port,
+POT STILL LIGHTLY AGED RUM (NEW ENGLAND),pot-still-lightly-aged-rum,,
+POT STILL LIGHTLY AGED RUM (OVERPROOF),pot-still-lightly-aged-rum&overproof-rum,,
+POWDERED SUGAR,powdered-sugar,
+PRESERVES (BLUEBERRY),preserves,blueberry
+PRESERVES (RASPBERRY),preserves,raspberry
+PRESERVES (STRAWBERRY),preserves,strawberry
+PUNSCH,swedish-punsch,
+PUNT E MES,punt-e-mes,
+PUREE (BLACK CHERRY),fruit-puree,black cherry
+PUREE (BLACKBERRY),fruit-puree,blackberry
+PUREE (BOYSENBERRY),fruit-puree,boysenberry
+PUREE (FIG),fruit-puree,fig
+PUREE (KALAMANSI),fruit-puree,kalamansi
+PUREE (PASSION FRUIT),fruit-puree,passion fruit
+PUREE (PEACH),fruit-puree,peach
+PUREE (PUMPKIN),fruit-puree,pumpkin
+PUREE (SPICED APPLE),fruit-puree,spiced apple
+PUREE (WHITE PEACH),fruit-puree,white peach
+PURÉE (PASSION FRUIT),fruit-puree,passion fruit
+PURÉE (RHUBARB),fruit-puree,rhubarb
+PURÉE (TAMARIND),fruit-puree,tamarind
+RASPBERRY SYRUP,flavored-syrup,raspberry
+RHUM,@notes:rhum-agricole,,
+RIM (CINNAMON SUGAR),rim-mix,cinnamon sugar
+RIM (SPICY SUGAR AND SALT),rim-mix,spicy sugar & salt
+RIM (TOASTED FENNEL SALT),rim-mix,toasted fennel salt
+ROOT BEER,root-beer,
+ROSE LIQUEUR,rose-liqueur,
+ROSE'S LIME JUICE CORDIAL,lime-cordial,
+RUBY PORT,ruby-port,
+RUM,@notes:rum,,
+RUM (151-PROOF DEMERARA),demerara-rum&overproof-rum,,black-blended-overproof-rum
+RUM (AGED),@notes:aged-rum,,blended-aged-rum
+RUM (AGRICOLE AMBRE),@notes:rhum-agricole,,
+RUM (AGRICOLE BLANC),@notes:rhum-agricole-blanc,,
+RUM (BARBADOS),barbados-rum,,blended-aged-rum
+RUM (BLACK BLENDED OVERPROOF),black-blended-overproof-rum,,
+RUM (BLACK BLENDED),black-blended-rum,,
+RUM (BLACK POT STILL UNAGED),black-pot-still-rum,,
+RUM (BLACKSTRAP),blackstrap-rum,,
+RUM (BLENDED AGED),blended-aged-rum,,
+RUM (BLENDED LIGHTLY AGED),blended-lightly-aged-rum,,
+RUM (BRAIN),rum,brain rum (house batch),
+RUM (CANE AOC MARTINIQUE RHUM AGRICOLE VIEUX),rhum-agricole-vieux,,
+RUM (CANE AOC MARTINIQUE RHUM AGRICOLE),rhum-agricole-blanc,,
+RUM (CANE COFFEY STILL AGED),cane-coffey-still-aged-rum,,
+RUM (COLUMN STILL AGED),column-still-aged-rum,,
+RUM (COLUMN STILL LIGHTLY AGED),column-still-lightly-aged-rum,,
+RUM (DARK JAMAICAN),dark-rum&jamaican-rum,,black-blended-rum
+RUM (DARK OVERPROOF),@notes:dark-rum&overproof-rum,,black-blended-overproof-rum
+RUM (DARK),@notes:dark-rum,,black-blended-rum
+"RUM (DARK, HOP INFUSED)",@notes:dark-rum,hop-infused,black-blended-rum
+RUM (DEMERARA OVERPROOF),@notes:demerara-rum&overproof-rum,,black-blended-overproof-rum
+RUM (DEMERARA),@notes:demerara-rum,,blended-aged-rum
+RUM (ENGLISH WHITE),@notes:english-rum&white-rum,,
+RUM (ENGLISH),@notes:english-rum,,
+RUM (GOLD PUERTO RICAN),spanish-rum&lightly-aged-rum,,column-still-lightly-aged-rum
+RUM (GOLD),@notes:lightly-aged-rum,,blended-lightly-aged-rum
+RUM (JAMAICAN OVERPROOF),@notes:jamaican-rum&overproof-rum,,pot-still-lightly-aged-rum
+RUM (JAMAICAN WHITE),@notes:jamaican-rum&white-rum,,blended-lightly-aged-rum
+RUM (JAMAICAN),@notes:jamaican-rum,,blended-aged-rum
+RUM (LIGHT),@notes:white-rum,,blended-lightly-aged-rum|column-still-lightly-aged-rum
+RUM (LIGHTLY AGED),@notes:lightly-aged-rum,,blended-lightly-aged-rum
+RUM (NAVY),@notes:navy-rum,,
+RUM (OVERPROOF DEMERARA),@notes:demerara-rum&overproof-rum,,black-blended-overproof-rum
+RUM (PINEAPPLE),@notes:pineapple-rum,,
+RUM (POT STILL UNAGED),pot-still-unaged-rum,,
+RUM (R.L. SEALE 10 YEAR),blended-aged-rum&barbados-rum,,
+RUM (RHUM AGRICOLE BLANC),rhum-agricole-blanc,,
+RUM (RHUM AGRICOLE),@notes:rhum-agricole,,
+RUM (SPANISH WHITE),@notes:spanish-rum&white-rum,,column-still-lightly-aged-rum
+RUM (SPANISH),@notes:spanish-rum,,
+RUM (SPICED),spiced-rum,,
+RUM (VIRGIN ISLANDS),virgin-islands-rum,,column-still-lightly-aged-rum
+RUM (WHITE OVERPROOF),white-rum&overproof-rum,,pot-still-unaged-rum
+RUM (WHITE PUERTO RICAN),spanish-rum&white-rum,,column-still-lightly-aged-rum
+RUM (WHITE),@notes:white-rum,,blended-lightly-aged-rum|column-still-lightly-aged-rum
+"RUM (WHITE, SUGARED)",@notes:white-rum,sugared,blended-lightly-aged-rum|column-still-lightly-aged-rum
+RUM (WRAY & NEPHEW WHITE OVERPROOF),pot-still-unaged-rum&jamaican-rum&overproof-rum,,
+"RUM (ZACAPA, COFFEE INFUSED)",column-still-aged-rum,coffee-infused,
+RYE,rye-whiskey,
+SAKE,sake,
+SALINE SOLUTION,saline,
+SALT,salt,
+SALT (APPLEWOOD SMOKED),salt,
+SALT (CELERY),salt,celery salt
+SALT (CYPRUS SEA),salt,
+SALT (MALDON),salt,
+SALT (SEA),salt,
+SALTED BUTTER,butter,
+SAMBUCA,sambuca,
+SCHNAPPS (APPLE),apple-liqueur,
+SCOTCH,scotch,
+SCOTCH (SMOKY),peated-scotch,
+SECRET,-,
+SELTZER WATER,soda-water,
+SHAVED ICE,ice,
+SHERBET (LEMON),sherbet,lemon
+SHERBET (LIME),sherbet,lime
+SHERBET (ORANGE),sherbet,orange
+SHERBET (TANGERINE),sherbet,tangerine
+SHERRY,@notes:sherry,
+SHERRY (AMONTILLADO),amontillado-sherry,
+SHERRY (CREAM),cream-sherry,
+SHERRY (FINO),fino-sherry,
+SHERRY (MANZANILLA),manzanilla-sherry,
+SHERRY (OLOROSO),oloroso-sherry,
+SHERRY (PALE CREAM),pale-cream-sherry,
+SHERRY (PALO CORTADO),palo-cortado-sherry,
+SHERRY (PEDRO XIMENEZ),px-sherry,
+SHRUB,@notes:shrub,
+SHRUB (CAMPFIRE),shrub,campfire
+SHRUB (CELERY),shrub,celery
+SHRUB (HABANERO),shrub,habanero
+SHRUB (PLUM-MARIONBERRY),shrub,plum-marionberry
+SHRUB (RHUBARB),shrub,rhubarb
+SHRUBB (CONCORD GRAPE),shrub,Concord grape
+SHRUBB (CREOLE),creole-shrubb,
+SHRUBB (QUINCE),shrub,quince
+SIMPLE SYRUP,simple-syrup,
+SLOE GIN,sloe-gin,
+SODA,soda-water,
+SODA (BLOOD ORANGE),flavored-soda,blood orange
+SODA (CLUB),soda-water,
+SODA (COCA-COLA),cola,
+SODA (CUCUMBER),flavored-soda,cucumber
+SODA (GINGER ALE),ginger-ale,
+SODA (GINGER BEER),ginger-beer,
+SODA (GINGER),ginger-beer,
+SODA (GRAPEFRUIT (TING)),grapefruit-soda,
+SODA (GRAPEFRUIT),grapefruit-soda,
+SODA (GUAVA),flavored-soda,guava
+SODA (LAVENDER),flavored-soda,lavender
+SODA (LEMON LIME),lemon-lime-soda,
+SODA (LEMON),flavored-soda,lemon
+SODA (LIME),flavored-soda,lime
+SODA (ORANGE),flavored-soda,orange
+SODA (RHUBARB),flavored-soda,rhubarb
+SODA (ROOT BEER),root-beer,
+SODA (TONIC),tonic-water,
+SODA (VANILLA),flavored-soda,vanilla
+SODA WATER,soda-water,
+SORBET,ice-cream,sorbet
+SORREL (SPICED),flavored-syrup,spiced sorrel
+SPARKLING LEMONADE,lemonade,sparkling
+SPICE (ALLSPICE),spices,allspice
+SPICE (ANISE SEED),spices,anise seed
+SPICE (BASIL),basil,
+SPICE (BLACK PEPERCORNS),black-pepper,
+SPICE (BLACK PEPPER),black-pepper,
+SPICE (CARDAMOM PODS),spices,cardamom
+SPICE (CELERY SEED),spices,celery seed
+SPICE (CILANTRO),herbs-other,cilantro
+SPICE (CINNAMON FRENCH OAK),cinnamon,
+SPICE (CINNAMON STICK),cinnamon,
+SPICE (CINNAMON),cinnamon,
+SPICE (CLOVE),spices,clove
+SPICE (CLOVES),spices,clove
+SPICE (COCOA NIBS),spices,cocoa nibs
+SPICE (DILL),herbs-other,dill
+SPICE (FRESH THYME),herbs-other,thyme
+SPICE (GINGER),spices,ginger
+SPICE (NUTMEG),nutmeg,
+SPICE (PARSLEY),herbs-other,parsley
+SPICE (ROSEMARY),herbs-other,rosemary
+SPICE (STAR ANISE),spices,star anise
+SPICE (TARRAGON),herbs-other,tarragon
+SPICE (THYME),herbs-other,thyme
+SPICE (VANILLA BEAN),vanilla,
+SPICE (VANILLA POD),vanilla,
+STRAWBERRY LIQUEUR,strawberry-liqueur,
+STREGA,strega,
+SUGAR,sugar,
+SUGAR (BROWN CUBE),sugar-cube,brown
+SUGAR (BROWN),brown-sugar,
+SUGAR (CANE),sugar,
+SUGAR (COCONUT PALM),coconut-sugar,
+SUGAR (CUBE),sugar-cube,
+SUGAR (POWDERED),powdered-sugar,
+SUGAR (SUPERFINE MIXED WITH CINNAMON),superfine-sugar,cinnamon sugar
+SUGAR (SUPERFINE),superfine-sugar,
+SUGAR (TURBINADO),brown-sugar,
+SUGAR (WHITE),sugar,
+SUGAR CUBE,sugar-cube,
+SUGAR SYRUP,simple-syrup,
+SUZE,suze,
+SWEDISH PUNSCH,swedish-punsch,
+SWEET VERMOUTH,sweet-vermouth,
+SWEET-AND-SOUR MIX,house-mix,sweet-and-sour
+SWEETENED CONDENSED MILK,condensed-milk,
+SYRUP (AGAVE NECTAR),agave-syrup,
+SYRUP (AGAVE),agave-syrup,
+SYRUP (ALMOND),orgeat,
+SYRUP (APPLE),flavored-syrup,apple
+SYRUP (APPLE-CORIANDER BEER),flavored-syrup,apple-coriander beer
+SYRUP (BANANA),flavored-syrup,banana
+SYRUP (BLACK CARDAMON),flavored-syrup,black cardamom
+SYRUP (BLUEBERRY),flavored-syrup,blueberry
+SYRUP (BUTTER),flavored-syrup,butter
+SYRUP (CANE SUGAR),cane-syrup,
+SYRUP (CAPILLAIRE),flavored-syrup,capillaire
+SYRUP (CARAMEL),flavored-syrup,caramel
+SYRUP (CARAMELIZED SIMPLE),flavored-syrup,caramelized simple
+SYRUP (CINNAMON),cinnamon-syrup,
+SYRUP (CLOVE),flavored-syrup,clove
+SYRUP (CORIANDER),flavored-syrup,coriander
+SYRUP (CRANBERRY),flavored-syrup,cranberry
+SYRUP (CUMIN),flavored-syrup,cumin
+SYRUP (DEMARARA),demerara-syrup,
+SYRUP (DEMERARA),demerara-syrup,
+SYRUP (DJER),flavored-syrup,djer
+SYRUP (EAU DE THE),flavored-syrup,eau de thé
+SYRUP (FENNEL),flavored-syrup,fennel
+SYRUP (GASTRIQUE),flavored-syrup,gastrique
+SYRUP (GINGER),ginger-syrup,
+SYRUP (GRAPEFRUIT),flavored-syrup,grapefruit
+SYRUP (GRENADINE),grenadine,
+SYRUP (GUM),gum-syrup,
+SYRUP (GUNPOWDER TEA),flavored-syrup,gunpowder tea
+SYRUP (HIBISCUS),flavored-syrup,hibiscus
+SYRUP (HONEY),honey-syrup,
+SYRUP (JERK),flavored-syrup,jerk
+SYRUP (KUMQUAT),flavored-syrup,kumquat
+SYRUP (LAVENDER),flavored-syrup,lavender
+SYRUP (LEMON),flavored-syrup,lemon
+SYRUP (LEMONGRASS),flavored-syrup,lemongrass
+SYRUP (LI HING MUI),flavored-syrup,li hing mui
+SYRUP (LINGONBERRY),flavored-syrup,lingonberry
+SYRUP (MAI TAI RICH SIMPLE),rich-simple-syrup,
+SYRUP (MAPLE),maple-syrup,
+"SYRUP (MAPLE, GRADE B)",maple-syrup,
+SYRUP (MARTINIQUE SUGARCANE),cane-syrup,
+SYRUP (MINT),flavored-syrup,mint
+SYRUP (MOLASSES),molasses,
+SYRUP (NAPA WINE),flavored-syrup,Napa wine
+SYRUP (OLD FASHIONED),flavored-syrup,Old Fashioned
+SYRUP (ORGEAT),orgeat,
+SYRUP (PASSION FRUIT HONEY),passion-fruit-syrup,honey
+SYRUP (PASSION FRUIT),passion-fruit-syrup,
+SYRUP (PINEAPPLE GUM),flavored-syrup,pineapple gum
+SYRUP (PINEAPPLE),flavored-syrup,pineapple
+SYRUP (PISTACHIO),flavored-syrup,pistachio
+SYRUP (POMEGRANATE),grenadine,
+SYRUP (PRICKLY PEAR),flavored-syrup,prickly pear
+SYRUP (QUININE),flavored-syrup,quinine
+SYRUP (RASPBERRY GUM),flavored-syrup,raspberry gum
+SYRUP (RICE),flavored-syrup,rice
+SYRUP (RICH SIMPLE),rich-simple-syrup,
+SYRUP (RICH),rich-simple-syrup,
+SYRUP (ROSE),flavored-syrup,rose
+SYRUP (SCARLET GLOW TEA),flavored-syrup,Scarlet Glow tea
+SYRUP (SIMPLE),simple-syrup,
+SYRUP (SORGHUM),sorghum-syrup,
+SYRUP (SPICED),flavored-syrup,spiced
+SYRUP (SUGAR),simple-syrup,
+SYRUP (THYME-PICPOUL),flavored-syrup,thyme-picpoul
+SYRUP (TONIC),flavored-syrup,tonic
+SYRUP (TONKA BEAN),flavored-syrup,tonka bean
+SYRUP (VANILLA),vanilla-syrup,
+TABASCO PEPPER SAUCE,hot-sauce,
+TEA (ASSAM),tea,Assam
+TEA (CEYLON),tea,Ceylon
+TEA (CHAMOMILE),tea,chamomile
+TEA (DRAGON'S BLOOD),tea,Dragon's Blood
+TEA (EARL GREY),tea,Earl Grey
+TEA (GREEN),tea,green
+TEA (HIBISCUS),tea,hibiscus
+TEA (JASMINE),tea,jasmine
+TEA (ORANGE PEKOE TEA),tea,orange pekoe
+TEA (PEPPERMINT),tea,peppermint
+TEQUILA (ANEJO),tequila-anejo,
+TEQUILA (AÑEJO),tequila-anejo,
+TEQUILA (BLANCO),tequila-blanco,
+TEQUILA (REPOSADO),tequila-reposado,
+TINCTURE (ALLSPICE),tincture,allspice
+TINCTURE (ANGELICA),tincture,angelica
+TINCTURE (BAY LEAF),tincture,bay leaf
+TINCTURE (BLACK PEPPER),tincture,black pepper
+TINCTURE (CHAMOMILE),tincture,chamomile
+TINCTURE (CINCHONA),tincture,cinchona
+TINCTURE (CORIANDER),tincture,coriander
+TINCTURE (ELDERBERRY),tincture,elderberry
+TINCTURE (EUCALYPTUS),tincture,eucalyptus
+TINCTURE (GOLDENSEAL),tincture,goldenseal
+TINCTURE (LAVENDER),tincture,lavender
+TINCTURE (MACE),tincture,mace
+TINCTURE (RHUBARB),tincture,rhubarb
+TINCTURE (ROSEMARY),tincture,rosemary
+TINCTURE (SAGE),tincture,sage
+TINCTURE (SARSAPARILLA),tincture,sarsaparilla
+TINCTURE (TANSY),tincture,tansy
+TOMATO JUICE,tomato-juice,
+TORANI AMER,torani-amer,
+TRADER TIKI'S DON'S MIX,grapefruit-juice+cinnamon-syrup,Donn's Mix
+TWIST (GRAPEFRUIT),citrus-twist,
+TWIST (LEMON),citrus-twist,
+TWIST (LIME),citrus-twist,
+TWIST (ORANGE),citrus-twist,
+VANILLA EXTRACT,vanilla,
+VANILLA ICE CREAM,ice-cream,vanilla
+VEG (CUCUCMBER),cucumber,
+VEGETABLE (CUCUMBER),cucumber,
+VERMOUTH (BIANCO/BLANC),blanc-vermouth,
+VERMOUTH (BLANC ROOIBOS TEA INFUSED),blanc-vermouth,rooibos-infused
+VERMOUTH (BLANC),blanc-vermouth,
+VERMOUTH (DRY),dry-vermouth,
+"VERMOUTH (DRY, HERBS DE PROVENCE INFUSED)",dry-vermouth,herbes de Provence-infused
+VERMOUTH (SWEET),sweet-vermouth,
+"VERMOUTH (SWEET, CHAI INFUSED)",sweet-vermouth,chai-infused
+VIRGIN ISLANDS RUM,virgin-islands-rum,,column-still-lightly-aged-rum
+VODKA,vodka,
+VODKA (BISON GRASS),bison-grass-vodka,
+VODKA (CHOCOLATE INFUSED),vodka,chocolate-infused
+VODKA (CHOCOLATE),chocolate-vodka,
+VODKA (LEMON),citrus-vodka,
+VODKA (LEMONGRASS INFUSED),vodka,lemongrass-infused
+"VODKA (MILK-WASHED, TEA INFUSED)",vodka,"milk-washed, tea-infused"
+VODKA (PEANUT BUTTER AND JELLY INFUSED),vodka,PB&J-infused
+VODKA (POTATO),vodka,
+VODKA (RUBY RED GRAPEFRUIT),grapefruit-vodka,
+WATER,water,
+WATER (COCONUT),coconut-water,
+WATER (COLD),water,
+WATER (CORN),house-mix,corn water
+WATER (HOT),water,
+WATER (ORANGE FLOWER),orange-flower-water,
+WATER (ROSE FLOWER),rose-water,
+WATER (TONIC),tonic-water,
+WATER BOILING,water,
+WATER HOT,water,
+WHIKSEY (BOURBON),bourbon,
+WHISKEY (BANANA JAMESON),irish-whiskey,banana-infused
+WHISKEY (BOURBON),bourbon,
+"WHISKEY (BOURBON, CHITOSAN/GELLAN-WASHED)",bourbon,chitosan/gellan-washed
+"WHISKEY (BOURBON, LAPSANG SOUCHONG INFUSED)",bourbon,lapsang souchong-infused
+"WHISKEY (BOURBON, PEACH INFUSED)",bourbon,peach-infused
+WHISKEY (CHAMOMILE SCOTCH),scotch,chamomile-infused
+WHISKEY (CORN),corn-whiskey,
+WHISKEY (FIG BOURBON),bourbon,fig-infused
+WHISKEY (IRISH),irish-whiskey,
+"WHISKEY (IRISH, GREEN TEA INFUSED)",irish-whiskey,green tea-infused
+"WHISKEY (IRISH, HIBISCUS INFUSED)",irish-whiskey,hibiscus-infused
+"WHISKEY (IRISH, NETTLE TEA INFUSED)",irish-whiskey,nettle tea-infused
+WHISKEY (JAPANESE),japanese-whisky,
+WHISKEY (OAT),oat-whiskey,
+WHISKEY (RYE OVERPROOF),rye-whiskey,
+WHISKEY (RYE),rye-whiskey,
+"WHISKEY (RYE, SUGARED)",rye-whiskey,sugared
+WHISKEY (SCOTCH),scotch,
+"WHISKEY (SCOTCH, MASALA CHAI TEA INFUSED)",scotch,masala chai-infused
+WHISKEY (WHEAT),wheat-whiskey,
+WHISKY (BLENDED SCOTCH),blended-scotch,
+WHISKY (JAPANESE MALT),japanese-whisky,
+WHISKY (SINGLE MALT SCOTCH),single-malt-scotch,
+WHISKY (TENNESSEE),tennessee-whiskey,
+WHSIKEY (BOURBON),bourbon,
+"WHSIKEY (BOURBON, CHITOSAN/GELLAN-WASHED)",bourbon,chitosan/gellan-washed
+WILD TURKEY (100-PROOF),bourbon,
+WINE (BEAUJOLAIS NOUVEAU),red-wine,
+WINE (BIANCO),blanc-vermouth,
+WINE (BORDEAUX),red-wine,
+WINE (BURGUNDY),red-wine,
+WINE (CABERNET FRANC),red-wine,
+WINE (CABERNET),red-wine,
+WINE (CHAMPAGNE),sparkling-wine,
+WINE (CHARDONNAY),white-wine,
+WINE (DRY RED),red-wine,
+WINE (DRY WHITE),white-wine,
+WINE (LIMOUX),sparkling-wine,
+WINE (MADEIRA),madeira,
+WINE (MOSCATO),dessert-wine,
+WINE (MUSCAT),dessert-wine,
+WINE (PORT),port,
+WINE (PROSECCO),sparkling-wine,
+WINE (RED),red-wine,
+WINE (REISLING),white-wine,
+WINE (RIOJA),red-wine,
+WINE (ROSE),rose-wine,
+WINE (ROSÉ),rose-wine,
+WINE (SAUVIGNON BLANC),white-wine,
+WINE (SEKT),sparkling-wine,
+WINE (SPARKLING ROSÉ),sparkling-rose,
+WINE (SPARKLING),sparkling-wine,
+WINE (SPARKLING) (CHAMPAGNE),sparkling-wine,
+WINE (TOKAJI),dessert-wine,
+WINE (VINHO VERDE),white-wine,
+WINE (WHITE),white-wine,
+WINE SPARKLING,sparkling-wine,
+WORCESTERSHIRE SAUCE,worcestershire,
+YAKIMA SALT SOLUTION,saline,
+YELLOW CHARTREUSE,yellow-chartreuse,
+ZWACK,zwack,
