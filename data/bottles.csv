@@ -1,0 +1,2288 @@
+name,node,aliases,basis
+# Bottles people can search for in My Bar. Picking one adds its category (or categories).
+#
+# node: taxonomy id; "a+b" when the bottle is genuinely both (a peated single malt is
+# single-malt-scotch+peated-scotch). Owning the bottle satisfies everything above each
+# listed node, so map CONSERVATIVELY: a bottle filed too specifically claims recipes it
+# can't serve, while one filed too broadly only misses a few. When unsure, go broader.
+# Where a book names the bottle, follow the book's own classification; the build checks
+# each bottle against products.csv so the two never disagree.
+#
+# aliases: "|"-separated extra search terms (old labels, nicknames).
+# basis: why a bottle sits in a specific category, with a source where it isn't obvious.
+# ---------------------------------------------------------------- gin
+Beefeater London Dry Gin,london-dry-gin,,
+Beefeater 24,london-dry-gin,,
+Tanqueray London Dry Gin,london-dry-gin,,
+Tanqueray No. Ten,gin,No. 10,
+Bombay Dry Gin,london-dry-gin,,
+Bombay Sapphire,london-dry-gin,,
+Gordon's London Dry Gin,london-dry-gin,,
+Fords Gin,london-dry-gin,Ford's,
+Sipsmith London Dry Gin,london-dry-gin,,
+Hayman's London Dry Gin,london-dry-gin,,
+Fifty Pounds Gin,london-dry-gin,,
+Junipero Gin,london-dry-gin,Anchor Junipero,
+Greylock Gin,london-dry-gin,Berkshire Mountain,
+Cadenhead's Old Raj Gin,gin,Old Raj,
+Plymouth Gin,plymouth-gin,,
+Plymouth Navy Strength Gin,navy-strength-gin,,
+Perry's Tot Navy Strength Gin,navy-strength-gin,,
+Hayman's Royal Dock Navy Strength Gin,navy-strength-gin,,
+Martin Miller's Westbourne Strength Gin,navy-strength-gin,,
+Martin Miller's Gin,gin,,
+Hendrick's Gin,contemporary-gin,Hendrick's,
+Aviation Gin,contemporary-gin,Aviation,
+Dorothy Parker Gin,contemporary-gin,,
+St. George Botanivore Gin,contemporary-gin,,
+The Botanist Gin,gin,Bruichladdich,
+Monkey 47,gin,,
+Citadelle Gin,gin,,
+Ransom Old Tom Gin,old-tom-gin,,
+Hayman's Old Tom Gin,old-tom-gin,,
+Tanqueray Old Tom Gin,old-tom-gin,,
+Anchor Genevieve,genever,,
+Bols Genever,genever,,
+Bols Barrel-Aged Genever,aged-genever,,
+Plymouth Sloe Gin,sloe-gin,,
+Hayman's Sloe Gin,sloe-gin,,
+Sipsmith Sloe Gin,sloe-gin,,
+# ---------------------------------------------------------------- whiskey
+Buffalo Trace Bourbon,bourbon,,
+Eagle Rare 10 Year Bourbon,bourbon,,
+Elijah Craig Small Batch Bourbon,bourbon,Elijah Craig 12,
+Evan Williams Bourbon,bourbon,,
+Evan Williams Single Barrel Bourbon,bourbon,,
+Evan Williams Bottled-in-Bond,bourbon,,
+Four Roses Bourbon,bourbon,,
+Four Roses Small Batch Bourbon,bourbon,,
+Old Forester 86 Proof Bourbon,bourbon,,
+Old Forester 100 Proof Bourbon,bourbon,,
+Old Grand-Dad Bonded Bourbon,bourbon,,
+Old Grand-Dad 114 Bourbon,bourbon,,
+Wild Turkey 101 Bourbon,bourbon,,
+Russell's Reserve 10 Year Bourbon,bourbon,,
+Woodford Reserve Bourbon,bourbon,,
+Maker's Mark Bourbon,bourbon,,
+Weller Antique 107 Bourbon,bourbon,Old Weller,
+Weller Special Reserve Bourbon,bourbon,,
+Bulleit Bourbon,bourbon,,
+Knob Creek Bourbon,bourbon,,
+Baker's Bourbon,bourbon,,
+Booker's Bourbon,bourbon,,
+Blanton's Single Barrel Bourbon,bourbon,,
+Willett Pot Still Reserve Bourbon,bourbon,Willett,
+Henry McKenna Bottled-in-Bond Bourbon,bourbon,,
+Old Fitzgerald Bourbon,bourbon,,
+1792 Small Batch Bourbon,bourbon,,
+Jim Beam Bourbon,bourbon,,
+Larceny Bourbon,bourbon,,
+Basil Hayden Bourbon,bourbon,,
+Stagg Bourbon,bourbon,Stagg Jr,
+Bernheim Original Wheat Whiskey,wheat-whiskey,Bernheim,
+George Dickel No. 12,tennessee-whiskey,Dickel,
+Jack Daniel's Old No. 7,tennessee-whiskey,,
+Uncle Nearest 1856,tennessee-whiskey,,
+Mellow Corn,corn-whiskey,,
+High West Silver Oat Whiskey,oat-whiskey,,
+Rittenhouse Rye,rye-whiskey,Rittenhouse 100|Rittenhouse Bottled-in-Bond,
+Old Overholt Rye,rye-whiskey,,
+Wild Turkey 101 Rye,rye-whiskey,,
+Russell's Reserve 6 Year Rye,rye-whiskey,,
+Sazerac Rye,rye-whiskey,Sazerac 6,
+Bulleit Rye,rye-whiskey,,
+High West Double Rye,rye-whiskey,,
+High West Rendezvous Rye,rye-whiskey,,
+Michter's US*1 Rye,rye-whiskey,Michter's Rye,
+Templeton Rye,rye-whiskey,,
+Pikesville Rye,rye-whiskey,,
+Old Forester Rye,rye-whiskey,,
+Rittenhouse Very Rare,rye-whiskey,,
+Knob Creek Rye,rye-whiskey,,
+Old Potrero Rye,rye-whiskey,Hotaling's,
+WhistlePig 10 Year Rye,rye-whiskey,,
+Jameson Irish Whiskey,irish-whiskey,,
+Jameson Black Barrel,irish-whiskey,,
+Powers Gold Label,irish-whiskey,Powers,
+Redbreast 12 Year,irish-whiskey,,
+Redbreast 12 Cask Strength,irish-whiskey,,
+Bushmills Original,irish-whiskey,Bushmills,
+Black Bush,irish-whiskey,Bushmills Black Bush,
+Knappogue Castle 12 Year,irish-whiskey,,
+Green Spot,irish-whiskey,,
+Tullamore D.E.W.,irish-whiskey,Tullamore Dew,
+Teeling Small Batch,irish-whiskey,,
+Clontarf 1014,irish-whiskey,,
+Connemara Peated Single Malt,irish-whiskey,,
+Famous Grouse,blended-scotch,,
+Compass Box Asyla,blended-scotch,,
+Compass Box Great King Street Artist's Blend,blended-scotch,Great King Street,
+Dewar's White Label,blended-scotch,Dewar's,
+Johnnie Walker Red Label,blended-scotch,,
+Johnnie Walker Black Label,blended-scotch,,
+Chivas Regal 12,blended-scotch,,
+Monkey Shoulder,scotch,,
+Compass Box Oak Cross,scotch,,
+Compass Box Peat Monster,peated-scotch,,
+Glenlivet 12,single-malt-scotch,,
+Glenfiddich 12,single-malt-scotch,,
+Macallan 12 Double Cask,single-malt-scotch,Macallan,
+Glenmorangie 10 Original,single-malt-scotch,Glenmorangie,
+Balvenie 12 DoubleWood,single-malt-scotch,Balvenie,
+Aberlour 12,single-malt-scotch,,
+Oban 14,single-malt-scotch,,
+Highland Park 12,single-malt-scotch,,
+Springbank 10,single-malt-scotch,,
+Benromach 10,single-malt-scotch,,
+Dalmore 12,single-malt-scotch,,
+Laphroaig 10,single-malt-scotch+peated-scotch,,
+Ardbeg 10,single-malt-scotch+peated-scotch,Ardbeg Ten,
+Lagavulin 16,single-malt-scotch+peated-scotch,,
+Caol Ila 12,single-malt-scotch+peated-scotch,,
+Bowmore 12,single-malt-scotch+peated-scotch,,
+Talisker 10,single-malt-scotch+peated-scotch,,
+Kilchoman Machir Bay,single-malt-scotch+peated-scotch,,
+Port Charlotte 10,single-malt-scotch+peated-scotch,Bruichladdich Port Charlotte,
+Suntory Toki,japanese-whisky,,
+Yamazaki 12,japanese-whisky,,
+Hakushu 12,japanese-whisky,,
+Hibiki Harmony,japanese-whisky,,
+Nikka From the Barrel,japanese-whisky,,
+Nikka Taketsuru,japanese-whisky,,
+Nikka Coffey Grain,japanese-whisky,,
+# ---------------------------------------------------------------- rum
+Smith & Cross Jamaica Rum,jamaican-rum+pot-still-lightly-aged-rum+overproof-rum,Smith and Cross,
+Wray & Nephew White Overproof,jamaican-rum+pot-still-unaged-rum+white-rum+overproof-rum,Wray and Nephew,
+Rum-Bar Overproof,jamaican-rum+pot-still-unaged-rum+white-rum+overproof-rum,Rum Bar,"inferred from production, Smuggler's Cove definitions"
+Rum Fire,jamaican-rum+pot-still-unaged-rum+white-rum+overproof-rum,Hampden Rum Fire,"inferred from production, Smuggler's Cove definitions"
+Appleton Estate Signature,jamaican-rum+blended-lightly-aged-rum,Appleton V/X|Appleton Estate V/X|Appleton Signature Blend,Smuggler's Cove bottle list
+Appleton Estate 8 Year Reserve,jamaican-rum+blended-aged-rum,Appleton Reserve,Smuggler's Cove bottle list
+Appleton Estate 12 Year Rare Casks,jamaican-rum+aged-rum,Appleton 12,
+Appleton Estate 15 Year,jamaican-rum+aged-rum,,
+Appleton Estate 21 Year,jamaican-rum+aged-rum,,
+Appleton White,jamaican-rum+blended-lightly-aged-rum+white-rum,,"inferred from production, Smuggler's Cove definitions"
+Hamilton Jamaican Pot Still Gold,jamaican-rum+pot-still-unaged-rum,,Smuggler's Cove bottle list
+Hamilton Jamaican Pot Still Black,jamaican-rum+black-pot-still-rum,,
+Hampden Estate 8 Year,jamaican-rum+pot-still-aged-rum,,
+Worthy Park 109,jamaican-rum+pot-still-aged-rum,,
+Planteray Xaymaca,jamaican-rum,Plantation Xaymaca,
+Coruba Dark,jamaican-rum+dark-rum,Coruba,
+Myers's Original Dark,jamaican-rum+black-blended-rum,Myers|Myer's,"inferred from production, Smuggler's Cove definitions"
+Gosling's Black Seal,english-rum+black-blended-rum,Goslings,Smuggler's Cove bottle list
+Cruzan Black Strap,blackstrap-rum,Cruzan Blackstrap,
+Lemon Hart 151,demerara-rum+black-blended-overproof-rum,,Smuggler's Cove bottle list
+Hamilton 151 Overproof Demerara,demerara-rum+black-blended-overproof-rum,Hamilton 151,"inferred from production, Smuggler's Cove definitions"
+El Dorado 151,demerara-rum+black-blended-overproof-rum,,"inferred from production, Smuggler's Cove definitions"
+Planteray O.F.T.D.,black-blended-overproof-rum,Plantation O.F.T.D.|OFTD,Smuggler's Cove bottle list
+Planteray Original Dark 73,black-blended-overproof-rum,Plantation Original Dark Overproof,"inferred from production, Smuggler's Cove definitions"
+Lemon Hart Original,demerara-rum+black-blended-rum,Lemon Hart 80,Smuggler's Cove bottle list
+El Dorado 3 Year,demerara-rum+blended-lightly-aged-rum+white-rum,,Smuggler's Cove bottle list
+El Dorado 5 Year,demerara-rum+aged-rum,,
+El Dorado 8 Year,demerara-rum+aged-rum,,
+El Dorado 12 Year,demerara-rum+blended-aged-rum,,Smuggler's Cove bottle list
+El Dorado 15 Year,demerara-rum+blended-long-aged-rum,,Smuggler's Cove bottle list
+El Dorado 21 Year,demerara-rum+aged-rum,,
+Hamilton Demerara 86,demerara-rum,,
+Banks 5 Island,blended-lightly-aged-rum+white-rum,Banks 5,Smuggler's Cove bottle list
+Banks 7 Golden Age,blended-lightly-aged-rum,Banks 7,Smuggler's Cove bottle list
+Planteray 3 Stars,blended-lightly-aged-rum+white-rum,Plantation 3 Stars,"inferred from production, Smuggler's Cove definitions"
+Planteray Original Dark,black-blended-rum,Plantation Original Dark,"inferred from production, Smuggler's Cove definitions"
+Planteray 5 Year Barbados,barbados-rum+blended-aged-rum,Plantation 5 Year|Plantation Grande Reserve,Smuggler's Cove bottle list
+Planteray Stiggins' Fancy Pineapple,pineapple-rum,Plantation Pineapple|Plantation Stiggins' Fancy,
+Mount Gay Eclipse,barbados-rum+blended-lightly-aged-rum,,Smuggler's Cove bottle list
+Mount Gay Black Barrel,barbados-rum+aged-rum,,
+Mount Gay XO,barbados-rum+blended-aged-rum,,Smuggler's Cove bottle list
+Doorly's 3 Year,barbados-rum+white-rum,,
+Doorly's 5 Year,barbados-rum+aged-rum,,
+Doorly's XO,barbados-rum+aged-rum,,
+Foursquare Port Cask Finish,barbados-rum+aged-rum,,
+R.L. Seale's 10 Year,barbados-rum+aged-rum,RL Seale,
+Scarlet Ibis,english-rum+column-still-lightly-aged-rum,,Smuggler's Cove bottle list
+Angostura 5 Year,english-rum+column-still-aged-rum,,Smuggler's Cove bottle list
+Angostura 7 Year,english-rum+aged-rum,,
+Angostura 1919,english-rum+aged-rum,,
+Pusser's Gunpowder Proof,navy-rum+blended-aged-rum+overproof-rum,Pusser's Navy,Smuggler's Cove bottle list
+Pusser's Blue Label,navy-rum+blended-aged-rum,,Smuggler's Cove bottle list
+Flor de Caña 4 Extra Seco,spanish-rum+column-still-lightly-aged-rum+white-rum,Flor de Cana 4|Flor de Cana Extra Dry|Flor de Cana Silver Dry|Flor de Cana White,Smuggler's Cove bottle list
+Flor de Caña 7 Gran Reserva,spanish-rum+column-still-aged-rum,Flor de Cana 7,"inferred from production, Smuggler's Cove definitions"
+Flor de Caña 12,spanish-rum+column-still-aged-rum,Flor de Cana 12,Smuggler's Cove bottle list
+Bacardi Superior,spanish-rum+column-still-lightly-aged-rum+white-rum,Bacardi White|Bacardi Silver,"inferred from production, Smuggler's Cove definitions"
+Bacardi 8 Reserva Ocho,spanish-rum+column-still-aged-rum,Bacardi 8|Bacardi Ocho,Smuggler's Cove bottle list
+Havana Club 3 Year,spanish-rum+white-rum,,
+Havana Club 7 Year,spanish-rum+column-still-aged-rum,,"inferred from production, Smuggler's Cove definitions"
+Caña Brava,spanish-rum+column-still-lightly-aged-rum+white-rum,Cana Brava,Smuggler's Cove bottle list
+Don Q Cristal,spanish-rum+white-rum,,
+Don Q Añejo,spanish-rum+aged-rum,Don Q Anejo,
+Ron del Barrilito 3 Star,spanish-rum+column-still-aged-rum,Barrilito,Smuggler's Cove bottle list
+Santa Teresa 1796,spanish-rum+blended-long-aged-rum,,Smuggler's Cove bottle list
+Diplomático Reserva Exclusiva,spanish-rum+blended-aged-rum,Diplomatico,Smuggler's Cove bottle list
+Ron Zacapa 23,spanish-rum+column-still-aged-rum,Zacapa,Smuggler's Cove bottle list
+Pampero Aniversario,spanish-rum+black-blended-rum,,Smuggler's Cove bottle list (one source; verify)
+Matusalem Gran Reserva 15,spanish-rum+column-still-aged-rum,Matusalem,Smuggler's Cove bottle list
+Cruzan Single Barrel,virgin-islands-rum+column-still-aged-rum,,Smuggler's Cove bottle list
+Cruzan Aged Light,virgin-islands-rum+white-rum,,
+10 Cane,white-rum,,
+Rhum J.M Blanc,rhum-agricole-blanc,JM Blanc|Rhum JM,
+Rhum J.M VSOP,rhum-agricole-vieux,JM VSOP,
+Neisson Blanc,rhum-agricole-blanc,,
+Neisson Réserve Spéciale,rhum-agricole-vieux,Neisson Reserve Speciale,
+La Favorite Blanc,rhum-agricole-blanc,,
+La Favorite Ambré,rhum-agricole-vieux,La Favorite Ambre,Smuggler's Cove bottle list
+Rhum Clément Canne Bleue,rhum-agricole-blanc,Clement Canne Bleue,
+Rhum Clément Première Canne,rhum-agricole-blanc,Clement Premiere Canne,
+Rhum Clément VSOP,rhum-agricole-vieux,Clement VSOP,
+St. James Royal Ambré,rhum-agricole-vieux,St James,"inferred from production, Smuggler's Cove definitions"
+Barbancourt White,rhum-agricole-blanc,,"no Smuggler's Cove class; follows Death & Co, which uses it as its agricole blanc"
+Barbancourt 3 Star,cane-coffey-still-aged-rum,,"inferred from production, Smuggler's Cove definitions"
+Barbancourt 8 Year 5 Star,cane-coffey-still-aged-rum,Barbancourt 8,Smuggler's Cove bottle list
+Novo Fogo Silver,cachaca,,
+Avuá Prata,cachaca,Avua,
+Leblon Cachaça,cachaca,,
+Ypióca Prata,cachaca,Ypioca,
+Sagatiba Pura,cachaca,,
+Beleza Pura,cachaca,,
+Batavia Arrack van Oosten,batavia-arrack,Van Oosten,
+By the Dutch Batavia Arrack,batavia-arrack,,
+Sailor Jerry Spiced,spiced-rum,,
+Kraken Black Spiced,spiced-rum,,
+Captain Morgan Original Spiced,spiced-rum,,
+# ---------------------------------------------------------------- agave
+Fortaleza Blanco,tequila-blanco,,
+Fortaleza Reposado,tequila-reposado,,
+Fortaleza Añejo,tequila-anejo,Fortaleza Anejo,
+Siete Leguas Blanco,tequila-blanco,,
+Siete Leguas Reposado,tequila-reposado,,
+Siete Leguas Añejo,tequila-anejo,Siete Leguas Anejo,
+El Tesoro Blanco,tequila-blanco,El Tesoro Platinum,
+El Tesoro Reposado,tequila-reposado,,
+El Tesoro Añejo,tequila-anejo,El Tesoro Anejo,
+Tapatio Blanco 110,tequila-blanco,Tapatio 110,
+Tapatio Blanco,tequila-blanco,,
+Tapatio Reposado,tequila-reposado,,
+Cimarron Blanco,tequila-blanco,,
+Cimarron Reposado,tequila-reposado,,
+Pueblo Viejo Blanco,tequila-blanco,,
+Pueblo Viejo Reposado,tequila-reposado,,
+Pueblo Viejo Añejo,tequila-anejo,Pueblo Viejo Anejo,
+Olmeca Altos Plata,tequila-blanco,Altos,
+Olmeca Altos Reposado,tequila-reposado,,
+Siembra Azul Blanco,tequila-blanco,,
+Siembra Azul Reposado,tequila-reposado,,
+Siembra Azul Añejo,tequila-anejo,Siembra Azul Anejo,
+Tequila Ocho Plata,tequila-blanco,Ocho Plata,
+Tequila Ocho Reposado,tequila-reposado,,
+Tequila Ocho Añejo,tequila-anejo,Ocho Anejo,
+Arette Blanco,tequila-blanco,,
+Arette Reposado,tequila-reposado,,
+G4 Blanco,tequila-blanco,,
+G4 Reposado,tequila-reposado,,
+Cabeza Blanco,tequila-blanco,,
+Chinaco Blanco,tequila-blanco,Chinaco Verde,
+Partida Blanco,tequila-blanco,,
+Partida Reposado,tequila-reposado,,
+Partida Añejo,tequila-anejo,Partida Anejo,
+Centinela Reposado,tequila-reposado,,
+Milagro Silver,tequila-blanco,,
+Milagro Reposado,tequila-reposado,,
+Espolòn Blanco,tequila-blanco,Espolon Blanco,
+Espolòn Reposado,tequila-reposado,Espolon Reposado,
+Lunazul Blanco,tequila-blanco,,
+Lunazul Reposado,tequila-reposado,,
+El Jimador Blanco,tequila-blanco,,
+El Jimador Reposado,tequila-reposado,,
+Cazadores Blanco,tequila-blanco,,
+Cazadores Reposado,tequila-reposado,,
+Herradura Silver,tequila-blanco,Herradura Blanco,
+Herradura Reposado,tequila-reposado,,
+Herradura Añejo,tequila-anejo,Herradura Anejo,
+Don Julio Blanco,tequila-blanco,,
+Don Julio Reposado,tequila-reposado,,
+Don Julio Añejo,tequila-anejo,Don Julio Anejo,
+Patrón Silver,tequila-blanco,Patron Silver,
+Patrón Reposado,tequila-reposado,Patron Reposado,
+Patrón Añejo,tequila-anejo,Patron Anejo,
+Casamigos Blanco,tequila-blanco,,
+Casamigos Reposado,tequila-reposado,,
+Casamigos Añejo,tequila-anejo,Casamigos Anejo,
+Cabrito Blanco,tequila-blanco,,
+Gran Centenario Plata,tequila-blanco,,
+José Cuervo Tradicional Reposado,tequila-reposado,Jose Cuervo Tradicional,
+José Cuervo Platino,tequila-blanco,Jose Cuervo Platino,
+Del Maguey Vida,mezcal,,
+Del Maguey Chichicapa,mezcal,,
+Del Maguey San Luis del Rio,mezcal,,
+Del Maguey Espadín Especial,mezcal,Del Maguey Espadin,
+Montelobos Espadín,mezcal,Montelobos,
+Ilegal Joven,mezcal,Ilegal Mezcal,
+Banhez Ensamble,mezcal,Banhez,
+Sombra Mezcal,mezcal,Sombra,
+Los Amantes Joven,mezcal,,
+Mezcal Unión Uno,mezcal,Mezcal Union,
+Bozal Ensamble,mezcal,Bozal,
+Los Nahuales Joven,mezcal,,
+La Puritita Verdá,mezcal,La Puritita,
+# ---------------------------------------------------------------- brandy
+Pierre Ferrand 1840,cognac,Ferrand 1840,
+Pierre Ferrand Ambre,cognac,Ferrand Ambre,
+Pierre Ferrand Réserve,cognac,Ferrand Reserve,
+Hine H by Hine,cognac,Hine H,
+Hine Rare VSOP,cognac,Hine VSOP,
+Rémy Martin VSOP,cognac,Remy Martin VSOP,
+Rémy Martin 1738,cognac,Remy Martin 1738,
+Rémy Martin VS,cognac,Remy Martin VS,
+Hennessy VS,cognac,,
+Hennessy VSOP,cognac,,
+Hennessy Black,cognac,,
+Courvoisier VS,cognac,,
+Courvoisier VSOP,cognac,,
+Martell VS,cognac,,
+Martell VSOP,cognac,,
+Louis Royer Force 53,cognac,,
+Louis Royer VSOP,cognac,,
+Camus VS,cognac,,
+Park VS,cognac,,
+Guillon-Painturaud VSOP,cognac,,
+Tariquet VS Classique,armagnac,Tariquet,
+Château de Laubade VSOP,armagnac,Laubade,
+Delord Armagnac,armagnac,,
+Darroze Armagnac,armagnac,,
+Gran Duque d'Alba,brandy-de-jerez,,
+Cardenal Mendoza,brandy-de-jerez,,
+Lepanto Brandy de Jerez,brandy-de-jerez,Lepanto,
+Copper & Kings American Brandy,brandy,,
+Germain-Robin,brandy,,
+St. George Brandy,brandy,,
+E&J VSOP,brandy,,
+Christian Brothers Brandy,brandy,,
+Macchu Pisco,pisco,,
+BarSol Primero Quebranta,pisco,BarSol,
+Campo de Encanto Acholado,pisco,Campo de Encanto,
+La Diablada Pisco,pisco,La Diablada,
+Waqar Pisco,pisco,,
+Pisco Capel Reservado,pisco,Capel,
+Caravedo Pisco,pisco,,
+Kappa Pisco,pisco,,
+Pisco Portón,pisco,Porton,
+Laird's Applejack,applejack,Lairds Applejack,
+Laird's Bottled-in-Bond Apple Brandy,applejack,Laird's Bonded|Laird's 100,
+Laird's Straight Apple Brandy 86,applejack,,
+Busnel VSOP Calvados,calvados,Busnel,
+Château du Breuil Fine Calvados,calvados,Chateau du Breuil,
+Daron Fine Calvados,calvados,Daron,
+Boulard Calvados,calvados,,
+Christian Drouin Calvados,calvados,,
+Père Magloire Calvados,calvados,Pere Magloire,
+Roger Groult Calvados,calvados,,
+Clear Creek Apple Brandy,apple-brandy,,
+Massenez Kirsch Vieux,kirsch,,
+F. Meyer Kirsch,kirsch,,
+Clear Creek Kirsch,kirsch,,
+Schladerer Kirschwasser,kirsch,,
+Clear Creek Pear Brandy,pear-eau-de-vie,,
+F. Meyer Poire Williams,pear-eau-de-vie,,
+Massenez Poire Williams,pear-eau-de-vie,,
+F. Meyer Framboise,framboise,,
+Clear Creek Framboise,framboise,,
+F. Meyer Mirabelle,mirabelle,,
+Blume Marillen Apricot Eau de Vie,apricot-eau-de-vie,Blume Marillen,
+Clear Creek Douglas Fir,douglas-fir-eau-de-vie,,
+Maraska Slivovitz,plum-brandy,,
+R. Jelinek Slivovitz,plum-brandy,Jelinek,
+Nonino Grappa,grappa,,
+Nardini Grappa,grappa,,
+# ---------------------------------------------------------------- vodka
+Absolut Vodka,vodka,,
+Grey Goose,vodka,,
+Belvedere,vodka,,
+Ketel One,vodka,,
+Tito's Handmade Vodka,vodka,Titos,
+Smirnoff No. 21,vodka,Smirnoff,
+Stolichnaya,vodka,Stoli,
+Russian Standard,vodka,,
+Luksusowa Potato Vodka,vodka,Luksusowa,
+Chopin Potato Vodka,vodka,Chopin,
+Reyka Vodka,vodka,,
+Karlsson's Gold,vodka,,
+Charbay Vodka,vodka,,
+Absolut Citron,citrus-vodka,,
+Ketel One Citroen,citrus-vodka,,
+Charbay Meyer Lemon,citrus-vodka,,
+Hangar 1 Buddha's Hand Citron,citrus-vodka,Hangar One Buddha's Hand,
+Charbay Ruby Red Grapefruit,grapefruit-vodka,,
+Deep Eddy Ruby Red,grapefruit-vodka,,
+Żubrówka Bison Grass,bison-grass-vodka,Zubrowka,
+Alchemia Chocolate Vodka,chocolate-vodka,,
+# ---------------------------------------------------------------- other spirits
+Vieux Pontarlier Absinthe,absinthe,,
+Pernod Absinthe,absinthe,,
+St. George Absinthe Verte,absinthe,,
+Kübler Absinthe,absinthe,Kubler,
+Duplais Verte,absinthe,,
+La Clandestine Absinthe,absinthe,,
+Lucid Absinthe,absinthe,,
+Marteau Absinthe,absinthe,,
+Ricard Pastis,pastis,,
+Pernod Anise,pastis,Pernod Original,
+Herbsaint,herbsaint,,
+Linie Aquavit,aquavit,,
+Aalborg Taffel Akvavit,aquavit,Aalborg,
+Krogstad Aquavit,aquavit,,
+O.P. Anderson Aquavit,aquavit,,
+# ---------------------------------------------------------------- liqueurs
+Cointreau,triple-sec,,
+Combier Liqueur d'Orange,triple-sec,Combier Triple Sec,
+Luxardo Triplum,triple-sec,,
+Grand Marnier Cordon Rouge,grand-marnier,Grand Marnier,
+Pierre Ferrand Dry Curaçao,orange-curacao,Ferrand Dry Curacao,
+Marie Brizard Orange Curaçao,orange-curacao,,
+Senior Curaçao of Curaçao Orange,orange-curacao,,
+Senior Curaçao of Curaçao Blue,blue-curacao,,
+Bols Blue Curaçao,blue-curacao,,
+Rhum Clément Créole Shrubb,creole-shrubb,Clement Creole Shrubb,
+Mandarine Napoléon,mandarine-liqueur,Mandarine Napoleon,
+Solerno Blood Orange,blood-orange-liqueur,,
+Royal Combier,orange-liqueur,,
+Luxardo Maraschino,maraschino,,
+Maraska Maraschino,maraschino,,
+Leopold Bros. Maraschino,maraschino,,
+Cherry Heering,cherry-heering,Heering,
+Luxardo Sangue Morlacco,cherry-liqueur,,
+Rothman & Winter Orchard Cherry,cherry-liqueur,,
+Combier Roi René Rouge,cherry-liqueur,Roi Rene,
+Leopold Bros. Tart Cherry,cherry-liqueur,,
+Rothman & Winter Orchard Apricot,apricot-liqueur,,
+Giffard Abricot du Roussillon,apricot-liqueur,,
+Marie Brizard Apry,apricot-liqueur,,
+Giffard Crème de Pêche,peach-liqueur,Giffard Peche,
+Mathilde Pêche,peach-liqueur,Mathilde Peche,
+Merlet Crème de Pêche,peach-liqueur,,
+Massenez Crème de Pêche,peach-liqueur,,
+Rothman & Winter Orchard Pear,pear-liqueur,,
+Mathilde Poire,pear-liqueur,,
+Merlet Crème de Poire,pear-liqueur,,
+Belle de Brillet,pear-liqueur,,
+Giffard Banane du Brésil,banana-liqueur,,
+Tempus Fugit Crème de Banane,banana-liqueur,,
+Kalani Ron de Coco,coconut-liqueur,Kalani,
+Giffard Crème de Mûre,blackberry-liqueur,Giffard Mure,
+Massenez Crème de Mûre,blackberry-liqueur,,
+Leopold Bros. Blackberry,blackberry-liqueur,,
+Chambord,raspberry-liqueur,,
+Giffard Crème de Framboise,raspberry-liqueur,,
+Merlet Crème de Framboise,raspberry-liqueur,,
+St. George Raspberry Liqueur,raspberry-liqueur,,
+Giffard Crème de Fraise des Bois,strawberry-liqueur,,
+Merlet Crème de Fraise des Bois,strawberry-liqueur,,
+Giffard Crème de Cassis,creme-de-cassis,,
+Lejay Crème de Cassis,creme-de-cassis,,
+Merlet Crème de Cassis,creme-de-cassis,,
+Combier Crème de Cassis,creme-de-cassis,,
+Pama Pomegranate,pomegranate-liqueur,,
+Combier Pamplemousse Rose,grapefruit-liqueur,,
+Giffard Crème de Pamplemousse Rose,grapefruit-liqueur,,
+St-Germain,elderflower-liqueur,St Germain,
+Giffard Fleur de Sureau,elderflower-liqueur,,
+St. Elder,elderflower-liqueur,,
+Rothman & Winter Crème de Violette,creme-de-violette,,
+Giffard Crème de Violette,creme-de-violette,,
+The Bitter Truth Violet,creme-de-violette,,
+Crème Yvette,creme-yvette,Creme Yvette,
+Marie Brizard Parfait Amour,parfait-amour,,
+Combier Liqueur de Rose,rose-liqueur,,
+Giffard White Crème de Cacao,creme-de-cacao-white,,
+Marie Brizard White Crème de Cacao,creme-de-cacao-white,,
+Bols White Crème de Cacao,creme-de-cacao-white,,
+Tempus Fugit Crème de Cacao,creme-de-cacao,,
+Marie Brizard Dark Crème de Cacao,creme-de-cacao,,
+Kahlúa,coffee-liqueur,Kahlua,
+Mr Black Cold Brew Coffee Liqueur,coffee-liqueur,Mr Black,
+St. George NOLA Coffee Liqueur,coffee-liqueur,,
+Caffè Borghetti,coffee-liqueur,Borghetti,
+Tia Maria,coffee-liqueur,,
+Galliano Ristretto,galliano-ristretto,,
+Giffard Menthe-Pastille,creme-de-menthe,,
+Tempus Fugit Crème de Menthe,creme-de-menthe,,
+Marie Brizard White Crème de Menthe,creme-de-menthe,,
+Lazzaroni Amaretto,amaretto,,
+Disaronno,amaretto,,
+Luxardo Amaretto di Saschira,amaretto,Luxardo Amaretto,
+Nux Alpina Walnut Liqueur,nocino,Nux Alpina,
+Giffard Vanille de Madagascar,vanilla-liqueur,,
+Licor 43,licor-43,,
+Galliano L'Autentico,galliano,Galliano,
+Tuaca,tuaca,,
+Bärenjäger,honey-liqueur,Barenjager,
+Drambuie,drambuie,,
+Bénédictine D.O.M.,benedictine,Benedictine,
+Green Chartreuse,green-chartreuse,,
+Yellow Chartreuse,yellow-chartreuse,,
+Strega,strega,Liquore Strega,
+Dolin Génépy des Alpes,genepy,Dolin Genepy,
+Élixir Combier,herbal-liqueur,Elixir Combier,
+Zirbenz Stone Pine,pine-liqueur,,
+John D. Taylor's Velvet Falernum,falernum,Velvet Falernum,
+St. Elizabeth Allspice Dram,allspice-dram,,
+Hamilton Pimento Dram,allspice-dram,,
+The Bitter Truth Pimento Dram,allspice-dram,,
+Domaine de Canton,ginger-liqueur,Canton,
+Giffard Ginger of the Indies,ginger-liqueur,,
+The King's Ginger,ginger-liqueur,,
+Ancho Reyes,chile-liqueur,,
+Ancho Reyes Verde,chile-liqueur,,
+Helbing Kümmel,kummel,Helbing Kummel,
+Combier Kümmel,kummel,Combier Kummel,
+Marie Brizard Anisette,anisette,,
+Sambuca Romana,sambuca,,
+Danziger Goldwasser,goldwasser,Goldwasser,
+Pimm's No. 1,pimms,Pimms,
+Kronan Swedish Punsch,swedish-punsch,,
+Carlshamns Flaggpunsch,swedish-punsch,,
+Zoco Pacharán,pacharan,Zoco Pacharan,
+Becherovka,becherovka,,
+Dimmi Liquore di Milano,dimmi,Dimmi,
+Verveine du Velay,verveine,,
+Berentzen Apfelkorn,apple-liqueur,,
+# ---------------------------------------------------------------- amari & bitter aperitifs
+Campari,campari,,
+Aperol,aperol,,
+Luxardo Bitter Rosso,luxardo-bitter,Luxardo Bitter,
+Gran Classico Bitter,gran-classico,,
+Casoni 1814,casoni-1814,,
+Amaro Averna,averna,Averna,
+Cynar,cynar,,
+Fernet-Branca,fernet-branca,Fernet Branca,
+Branca Menta,branca-menta,,
+Amaro Nonino Quintessentia,amaro-nonino,Nonino,
+Amaro Montenegro,amaro-montenegro,Montenegro,
+Amaro CioCiaro,amaro-ciociaro,Ciociaro,
+Amaro Meletti,amaro-meletti,Meletti,
+Ramazzotti,amaro-ramazzotti,,
+Amaro Lucano,amaro-lucano,Lucano,
+Amaro Nardini,amaro-nardini,Nardini Amaro,
+Luxardo Amaro Abano,amaro-abano,Abano,
+Amaro Sibilla,amaro-sibilla,Sibilla,
+Cardamaro,cardamaro,,
+Zucca Rabarbaro,zucca,Zucca,
+Amaro di Angostura,amaro-di-angostura,,
+The Bitter Truth EXR,bitter-truth-amaro,,
+Amer Picon,amer-picon,,
+Bittermens Amère Nouvelle,amer-nouvelle,Amere Nouvelle,
+Torani Amer,torani-amer,,
+Suze,suze,,
+Salers Gentiane,salers,Salers,
+Avèze Gentiane,gentian-liqueur,Aveze,
+Bigallet China-China,china-china,China China,
+Zwack,zwack,Unicum,
+# ---------------------------------------------------------------- vermouth & aromatized wine
+Carpano Antica Formula,sweet-vermouth,Carpano Antica,
+Carpano Classico,sweet-vermouth,,
+Cocchi Vermouth di Torino,sweet-vermouth,Cocchi Torino,
+Dolin Rouge,sweet-vermouth,,
+Martini & Rossi Rosso,sweet-vermouth,Martini Rosso,
+Martini & Rossi Riserva Speciale Rubino,sweet-vermouth,Martini Rubino,
+Cinzano Rosso,sweet-vermouth,,
+Noilly Prat Rouge,sweet-vermouth,,
+Contratto Vermouth Rosso,sweet-vermouth,,
+Vya Sweet Vermouth,sweet-vermouth,,
+Mancino Vermouth Rosso,sweet-vermouth,,
+Lustau Vermut Rojo,sweet-vermouth,,
+Punt e Mes,punt-e-mes,,
+Dolin Dry,dry-vermouth,,
+Noilly Prat Extra Dry,dry-vermouth,Noilly Prat,
+Noilly Prat Original Dry,dry-vermouth,,
+Martini & Rossi Extra Dry,dry-vermouth,Martini Extra Dry,
+Cinzano Extra Dry,dry-vermouth,,
+Vya Extra Dry,dry-vermouth,,
+Mancino Secco,dry-vermouth,,
+Dolin Blanc,blanc-vermouth,,
+Martini & Rossi Bianco,blanc-vermouth,Martini Bianco,
+Cinzano Bianco,blanc-vermouth,,
+Carpano Bianco,blanc-vermouth,,
+Contratto Vermouth Bianco,blanc-vermouth,,
+Mancino Bianco Ambrato,blanc-vermouth,,
+Lillet Blanc,lillet-blanc,,
+Lillet Rosé,lillet-rose,Lillet Rose,
+Lillet Rouge,lillet-rouge,,
+Cocchi Americano,cocchi-americano,,
+Dubonnet Rouge,dubonnet,,
+Bonal Gentiane-Quina,bonal,Bonal,
+Byrrh Grand Quinquina,byrrh,Byrrh,
+Pasquet Pineau des Charentes,pineau-des-charentes,,
+# ---------------------------------------------------------------- fortified
+Tio Pepe Fino,fino-sherry,,
+Lustau Jarana Fino,fino-sherry,,
+Barbadillo Fino,fino-sherry,,
+La Gitana Manzanilla,manzanilla-sherry,,
+Lustau Papirusa Manzanilla,manzanilla-sherry,,
+Barbadillo Solear Manzanilla,manzanilla-sherry,,
+La Cigarrera Manzanilla,manzanilla-sherry,,
+Lustau Los Arcos Amontillado,amontillado-sherry,,
+Barbadillo Príncipe Amontillado,amontillado-sherry,,
+Lustau Don Nuño Oloroso,oloroso-sherry,,
+Barbadillo San Rafael Oloroso,oloroso-sherry,,
+Lustau Península Palo Cortado,palo-cortado-sherry,,
+Barbadillo Obispo Gascón Palo Cortado,palo-cortado-sherry,,
+Lustau East India Solera,cream-sherry,,
+Williams & Humbert Dry Sack,cream-sherry,,
+Harveys Bristol Cream,cream-sherry,,
+Alvear Festival Pale Cream,pale-cream-sherry,,
+Lustau San Emilio Pedro Ximénez,px-sherry,Lustau PX,
+Toro Albalá Pedro Ximénez,px-sherry,,
+Hidalgo Pedro Ximénez,px-sherry,,
+Graham's Six Grapes,ruby-port,,
+Fonseca Bin 27,ruby-port,,
+Sandeman Ruby Port,ruby-port,,
+Dow's Fine Ruby Port,ruby-port,,
+Quinta do Noval Black,ruby-port,Noval Black,
+Graham's Late Bottled Vintage,port,Graham's LBV,
+Taylor Fladgate 10 Year Tawny,tawny-port,,
+Dow's 10 Year Tawny,tawny-port,,
+Ramos Pinto 10 Year Tawny,tawny-port,,
+Blandy's 5 Year Malmsey,madeira,,
+Blandy's 5 Year Verdelho,madeira,,
+Blandy's Sercial,madeira,,
+Broadbent Rainwater,madeira,,
+Rare Wine Co. Historic Series,madeira,,
+Sandeman Rainwater,madeira,,
+Cossart Gordon 5 Year Bual,madeira,,
+# ---------------------------------------------------------------- bitters
+Angostura Aromatic Bitters,angostura-bitters,Angostura,
+Angostura Orange Bitters,orange-bitters,,
+Regans' Orange Bitters No. 6,orange-bitters,Regan's,
+Fee Brothers West Indian Orange Bitters,orange-bitters,,
+The Bitter Truth Orange Bitters,orange-bitters,,
+Peychaud's Bitters,peychauds-bitters,Peychauds,
+Bittermens Xocolatl Mole Bitters,chocolate-bitters,Xocolatl,
+Fee Brothers Aztec Chocolate Bitters,chocolate-bitters,,
+The Bitter Truth Celery Bitters,celery-bitters,,
+Scrappy's Celery Bitters,celery-bitters,,
+Fee Brothers Peach Bitters,peach-bitters,,
+Fee Brothers Rhubarb Bitters,rhubarb-bitters,,
+Fee Brothers Whiskey Barrel-Aged Bitters,barrel-aged-bitters,,
+Fee Brothers Old Fashion Aromatic Bitters,aromatic-bitters,,
+The Bitter Truth Old Time Aromatic Bitters,aromatic-bitters,,
+The Bitter Truth Jerry Thomas' Bitters,jerry-thomas-bitters,,
+Bittermens 'Elemakule Tiki Bitters,tiki-bitters,Elemakule,
+Bittermens Burlesque Bitters,burlesque-bitters,,
+Bittermens Boston Bittahs,boston-bitters,,
+Bittermens Hopped Grapefruit Bitters,grapefruit-bitters,,
+Scrappy's Grapefruit Bitters,grapefruit-bitters,,
+Scrappy's Lavender Bitters,lavender-bitters,,
+Scrappy's Lime Bitters,lime-bitters,,
+The Bitter Truth Lemon Bitters,lemon-bitters,,
+Dr. Adam Elmegirab's Boker's Bitters,bokers-bitters,Boker's,
+Dr. Adam Elmegirab's Dandelion & Burdock Bitters,dandelion-burdock-bitters,,
+Bittercube Cherry Bark Vanilla Bitters,cherry-bitters,,
+Bar Keep Baked Apple Bitters,apple-bitters,,
+Tempus Fugit Abbott's Bitters,abbotts-bitters,Abbott's,
+Dale DeGroff's Pimento Aromatic Bitters,pimento-bitters,,
+Bittermens Hellfire Habanero Shrub,hellfire-bitters,Hellfire,
+# ================================================================ researched additions: gin, vodka & other spirits (2026-10-21)
+Bombay Sapphire East,london-dry-gin,,labelled London Dry Gin https://www.wine.com/product/bombay-sapphire-east-gin/530551
+Bombay Sapphire Premier Cru,london-dry-gin,Bombay Sapphire Premier Cru Murcian Lemon,labelled London Dry Gin https://flaviar.com/products/bombay-sapphire-premier-cru-murcian-lemon-london-dry-gin-700
+Beefeater Crown Jewel,london-dry-gin,Beefeater Crown Jewel Peerless Premium,labelled Peerless Premium London Dry Gin; travel retail
+Sipsmith VJOP,london-dry-gin,Sipsmith Very Junipery Over Proof,labelled London Dry Gin at 57.7%; not marketed as navy strength
+Bulldog Gin,london-dry-gin,Bulldog London Dry Gin,labelled London Dry Gin
+Broker's Gin,london-dry-gin,Brokers London Dry Gin|Broker's London Dry Gin,labelled London Dry Gin
+Boodles Gin,london-dry-gin,Boodles British Gin|Boodles London Dry Gin,label reads British Gin London Dry https://www.wine.com/product/boodles-london-dry-gin/529577
+Greenall's Gin,london-dry-gin,Greenall's The Original London Dry Gin|Greenalls,labelled The Original London Dry Gin
+Bloom Gin,london-dry-gin,Bloom London Dry Gin,labelled Premium London Dry Gin (floral but legally London Dry)
+No. 3 London Dry Gin,london-dry-gin,Berry Bros. & Rudd No. 3|No.3 Gin,labelled London Dry Gin https://www.diffordsguide.com/en-au/beer-wine-spirits/46/no3-london-dry-gin
+Portobello Road Gin,london-dry-gin,Portobello Road No. 171|Portobello Road London Dry Gin,labelled No. 171 London Dry Gin
+Christopher Wren Gin,london-dry-gin,City of London Christopher Wren London Dry Gin,labelled London Dry https://www.thewhiskyexchange.com/p/31208/city-of-london-christopher-wren-gin-70cl
+Whitley Neill Original Gin,london-dry-gin,Whitley Neill London Dry Gin|Whitley Neill Handcrafted Dry Gin,brand site: Original London Dry Gin https://whitleyneill.com/gin/the-original-london-dry-gin
+Opihr Gin,london-dry-gin,Opihr Oriental Spiced London Dry Gin,labelled Oriental Spiced London Dry Gin (spice-forward)
+Elephant Gin,london-dry-gin,Elephant London Dry Gin,labelled London Dry Gin https://catalog.lwc.co.uk/elephant-london-dry-gin-50cl
+Gilbey's Gin,london-dry-gin,Gilbey's London Dry Gin,US-made; labelled London Dry Gin (same basis as Gordon's US)
+Jensen's Bermondsey Dry Gin,gin,Jensen's London Distilled Dry Gin|Jensen's Gin,labelled London Distilled Dry Gin not London Dry Gin https://www.caskers.com/jensens-london-dry-gin-london-dry-gin
+City of London Dry Gin,gin,City of London No. 1 Dry Gin,London Dry in style but label wording ambiguous; kept broad
+Beefeater Burrough's Reserve,gin,Burrough's Reserve Oak Rested Gin,oak-rested in Lillet casks; not London Dry
+Citadelle Réserve,gin,Citadelle Reserve Gin,cask-aged French gin
+Seagram's Extra Dry Gin,gin,Seagram's Gin|Seagrams,American distilled dry gin; lightly barrel-rested
+Bluecoat American Dry Gin,gin,Bluecoat Gin,American dry gin
+Brooklyn Gin,gin,,juniper-led American dry gin
+Death's Door Gin,gin,,juniper coriander fennel only
+FEW American Gin,gin,FEW Gin,juniper-led American gin
+Leopold's American Small Batch Gin,gin,Leopold Bros Gin|Leopold's Gin,American dry gin
+Letherbee Original Label Gin,gin,Letherbee Gin,juniper-heavy American gin
+Spirit Works Gin,gin,Spirit Works Distillery Gin,American dry gin
+Barr Hill Gin,gin,Caledonia Spirits Barr Hill,juniper and raw honey only; kept broad
+St. George Dry Rye Gin,gin,,rye-base juniper-forward gin
+No. 209 Gin,gin,Number 209 Gin,San Francisco dry gin
+New Amsterdam Gin,gin,New Amsterdam Stratusphere Gin,citrus-light American gin; kept broad
+Caorunn Gin,gin,Caorunn Small Batch Scottish Gin,Scottish dry gin
+Edinburgh Gin,gin,Edinburgh Gin Classic,Scottish dry gin
+Isle of Harris Gin,gin,Harris Gin,Scottish gin with sugar kelp
+Silent Pool Gin,gin,,English gin; not labelled London Dry
+Warner's Harrington Dry Gin,gin,Warner Edwards Harrington Dry Gin|Warner's Gin,labelled Harrington Dry Gin
+Tarquin's Cornish Dry Gin,gin,Tarquin's Gin,Cornish dry gin
+Drumshanbo Gunpowder Irish Gin,gin,Gunpowder Gin,Irish gin with gunpowder tea; juniper still prominent
+Malfy Gin Originale,gin,Malfy Original,Italian juniper-led gin (flavoured Malfy lines omitted except Arancia)
+Four Pillars Rare Dry Gin,gin,Four Pillars Gin,Australian dry gin
+Langley's No. 8 Gin,gin,Langley's No.8,labelled Distilled London Gin
+Tanqueray Malacca,gin,,limited re-release of 1997 recipe; discontinued
+Hendrick's Orbium,contemporary-gin,,quinine wormwood blue lotus Hendrick's variant
+Hendrick's Neptunia,contemporary-gin,,coastal botanicals Hendrick's variant
+Hendrick's Lunar,contemporary-gin,,floral Hendrick's variant
+St. George Terroir Gin,contemporary-gin,,Douglas fir bay laurel forest-led
+Uncle Val's Botanical Gin,contemporary-gin,Uncle Val's Gin,cucumber lemon sage led
+FEW Breakfast Gin,contemporary-gin,,Earl Grey tea-led
+Gin Mare,contemporary-gin,,Mediterranean olive basil rosemary thyme led
+Nolet's Silver Gin,contemporary-gin,Nolet's Gin|Nolet's Silver Dry Gin,rose peach raspberry led
+G'Vine Floraison,contemporary-gin,G'Vine Gin,grape-based with vine flower
+Brockmans Gin,contemporary-gin,Brockmans Intensely Smooth Gin,berry-forward
+Roku Gin,contemporary-gin,Suntory Roku,Japanese botanicals sakura yuzu sencha
+Ki No Bi Kyoto Dry Gin,contemporary-gin,KI NO BI|Kyoto Dry Gin,yuzu gyokuro sansho; rice spirit base
+Nikka Coffey Gin,contemporary-gin,,Japanese citrus and sansho led
+Etsu Gin,contemporary-gin,Etsu Japanese Gin,yuzu and Japanese tea led
+Leopold's Navy Strength Gin,navy-strength-gin,Leopold Bros Navy Strength,57% https://www.diffordsguide.com/beer-wine-spirits/category/1513/gin-navy-strength-gin-554-or-57-alc/vol
+Four Pillars Navy Strength Gin,navy-strength-gin,,58.8% sold as navy strength
+Bathtub Gin Navy Strength,navy-strength-gin,Bathtub Navy-Strength Gin,57% Ableforth's
+Edinburgh Gin Cannonball,navy-strength-gin,Edinburgh Cannonball Navy Strength Gin,57.2% https://www.thewhiskyexchange.com/p/33133/edinburgh-cannonball-navy-strength-gin
+Fords Gin Officers' Reserve,navy-strength-gin,Ford's Officers Reserve,54.5% sold as navy strength https://www.caskers.com/ford-s-gin-officers-reserve-navy-strength-gin
+Anchor Old Tom Gin,old-tom-gin,Anchor Distilling Old Tom|Hotaling Old Tom,https://www.drinkhacker.com/2015/02/09/review-anchor-distilling-old-tom-gin/
+Jensen's Old Tom Gin,old-tom-gin,Jensen's London Distilled Old Tom,unsweetened 1840s recipe https://www.diffordsguide.com/beer-wine-spirits/280/jensens-old-tom-gin
+Spring44 Old Tom Gin,old-tom-gin,Spring 44 Old Tom,https://theginisin.com/gin-reviews/spring-44-old-tom-gin/
+Greenhook Ginsmiths Old Tom Gin,old-tom-gin,Greenhook Old Tom,barrel-aged Old Tom
+The Bitter Truth Old Tom Gin,old-tom-gin,Bitter Truth Old Tom,
+City of London Old Tom Gin,old-tom-gin,City of London No. 3 Old Tom,
+Barr Hill Tom Cat,gin,Barr Hill Tom Cat Gin|Tom Cat Reserve,barrel-aged honey-sweetened Old Tom style; label can't say gin https://shop.klwines.com/products/details/1340302
+Tanqueray Flor de Sevilla,orange-gin,Tanqueray Sevilla|Tanqueray Sevilla Orange,Seville orange distilled gin
+Beefeater Blood Orange,orange-gin,Beefeater Blood Orange Gin,blood-orange flavoured Beefeater
+Malfy Gin Con Arancia,orange-gin,Malfy Arancia|Malfy Blood Orange,Sicilian blood orange gin
+Whitley Neill Blood Orange Gin,orange-gin,Whitley Neill Blood Orange,blood orange flavoured gin
+Gordon's Mediterranean Orange,orange-gin,Gordon's Orange Gin,orange flavoured Gordon's
+Gordon's Sloe Gin,sloe-gin,,
+Monkey 47 Schwarzwald Sloe Gin,sloe-gin,Monkey 47 Sloe Gin,https://www.olivemagazine.com/guides/taste-tests/how-to-make-sloe-gin-and-which-sloe-gin-you-should-buy
+Spirit Works Sloe Gin,sloe-gin,,true sloe berry US sloe gin
+Elephant Sloe Gin,sloe-gin,,
+Bramley & Gage Sloe Gin,sloe-gin,Bramley and Gage Sloe Gin,
+Bols Genever 100% Malt Spirit,genever,Bols 100% Malt Genever,https://distiller.com/articles/genever-brands
+Old Duff Genever,genever,Old Duff Real Dutch Genever,https://distiller.com/articles/genever-brands
+Old Duff Single Malt Genever,genever,Old Duff 100% Malt Genever,https://distiller.com/articles/genever-brands
+Rutte Old Simon Genever,genever,Old Simon Genever,https://distiller.com/articles/genever-brands
+Zuidam Rogge Genever,genever,Zuidam Rye Genever,possibly lightly aged; kept at genever https://distiller.com/articles/genever-brands
+De Borgen Malt Genever,genever,De Borgen Old Style Genever,https://www.insidehook.com/drinks/what-is-genever
+Notaris Bartenders Choice Genever,genever,Notaris Jonge Graanjenever Bartenders Choice,https://www.insidehook.com/drinks/what-is-genever
+By The Dutch Old Genever,genever,By The Dutch Genever,https://www.insidehook.com/drinks/what-is-genever
+Filliers 12 Year Oude Graanjenever,aged-genever,Filliers 12 Year Genever,oak-matured 12 years https://distiller.com/articles/genever-brands
+Notaris 3 Year Old Graanjenever,aged-genever,Notaris Oude Graanjenever 3 Year,three years in oak https://www.insidehook.com/drinks/what-is-genever
+Absolut Elyx,vodka,,
+Stolichnaya Elit,vodka,Stoli Elit,
+Beluga Noble,vodka,Beluga Vodka,
+Russian Standard Platinum,vodka,,
+Imperia Vodka,vodka,Russian Standard Imperia,
+Cîroc,vodka,Ciroc|Cîroc Snap Frost,unflavoured grape-based vodka only
+Svedka,vodka,,
+Skyy Vodka,vodka,Skyy,
+New Amsterdam Vodka,vodka,,
+Pinnacle Vodka,vodka,,
+Finlandia,vodka,Finlandia Vodka,
+Wyborowa,vodka,Wyborowa Vodka,
+Sobieski,vodka,Sobieski Vodka,
+Żubrówka Biała,vodka,Zubrowka Biala|Zubrowka White,unflavoured rye vodka from the Żubrówka range
+Chopin Rye Vodka,vodka,Chopin Rye,
+Chopin Wheat Vodka,vodka,Chopin Wheat,
+Ultimat Vodka,vodka,Ultimat,
+Effen Vodka,vodka,Effen,
+Van Gogh Vodka,vodka,Van Gogh Blue,
+Three Olives Vodka,vodka,3 Olives,
+Crystal Head Vodka,vodka,Crystal Head,
+Haku Vodka,vodka,Suntory Haku,
+Nikka Coffey Vodka,vodka,,
+Hangar 1 Straight Vodka,vodka,Hangar One Vodka,
+Square One Organic Vodka,vodka,Square One,
+Purity Vodka,vodka,,
+Wheatley Vodka,vodka,,
+Deep Eddy Original Vodka,vodka,Deep Eddy Vodka,unflavoured
+Prairie Organic Vodka,vodka,Prairie Vodka,
+Aylesbury Duck Vodka,vodka,,
+Monopolowa,vodka,Monopolowa Vodka,
+Gordon's Vodka,vodka,,
+Popov Vodka,vodka,Popov,
+Moskovskaya,vodka,Moskovskaya Osobaya,
+Danzka,vodka,Danzka Vodka,
+St. George All Purpose Vodka,vodka,,
+Smirnoff Blue Label,vodka,Smirnoff 100 Proof|Smirnoff No. 57,100 proof unflavoured
+Burnett's Vodka,vodka,Burnett's,
+Grey Goose Le Citron,citrus-vodka,Grey Goose Citron,Menton lemon flavoured
+Stoli Citros,citrus-vodka,Stolichnaya Citros|Stoli Citrus,https://www.diffordsguide.com/en-au/beer-wine-spirits/category/546/lemon-citrus-vodkas
+Smirnoff Citrus,citrus-vodka,Smirnoff Twist Citrus,lemon-led citrus flavoured
+Deep Eddy Lemon,citrus-vodka,Deep Eddy Lemon Vodka,real lemon juice https://www.totalwine.com/theme/shop-lemon-vodkas
+Absolut Grapefruit,grapefruit-vodka,Absolut Ruby Red,https://www.absolut.com/en/products/absolut-ruby-red/
+Finlandia Grapefruit,grapefruit-vodka,Finlandia Grapefruit Fusion,pink grapefruit
+Three Olives Pink Grapefruit,grapefruit-vodka,3 Olives Grapefruit,
+Van Gogh Dutch Chocolate,chocolate-vodka,Van Gogh Chocolate Vodka,https://www.wine.com/product/van-gogh-dutch-chocolate-vodka/912678
+360 Double Chocolate Vodka,chocolate-vodka,360 Double Chocolate,
+Bak's Bison Grass Vodka,bison-grass-vodka,Bak's Zubrowka,https://www.just-drinks.com/news/us-baks-bison-grass-vodka-launched
+Grasovka Bison Grass Vodka,bison-grass-vodka,Grasovka,
+Jade Nouvelle-Orléans,absinthe,Jade Nouvelle Orleans,
+Jade 1901,absinthe,Jade PF 1901,
+Jade Edouard,absinthe,Jade Edouard 72,
+Jade Verte Suisse,absinthe,Jade Verte Suisse 65,
+Jade C.F. Berger,absinthe,,
+Leopold Bros Absinthe Verte,absinthe,Leopold's Absinthe,
+Vieux Carré Absinthe,absinthe,Vieux Carre Absinthe Supérieure,Philadelphia Distilling
+Tenneyson Absinthe Royale,absinthe,Tenneyson,blanche
+Absinthe Ordinaire,absinthe,Ordinaire,
+Pacifique Absinthe Verte,absinthe,Pacifique,
+Butterfly Absinthe,absinthe,Butterfly Classic Absinthe,
+Mata Hari Absinthe,absinthe,Mata Hari,
+La Fée Absinthe Parisienne,absinthe,La Fee Parisienne|La Fée XS,
+Absente,absinthe,Absente Absinthe Refined|Absente 55,
+Grande Absente,absinthe,,
+Mansinthe,absinthe,,
+Duplais Blanche,absinthe,Absinthe Duplais Blanche,
+Copper & Kings Absinthe Alembic Blanche,absinthe,Copper and Kings Absinthe,
+Tentation Absinthe,absinthe,Emile Pernot Tentation,
+Doubs Mystique,absinthe,Doubs Mystique Carte d'Or,
+Pastis 51,pastis,51 Pastis de Marseille|Pernod 51,
+Henri Bardouin Pastis,pastis,Pastis Henri Bardouin,
+Berger Pastis,pastis,Berger Blanc,
+Herbsaint Original,herbsaint,Herbsaint Legendre|Herbsaint 100 Proof,1934 recipe 100-proof re-release
+Aalborg Jubilæums Akvavit,aquavit,Aalborg Jubilaeums|Aalborg Jubilee,dill and coriander led https://www.bevnet.com/spirits/2016/linie-aquavit-aalborg-taffel-aalborg-jubilaeums-now-available-u-s/
+Aalborg Dild Akvavit,aquavit,Aalborg Dild,
+Gammel Opland Aquavit,aquavit,Opland Aquavit,
+Løiten Export Aquavit,aquavit,Loiten Aquavit,
+Skåne Akvavit,aquavit,Skane Akvavit,
+Brennivín,aquavit,Brennivin Icelandic Schnapps,Icelandic caraway aquavit
+Gilde Non Plus Ultra,aquavit,Gilde Aquavit,
+Gamle Ode Dill Aquavit,aquavit,Gamle Ode,https://imbibemagazine.com/american-aquavit/
+Vikre Aquavit,aquavit,Vikre Øvrevann Aquavit,https://imbibemagazine.com/american-aquavit/
+Tattersall Aquavit,aquavit,,
+Gekkeikan Traditional,sake,Gekkeikan Sake,
+Gekkeikan Horin Junmai Daiginjo,sake,Gekkeikan Horin,
+Sho Chiku Bai Classic Junmai,sake,Sho Chiku Bai|Takara Sake,
+Sho Chiku Bai Nigori,sake,Sho Chiku Bai Silky Mild Nigori,
+Hakutsuru Excellent Junmai,sake,Hakutsuru,
+Hakutsuru Sayuri Nigori,sake,Sayuri Nigori,
+Ozeki Dry,sake,Ozeki Sake,
+Dassai 45,sake,Asahi Shuzo Dassai 45,
+Dassai 23,sake,,
+Kubota Senju,sake,Kubota Ginjo,
+Hakkaisan Tokubetsu Junmai,sake,Hakkaisan,
+Tozai Snow Maiden,sake,Tozai Snow Maiden Nigori,
+Momokawa Organic Junmai Ginjo,sake,Momokawa|SakeOne Momokawa,
+Kikusui Junmai Ginjo,sake,Kikusui,
+Wakatake Onikoroshi,sake,Demon Slayer Sake,
+Kurosawa Junmai Kimoto,sake,Kurosawa,
+Masumi Okuden Kantsukuri,sake,Masumi,
+Tentaka Kuni,sake,Tentaka Hawk in the Heavens,
+Otokoyama Tokubetsu Junmai,sake,Otokoyama,
+Dewazakura Oka Ginjo,sake,Dewazakura Cherry Bouquet,
+# ================================================================ researched additions: whiskey (2026-10-21)
+Benchmark Old No. 8 Bourbon,bourbon,Benchmark|Benchmark Bourbon,
+Benchmark Bottled in Bond Bourbon,bourbon,Benchmark BiB|Benchmark Bonded,
+Ancient Age Bourbon,bourbon,Ancient Age|AA,
+Old Charter 8 Bourbon,bourbon,Old Charter|Old Charter 8,
+Colonel E.H. Taylor Small Batch Bourbon,bourbon,E.H. Taylor Small Batch|EH Taylor Small Batch|Taylor Small Batch BiB,bottled-in-bond bourbon
+Colonel E.H. Taylor Single Barrel Bourbon,bourbon,E.H. Taylor Single Barrel|EH Taylor Single Barrel,
+Colonel E.H. Taylor Barrel Proof Bourbon,bourbon,E.H. Taylor Barrel Proof|EH Taylor Barrel Proof,
+Blanton's Gold Edition,bourbon,Blanton's Gold|Blantons Gold,
+Blanton's Straight from the Barrel,bourbon,Blanton's SFTB|Blantons Straight From The Barrel,
+Weller 12 Year Bourbon,bourbon,W.L. Weller 12|Weller 12,wheated bourbon
+Weller Full Proof Bourbon,bourbon,W.L. Weller Full Proof|Weller FP,wheated bourbon
+Weller Single Barrel Bourbon,bourbon,W.L. Weller Single Barrel,wheated bourbon
+W.L. Weller C.Y.P.B.,bourbon,Weller CYPB|Craft Your Perfect Bourbon,wheated bourbon
+Old Rip Van Winkle 10 Year Bourbon,bourbon,Old Rip Van Winkle|Van Winkle 10,wheated bourbon
+Van Winkle Special Reserve 12 Year Lot B,bourbon,Van Winkle Lot B|Pappy Lot B,wheated bourbon
+Pappy Van Winkle's Family Reserve 15 Year,bourbon,Pappy 15|Pappy Van Winkle 15,wheated bourbon
+Pappy Van Winkle's Family Reserve 20 Year,bourbon,Pappy 20|Pappy Van Winkle 20,wheated bourbon
+George T. Stagg Bourbon,bourbon,George T Stagg|GTS,Buffalo Trace Antique Collection
+William Larue Weller Bourbon,bourbon,William Larue Weller|WLW,Buffalo Trace Antique Collection; wheated bourbon
+Elmer T. Lee Single Barrel Bourbon,bourbon,Elmer T Lee|ETL,
+Rock Hill Farms Single Barrel Bourbon,bourbon,Rock Hill Farms,
+Hancock's President's Reserve Bourbon,bourbon,Hancock's Reserve|Hancocks President's Reserve,
+1792 Bottled in Bond Bourbon,bourbon,1792 BiB|1792 Bonded,
+1792 Full Proof Bourbon,bourbon,1792 Full Proof,
+1792 Single Barrel Bourbon,bourbon,1792 Single Barrel,
+1792 Sweet Wheat Bourbon,bourbon,1792 Sweet Wheat,wheated bourbon (not >=51% wheat)
+Very Old Barton Bottled in Bond Bourbon,bourbon,Very Old Barton|VOB,
+Early Times Bottled-in-Bond Bourbon,bourbon,Early Times BiB|Early Times Bonded,
+Elijah Craig Barrel Proof Bourbon,bourbon,Elijah Craig Barrel Proof|ECBP,
+Elijah Craig Toasted Barrel Bourbon,bourbon,Elijah Craig Toasted,
+Elijah Craig 18 Year Single Barrel Bourbon,bourbon,Elijah Craig 18,
+Evan Williams 1783 Small Batch Bourbon,bourbon,Evan Williams 1783|Evan Williams Small Batch,
+Heaven Hill 7 Year Bottled-in-Bond Bourbon,bourbon,Heaven Hill BiB|Heaven Hill 7 Year|Heaven Hill Bottled in Bond,https://heavenhill.com/?p=2916
+Larceny Barrel Proof Bourbon,bourbon,Larceny Barrel Proof,wheated bourbon
+J.T.S. Brown Bottled-in-Bond Bourbon,bourbon,JTS Brown BiB|JTS Brown,
+J.W. Dant Bottled-in-Bond Bourbon,bourbon,JW Dant BiB|J.W. Dant,
+Fighting Cock 103 Bourbon,bourbon,Fighting Cock,
+Jim Beam Black Bourbon,bourbon,Jim Beam Black|Jim Beam Black Extra-Aged,
+Jim Beam Bonded Bourbon,bourbon,Jim Beam Bonded|Jim Beam Bottled in Bond,
+Jim Beam Devil's Cut Bourbon,bourbon,Devil's Cut,
+Jim Beam Single Barrel Bourbon,bourbon,Jim Beam Single Barrel,
+Old Crow Bourbon,bourbon,Old Crow,
+Old Grand-Dad 80 Bourbon,bourbon,Old Grand-Dad|Old Granddad|OGD 80,
+Knob Creek 12 Year Bourbon,bourbon,Knob Creek 12,
+Knob Creek Single Barrel Reserve Bourbon,bourbon,Knob Creek Single Barrel|Knob Creek 120,
+Knob Creek 18 Year Bourbon,bourbon,Knob Creek 18,
+Maker's Mark 46,bourbon,Makers 46|Maker's 46,wheated bourbon
+Maker's Mark Cask Strength,bourbon,Makers Mark Cask Strength|Maker's CS,wheated bourbon
+Maker's Mark 101,bourbon,Makers Mark 101|Maker's 101,wheated bourbon
+Basil Hayden Toast Bourbon,bourbon,Basil Hayden's Toast,
+Legent Bourbon,bourbon,Legent,Kentucky straight bourbon partially finished in wine and sherry casks
+Booker's Rye,rye-whiskey,Bookers Rye,limited release Kentucky straight rye
+Wild Turkey 81 Bourbon,bourbon,Wild Turkey 81|Wild Turkey 8 Year,
+Wild Turkey Rare Breed Bourbon,bourbon,Rare Breed|Wild Turkey Rare Breed,
+Wild Turkey Kentucky Spirit Bourbon,bourbon,Kentucky Spirit,
+Wild Turkey Longbranch Bourbon,bourbon,Longbranch,
+Russell's Reserve Single Barrel Bourbon,bourbon,Russell's Reserve Single Barrel|Russells Single Barrel,
+Russell's Reserve 13 Year Bourbon,bourbon,Russell's 13,
+Old Forester 1870 Original Batch,bourbon,Old Forester 1870,
+Old Forester 1897 Bottled in Bond,bourbon,Old Forester 1897,
+Old Forester 1910 Old Fine Whisky,bourbon,Old Forester 1910,double-barreled bourbon
+Old Forester 1920 Prohibition Style,bourbon,Old Forester 1920,
+Old Forester Single Barrel Barrel Strength,bourbon,Old Forester Barrel Strength,
+Old Forester Statesman,bourbon,Statesman,
+Woodford Reserve Double Oaked,bourbon,Double Oaked|Woodford Double Oaked,
+Coopers' Craft Bourbon,bourbon,Coopers Craft,
+Four Roses Single Barrel Bourbon,bourbon,Four Roses Single Barrel,
+Four Roses Small Batch Select,bourbon,Four Roses Small Batch Select,
+Michter's US*1 Small Batch Bourbon,bourbon,Michter's Bourbon|Michters US1 Bourbon,
+Michter's 10 Year Bourbon,bourbon,Michter's 10 Bourbon,
+Angel's Envy Bourbon,bourbon,Angel's Envy|Angels Envy Port Finish,bourbon finished in port barrels
+Bulleit 10 Year Bourbon,bourbon,Bulleit 10,
+Noah's Mill Bourbon,bourbon,Noah's Mill,Willett/KBD
+Rowan's Creek Bourbon,bourbon,Rowan's Creek,Willett/KBD
+Willett Family Estate Bourbon,bourbon,Willett Family Estate Bourbon|Willett Purple Top,single barrel releases
+Smooth Ambler Old Scout Bourbon,bourbon,Old Scout Bourbon,
+New Riff Bottled in Bond Bourbon,bourbon,New Riff Bourbon|New Riff BiB,
+Wilderness Trail Bottled in Bond Bourbon,bourbon,Wilderness Trail Wheated|Wilderness Trail Bourbon,wheated bourbon
+Ezra Brooks 99 Bourbon,bourbon,Ezra Brooks 99|Ezra Brooks,
+Old Ezra 7 Year Barrel Strength Bourbon,bourbon,Old Ezra 7|Old Ezra Barrel Strength,https://www.breakingbourbon.com/review/old-ezra-7-year-barrel-strength
+Rebel 100 Bourbon,bourbon,Rebel Yell 100|Rebel 100,wheated bourbon
+Rebel Bourbon,bourbon,Rebel Yell|Rebel Yell Bourbon,wheated bourbon
+Yellowstone Select Bourbon,bourbon,Yellowstone,
+David Nicholson 1843 Bourbon,bourbon,David Nicholson 1843,
+Jefferson's Very Small Batch Bourbon,bourbon,Jefferson's Bourbon|Jeffersons,
+Jefferson's Reserve Bourbon,bourbon,Jefferson's Reserve,
+Jefferson's Ocean Aged at Sea Bourbon,bourbon,Jefferson's Ocean,
+Belle Meade Bourbon,bourbon,Belle Meade,
+Redemption High-Rye Bourbon,bourbon,Redemption Bourbon,
+James E. Pepper 1776 Bourbon,bourbon,James E Pepper Bourbon|Pepper 1776 Bourbon,
+High West American Prairie Bourbon,bourbon,American Prairie|High West Bourbon,
+FEW Bourbon,bourbon,Few Spirits Bourbon,
+Hudson Bright Lights Big Bourbon,bourbon,Hudson Baby Bourbon|Hudson Bourbon,renamed from Baby Bourbon in 2020 https://www.thespiritsbusiness.com/2020/09/hudson-creates-new-whiskey-and-updates-recipes/
+George Remus Bourbon,bourbon,George Remus,
+Woodinville Straight Bourbon,bourbon,Woodinville Bourbon,
+Balcones Texas Pot Still Bourbon,bourbon,Balcones Pot Still Bourbon,
+Garrison Brothers Small Batch Bourbon,bourbon,Garrison Brothers,
+TX Straight Bourbon,bourbon,TX Bourbon|Firestone & Robertson TX Bourbon,
+Widow Jane 10 Year Bourbon,bourbon,Widow Jane,
+Old Elk Bourbon,bourbon,Old Elk Blended Straight Bourbon,
+Penelope Four Grain Bourbon,bourbon,Penelope Bourbon|Penelope Four Grain,
+Heaven's Door Straight Bourbon,bourbon,Heaven's Door|Heavens Door Bourbon,Tennessee-distilled straight bourbon
+Barrell Bourbon,bourbon,Barrell Craft Spirits Bourbon,cask-strength blended batches
+Koval Bourbon,bourbon,Koval Single Barrel Bourbon,corn and millet bourbon
+Wyoming Whiskey Small Batch Bourbon,bourbon,Wyoming Whiskey,
+Bardstown Bourbon Company Origin Series Bourbon,bourbon,Bardstown Origin Bourbon,
+Starlight Carl T. Huber's Bourbon,bourbon,Starlight Bourbon,
+Old Overholt Bottled in Bond Rye,rye-whiskey,Old Overholt Bonded|Overholt BiB,100 proof 4yr https://en.wikipedia.org/wiki/Old_Overholt
+Old Overholt 114 Rye,rye-whiskey,Overholt 114,https://www.fredminnick.com/?p=5066
+Jim Beam Rye,rye-whiskey,Jim Beam Pre-Prohibition Style Rye,
+Wild Turkey 81 Rye,rye-whiskey,Wild Turkey Rye 81,
+Russell's Reserve Single Barrel Rye,rye-whiskey,Russell's Single Barrel Rye,
+Wild Turkey Rare Breed Rye,rye-whiskey,Rare Breed Rye,
+Thomas H. Handy Sazerac Rye,rye-whiskey,Thomas Handy|Handy Rye,Buffalo Trace Antique Collection
+Sazerac 18 Year Rye,rye-whiskey,Sazerac 18,Buffalo Trace Antique Collection
+Colonel E.H. Taylor Straight Rye,rye-whiskey,E.H. Taylor Rye|EH Taylor Rye,
+Elijah Craig Straight Rye,rye-whiskey,Elijah Craig Rye,
+Michter's 10 Year Rye,rye-whiskey,Michter's 10 Rye,
+Michter's Barrel Strength Rye,rye-whiskey,Michter's Barrel Strength Rye,
+Woodford Reserve Rye,rye-whiskey,Woodford Rye,
+Angel's Envy Rye,rye-whiskey,Angel's Envy Rye|Angels Envy Rum Finish Rye,American rye finished in rum casks
+Bulleit 12 Year Rye,rye-whiskey,Bulleit 12 Rye,
+Willett Family Estate Rye,rye-whiskey,Willett Rye|Willett 4 Year Rye,
+Smooth Ambler Old Scout Rye,rye-whiskey,Old Scout Rye,
+New Riff Bottled in Bond Rye,rye-whiskey,New Riff Rye,
+Wilderness Trail Bottled in Bond Rye,rye-whiskey,Wilderness Trail Rye,
+Peerless Straight Rye,rye-whiskey,Peerless Rye,
+Redemption Rye,rye-whiskey,Redemption Straight Rye,
+James E. Pepper 1776 Rye,rye-whiskey,James E Pepper Rye|Pepper 1776 Rye,
+FEW Rye,rye-whiskey,Few Spirits Rye,
+Catoctin Creek Roundstone Rye,rye-whiskey,Roundstone Rye,
+Dad's Hat Pennsylvania Rye,rye-whiskey,Dad's Hat Rye,
+Hudson Do The Rye Thing,rye-whiskey,Hudson Manhattan Rye|Hudson Rye,renamed from Manhattan Rye in 2020 https://www.thespiritsbusiness.com/2020/09/hudson-creates-new-whiskey-and-updates-recipes/
+Rossville Union Barrel Proof Rye,rye-whiskey,Rossville Union,
+Sagamore Spirit Rye,rye-whiskey,Sagamore Rye,
+Woodinville Straight Rye,rye-whiskey,Woodinville Rye,
+Koval Rye,rye-whiskey,Koval Single Barrel Rye,
+Leopold Bros Maryland-Style Rye,rye-whiskey,Leopold Maryland Rye,
+George Dickel Rye,rye-whiskey,Dickel Rye,straight rye; not Tennessee whiskey (TN law requires 51% corn)
+Jack Daniel's Tennessee Straight Rye,rye-whiskey,Jack Daniel's Rye|JD Rye,straight rye; not Tennessee whiskey (TN law requires 51% corn)
+WhistlePig PiggyBack 6 Year Rye,rye-whiskey,PiggyBack Rye|WhistlePig 6,100% rye distilled at Alberta Distillers but aged/bottled in Vermont as US straight rye; mapped like WhistlePig 10 https://www.gobourbon.com/?p=9860
+WhistlePig 12 Year Old World Rye,rye-whiskey,WhistlePig Old World,
+High West Midwinter Night's Dram,rye-whiskey,Midwinter Night's Dram,straight rye blend finished in port casks; seasonal
+Templeton Rye 6 Year,rye-whiskey,Templeton 6,
+Woodford Reserve Wheat,wheat-whiskey,Woodford Wheat,52% wheat https://breakingbourbon.com/review/woodford-reserve-wheat-whiskey
+Dry Fly Straight Washington Wheat,wheat-whiskey,Dry Fly Wheat,100% wheat https://www.wine.com/product/dry-fly-straight-wheat-whiskey/528708
+Old Elk Straight Wheat Whiskey,wheat-whiskey,Old Elk Wheat,95% wheat mash https://breakingbourbon.com/review/old-elk-10-year-wheat-whiskey
+Balcones Baby Blue Corn Whisky,corn-whiskey,Balcones Baby Blue|Baby Blue,Texas blue corn whisky
+Balcones True Blue 100,corn-whiskey,Balcones True Blue,cask-strength blue corn whisky
+Georgia Moon Corn Whiskey,corn-whiskey,Georgia Moon,Heaven Hill corn whiskey
+Platte Valley Straight Corn Whiskey,corn-whiskey,Platte Valley,100% straight corn https://www.bevnet.com/news/spirits/2014/mccormick-distilling-celebrates-national-moonshine-day/
+Koval Oat Whiskey,oat-whiskey,Koval Single Barrel Oat,100% oat https://www.wine.com/product/koval-oat-single-barrel-whiskey/531560
+Gentleman Jack,tennessee-whiskey,Jack Daniel's Gentleman Jack,
+Jack Daniel's Single Barrel Select,tennessee-whiskey,JD Single Barrel|Jack Daniel's Single Barrel,
+Jack Daniel's Single Barrel Barrel Proof,tennessee-whiskey,JD Barrel Proof,
+Jack Daniel's Bonded,tennessee-whiskey,Jack Daniel's Bottled in Bond|JD Bonded,
+Jack Daniel's 10 Year,tennessee-whiskey,JD 10 Year,
+Jack Daniel's 12 Year,tennessee-whiskey,JD 12 Year,
+George Dickel Classic No. 8,tennessee-whiskey,Dickel No. 8|George Dickel No 8,
+George Dickel Bottled in Bond,tennessee-whiskey,Dickel BiB|Dickel Bonded,
+George Dickel Barrel Select,tennessee-whiskey,Dickel Barrel Select,
+Uncle Nearest 1884 Small Batch,tennessee-whiskey,Uncle Nearest 1884,
+Uncle Nearest 1820 Single Barrel,tennessee-whiskey,Uncle Nearest 1820,
+Nelson's Green Brier Tennessee Whiskey,tennessee-whiskey,Nelson's Green Brier|Green Brier,
+Jack Daniel's Triple Mash,american-whiskey,JD Triple Mash,bonded blend of rye + Tennessee + malt; not Tennessee whiskey https://breakingbourbon.com/review/jack-daniels-triple-mash-blended-straight-whiskey
+Michter's US*1 American Whiskey,american-whiskey,Michter's American Whiskey|Michters Unblended American,aged in used bourbon barrels so not bourbon
+Michter's US*1 Sour Mash,american-whiskey,Michter's Sour Mash,
+High West Bourye,american-whiskey,Bourye,blend of straight bourbon and straight rye
+Early Times Kentucky Whisky,american-whiskey,Early Times,Kentucky whisky partly aged in used barrels; not bourbon
+Seagram's 7 Crown,american-whiskey,Seagram's 7|Seven Crown,American blended whiskey
+Kessler American Blended Whiskey,american-whiskey,Kessler,
+TX Blended Whiskey,american-whiskey,TX Whiskey|Firestone & Robertson TX,blended whiskey
+Tincup American Whiskey,american-whiskey,TINCUP,bourbon-style whiskey blended with Colorado single malt
+Woodford Reserve Straight Malt,american-whiskey,Woodford Malt,American single malt; no node so mapped to american-whiskey
+Westland American Single Malt,american-whiskey,Westland,American single malt; no node so mapped to american-whiskey
+Stranahan's Original Colorado Whiskey,american-whiskey,Stranahan's|Stranahans,American single malt; no node so mapped to american-whiskey
+Balcones Texas Single Malt,american-whiskey,Balcones Single Malt|Balcones Texas Single Malt Classic Edition,American single malt; no node so mapped to american-whiskey
+Westward American Single Malt,american-whiskey,Westward Whiskey,American single malt; no node so mapped to american-whiskey
+St. George Single Malt Whiskey,american-whiskey,St George Single Malt,American single malt; no node so mapped to american-whiskey
+McCarthy's Oregon Single Malt,american-whiskey,McCarthy's,peated American single malt (Clear Creek); no node
+Koval Four Grain Whiskey,american-whiskey,Koval Four Grain,oat/barley/rye/wheat
+Basil Hayden Dark Rye,whiskey,Basil Hayden's Dark Rye,Kentucky rye + Canadian rye + port; not pure American rye https://breakingbourbon.com/review/basil-hayden-dark-rye
+High West Campfire,whiskey,Campfire,blend of bourbon + rye + peated Scotch
+Crown Royal Deluxe,whiskey,Crown Royal|Crown Royal Fine De Luxe,Canadian whisky; no canadian node so mapped to whiskey
+Crown Royal Northern Harvest Rye,whiskey,Northern Harvest Rye,Canadian whisky; no canadian node so mapped to whiskey
+Crown Royal Black,whiskey,Crown Black,Canadian whisky; no canadian node so mapped to whiskey
+Crown Royal Special Reserve,whiskey,Crown Royal Reserve,Canadian whisky; no canadian node so mapped to whiskey
+Crown Royal XR,whiskey,Crown Royal Extra Rare,Canadian whisky; no canadian node so mapped to whiskey
+Canadian Club Original 1858,whiskey,Canadian Club|CC,Canadian whisky; no canadian node so mapped to whiskey
+Canadian Club 100% Rye,whiskey,Canadian Club Chairman's Select Rye|CC Rye,Canadian whisky; no canadian node so mapped to whiskey
+Canadian Club Classic 12,whiskey,Canadian Club 12|CC 12,Canadian whisky; no canadian node so mapped to whiskey https://www.lcbo.com/en/canadian-club-classic-12-year-old-311928
+Lot No. 40 Canadian Rye,whiskey,Lot 40|Lot No 40,Canadian whisky; no canadian node so mapped to whiskey
+Pike Creek 10 Year,whiskey,Pike Creek,Canadian whisky; no canadian node so mapped to whiskey
+Gooderham & Worts Four Grain,whiskey,Gooderham and Worts,Canadian whisky; no canadian node so mapped to whiskey
+J.P. Wiser's Deluxe,whiskey,Wiser's Deluxe|JP Wisers,Canadian whisky; no canadian node so mapped to whiskey
+Alberta Premium Rye,whiskey,Alberta Premium,Canadian whisky; no canadian node so mapped to whiskey
+Alberta Premium Dark Horse,whiskey,Dark Horse,Canadian whisky; no canadian node so mapped to whiskey
+Forty Creek Barrel Select,whiskey,Forty Creek,Canadian whisky; no canadian node so mapped to whiskey
+Forty Creek Copper Pot Reserve,whiskey,Forty Creek Copper Pot,Canadian whisky; no canadian node so mapped to whiskey
+Seagram's VO,whiskey,VO|Seagram's V.O.,Canadian whisky; no canadian node so mapped to whiskey
+Black Velvet Canadian Whisky,whiskey,Black Velvet,Canadian whisky; no canadian node so mapped to whiskey
+Canadian Mist,whiskey,,Canadian whisky; no canadian node so mapped to whiskey
+Windsor Canadian,whiskey,Windsor,Canadian whisky; no canadian node so mapped to whiskey
+Pendleton Canadian Whisky,whiskey,Pendleton|Pendleton Original,Canadian whisky; no canadian node so mapped to whiskey
+Gibson's Finest 12 Year,whiskey,Gibson's 12|Gibsons Finest,Canadian whisky; no canadian node so mapped to whiskey
+Collingwood Canadian Whisky,whiskey,Collingwood,Canadian whisky; no canadian node so mapped to whiskey
+Lock Stock & Barrel 13 Year Rye,whiskey,Lock Stock and Barrel,100% rye distilled in Canada
+Jameson Caskmates Stout Edition,irish-whiskey,Jameson Caskmates|Caskmates Stout,
+Jameson Caskmates IPA Edition,irish-whiskey,Caskmates IPA,
+Jameson Crested,irish-whiskey,Jameson Crested Ten|Crested Ten,
+Jameson 18 Year,irish-whiskey,Jameson 18,
+Powers John's Lane 12 Year,irish-whiskey,Powers John's Lane|John's Lane,single pot still
+Powers Three Swallow,irish-whiskey,Three Swallow,single pot still
+Redbreast 15 Year,irish-whiskey,Redbreast 15,
+Redbreast Lustau Edition,irish-whiskey,Redbreast Lustau,
+Redbreast 21 Year,irish-whiskey,Redbreast 21,
+Yellow Spot 12 Year,irish-whiskey,Yellow Spot,
+Red Spot 15 Year,irish-whiskey,Red Spot,
+Midleton Very Rare,irish-whiskey,Midleton VR,
+Writers' Tears Copper Pot,irish-whiskey,Writers Tears,
+Bushmills 10 Year Single Malt,irish-whiskey,Bushmills 10,
+Bushmills 16 Year Single Malt,irish-whiskey,Bushmills 16,
+Bushmills 21 Year Single Malt,irish-whiskey,Bushmills 21,
+Bushmills Red Bush,irish-whiskey,Red Bush,
+Tullamore D.E.W. 12 Year Special Reserve,irish-whiskey,Tullamore 12|Tullamore Dew 12,
+Tullamore D.E.W. XO Caribbean Rum Cask,irish-whiskey,Tullamore XO,
+Teeling Single Grain,irish-whiskey,Teeling Single Grain,
+Teeling Single Malt,irish-whiskey,Teeling Single Malt,
+Teeling Single Pot Still,irish-whiskey,Teeling Pot Still,
+Teeling Blackpitts Peated Single Malt,irish-whiskey,Teeling Blackpitts|Blackpitts,peated Irish; peated-scotch node is Scotch-only
+Kilbeggan Traditional Irish Whiskey,irish-whiskey,Kilbeggan,
+Kilbeggan Single Grain,irish-whiskey,,https://bevvy.co/articles/kilbeggan-single-grain-irish-whiskey-review
+Tyrconnell Single Malt,irish-whiskey,Tyrconnell,
+Proper No. Twelve,irish-whiskey,Proper 12|Proper Twelve,
+Slane Irish Whiskey,irish-whiskey,Slane|Slane Triple Casked,
+Roe & Co,irish-whiskey,Roe and Co,
+Glendalough Double Barrel,irish-whiskey,Glendalough,
+Paddy Irish Whiskey,irish-whiskey,Paddy,
+The Dubliner Irish Whiskey,irish-whiskey,The Dubliner,
+Busker Triple Cask Triple Smooth,irish-whiskey,Busker,
+West Cork Original Irish Whiskey,irish-whiskey,West Cork,
+Knappogue Castle 14 Year,irish-whiskey,Knappogue 14,
+Waterford Single Malt,irish-whiskey,Waterford,various Single Farm/Arcadian editions
+Dingle Single Malt,irish-whiskey,Dingle,
+Johnnie Walker Double Black,blended-scotch,JW Double Black|Johnnie Double Black,smoky but a grain+malt blend; kept to blended-scotch
+Johnnie Walker Gold Label Reserve,blended-scotch,JW Gold|Johnnie Walker Gold,
+Johnnie Walker 18 Year,blended-scotch,JW 18|Johnnie Walker Platinum,
+Johnnie Walker Blue Label,blended-scotch,JW Blue|Johnnie Blue,
+Johnnie Walker Green Label,scotch,JW Green|Johnnie Walker Green 15,blended malt (no grain) -> scotch
+Dewar's 12 Year,blended-scotch,Dewar's 12|Dewar's Special Reserve,
+Dewar's 15 Year,blended-scotch,Dewar's 15,
+Dewar's Caribbean Smooth,blended-scotch,Dewar's 8 Caribbean Smooth,
+Chivas Regal 18,blended-scotch,Chivas 18,
+Chivas Regal Extra 13,blended-scotch,Chivas Extra,
+Famous Grouse Smoky Black,blended-scotch,Black Grouse|Famous Grouse Smoky Black,blend; smoky but kept to blended-scotch
+Ballantine's Finest,blended-scotch,Ballantine's|Ballantines,
+Ballantine's 17 Year,blended-scotch,Ballantine's 17,
+J&B Rare,blended-scotch,J&B|J and B,
+Cutty Sark,blended-scotch,Cutty Sark Original,
+Grant's Family Reserve,blended-scotch,Grant's|Grants Triple Wood,
+Teacher's Highland Cream,blended-scotch,Teacher's,
+Bell's Original,blended-scotch,Bell's|Bells,
+Whyte & Mackay,blended-scotch,Whyte and Mackay|Whyte & Mackay Triple Matured,
+William Lawson's,blended-scotch,Lawson's,
+Black Bottle,blended-scotch,Black Bottle Blended Scotch,lightly smoky blend; kept to blended-scotch
+Pig's Nose,blended-scotch,Pigs Nose,
+Buchanan's 12 Year,blended-scotch,Buchanan's|Buchanan's DeLuxe,
+Buchanan's 18 Special Reserve,blended-scotch,Buchanan's 18,
+Old Parr 12 Year,blended-scotch,Grand Old Parr|Old Parr,
+Royal Salute 21 Year,blended-scotch,Royal Salute,
+Islay Mist,blended-scotch,Islay Mist 8|Islay Mist Original,grain+malt blend with Islay malt; kept to blended-scotch
+Clan MacGregor,blended-scotch,,
+Passport Scotch,blended-scotch,Passport,
+Vat 69,blended-scotch,VAT 69,
+White Horse,blended-scotch,White Horse Blended Scotch,
+Black & White,blended-scotch,Black and White|Buchanan's Black & White,
+Johnnie Walker Blonde,blended-scotch,JW Blonde,
+Compass Box Glasgow Blend,blended-scotch,Glasgow Blend,
+Compass Box Hedonism,scotch,Hedonism,blended grain Scotch (no malt) -> scotch
+Haig Club,scotch,Haig Club Clubman,single grain Scotch -> scotch
+Cameron Brig,scotch,Cameronbridge,single grain Scotch -> scotch
+Compass Box Orchard House,scotch,Orchard House,blended malt -> scotch
+Compass Box Spice Tree,scotch,Spice Tree,blended malt -> scotch
+Naked Malt,scotch,Naked Grouse|Naked Blended Malt,blended malt -> scotch
+Sheep Dip,scotch,Sheep Dip Blended Malt,blended malt -> scotch
+Shackleton Blended Malt,scotch,Shackleton|Mackinlay's Shackleton,blended malt -> scotch
+Copper Dog,scotch,Copper Dog Speyside,blended malt -> scotch
+Rock Oyster,scotch,Douglas Laing Rock Oyster,island blended malt; partly peated -> scotch only
+Scallywag,scotch,Douglas Laing Scallywag,blended malt -> scotch
+Timorous Beastie,scotch,Douglas Laing Timorous Beastie,blended malt -> scotch
+Big Peat,peated-scotch,Douglas Laing Big Peat,Islay blended malt; clearly peated
+Glenlivet Founder's Reserve,single-malt-scotch,Glenlivet Founders Reserve,
+Glenlivet 15 French Oak Reserve,single-malt-scotch,Glenlivet 15,
+Glenlivet 18,single-malt-scotch,Glenlivet 18 Year,
+Glenfiddich 14 Bourbon Barrel Reserve,single-malt-scotch,Glenfiddich 14,
+Glenfiddich 15 Solera,single-malt-scotch,Glenfiddich 15,
+Glenfiddich 18,single-malt-scotch,Glenfiddich 18 Year,
+Macallan 12 Sherry Oak,single-malt-scotch,Macallan 12 Sherry|Macallan Sherry Oak 12,
+Macallan 15 Double Cask,single-malt-scotch,Macallan 15,
+Macallan 18 Sherry Oak,single-malt-scotch,Macallan 18,
+Macallan 12 Triple Cask,single-malt-scotch,Macallan Fine Oak 12|Macallan Triple Cask,
+Glenmorangie Lasanta,single-malt-scotch,Lasanta,
+Glenmorangie Quinta Ruban,single-malt-scotch,Quinta Ruban,
+Glenmorangie Nectar d'Or,single-malt-scotch,Nectar d'Or,
+Glenmorangie 18,single-malt-scotch,Glenmorangie 18 Year,
+Balvenie 14 Caribbean Cask,single-malt-scotch,Balvenie Caribbean Cask,
+Balvenie 12 American Oak,single-malt-scotch,Balvenie American Oak,
+Balvenie 17 DoubleWood,single-malt-scotch,Balvenie 17,
+Balvenie 21 PortWood,single-malt-scotch,Balvenie 21,
+Aberlour A'bunadh,single-malt-scotch,Abunadh|Aberlour Abunadh,
+Aberlour 16,single-malt-scotch,Aberlour 16 Year,
+Highland Park 18,single-malt-scotch,Highland Park 18 Viking Pride,lightly peated -> single-malt only
+Highland Park 15,single-malt-scotch,Highland Park 15 Viking Heart,lightly peated -> single-malt only
+Springbank 15,single-malt-scotch,Springbank 15 Year,lightly peated -> single-malt only
+Springbank 12 Cask Strength,single-malt-scotch,Springbank 12 CS,lightly peated -> single-malt only
+Hazelburn 10,single-malt-scotch,Hazelburn,unpeated Springbank
+Kilkerran 12,single-malt-scotch,Kilkerran,lightly peated -> single-malt only
+Benromach 15,single-malt-scotch,Benromach 15 Year,
+Dalmore 15,single-malt-scotch,Dalmore 15 Year,
+Dalmore Cigar Malt,single-malt-scotch,Cigar Malt,
+Dalmore King Alexander III,single-malt-scotch,King Alexander III,
+Dalwhinnie 15,single-malt-scotch,Dalwhinnie,
+Cragganmore 12,single-malt-scotch,Cragganmore,
+Glenkinchie 12,single-malt-scotch,Glenkinchie,
+Clynelish 14,single-malt-scotch,Clynelish,
+Royal Lochnagar 12,single-malt-scotch,Royal Lochnagar,
+Oban Little Bay,single-malt-scotch,Oban Little Bay,
+Glen Moray Classic,single-malt-scotch,Glen Moray,
+Glen Grant 12,single-malt-scotch,Glen Grant,
+Glen Grant Arboralis,single-malt-scotch,Arboralis,
+Glenfarclas 12,single-malt-scotch,Glenfarclas,
+Glenfarclas 105,single-malt-scotch,Glenfarclas 105 Cask Strength,
+GlenDronach 12 Original,single-malt-scotch,Glendronach 12,
+GlenDronach 15 Revival,single-malt-scotch,Glendronach 15|Revival,
+GlenDronach 18 Allardice,single-malt-scotch,Glendronach 18,
+Glengoyne 10,single-malt-scotch,Glengoyne,
+Glengoyne 12,single-malt-scotch,Glengoyne 12 Year,
+GlenAllachie 12,single-malt-scotch,Glenallachie,
+GlenAllachie 15,single-malt-scotch,Glenallachie 15,
+Auchentoshan American Oak,single-malt-scotch,Auchentoshan,
+Auchentoshan Three Wood,single-malt-scotch,Auchentoshan 3 Wood,
+Auchentoshan 12,single-malt-scotch,Auchentoshan 12 Year,
+Bunnahabhain 12,single-malt-scotch,Bunnahabhain,unpeated Islay -> single-malt only
+Bruichladdich The Classic Laddie,single-malt-scotch,Classic Laddie|Bruichladdich,unpeated Islay -> single-malt only
+Bowmore 18,single-malt-scotch,Bowmore 18 Year,sherried with subdued peat; debatable so single-malt only
+Tobermory 12,single-malt-scotch,Tobermory,unpeated Tobermory distillery spirit
+Arran 10,single-malt-scotch,Arran Malt 10|Isle of Arran 10,
+Scapa Skiren,single-malt-scotch,Scapa,
+Old Pulteney 12,single-malt-scotch,Pulteney 12|Old Pulteney,
+Glen Scotia Double Cask,single-malt-scotch,Glen Scotia,
+Glen Scotia Victoriana,single-malt-scotch,Victoriana,
+Deanston 12,single-malt-scotch,Deanston,
+Tomatin 12,single-malt-scotch,Tomatin,
+Tomatin Cu Bocan,single-malt-scotch,Cù Bòcan|Cu Bocan,lightly peated -> single-malt only
+Tamdhu 12,single-malt-scotch,Tamdhu,
+Speyburn 10,single-malt-scotch,Speyburn,
+Craigellachie 13,single-malt-scotch,Craigellachie,
+Aultmore 12,single-malt-scotch,Aultmore,
+Aberfeldy 12,single-malt-scotch,Aberfeldy,
+Mortlach 12 Wee Witchie,single-malt-scotch,Mortlach 12|Mortlach,
+Mortlach 16 Distiller's Dram,single-malt-scotch,Mortlach 16,
+Cardhu 12,single-malt-scotch,Cardhu,
+The Singleton of Dufftown 12,single-malt-scotch,Singleton 12|Singleton Dufftown,
+The Singleton of Glendullan 12,single-malt-scotch,Singleton Glendullan,
+Benriach The Original Ten,single-malt-scotch,Benriach 10|Benriach Original Ten,
+Benriach The Smoky Ten,single-malt-scotch,Benriach Smoky 10,mix of peated and unpeated spirit; single-malt only https://www.masterofmalt.com/whiskies/benriach/benriach-the-smoky-ten-whisky/
+Glenrothes 12,single-malt-scotch,Glenrothes,
+anCnoc 12,single-malt-scotch,Ancnoc|Knockdhu,
+Balblair 12,single-malt-scotch,Balblair,
+Royal Brackla 12,single-malt-scotch,Royal Brackla,
+Strathisla 12,single-malt-scotch,Strathisla,
+Loch Lomond 12,single-malt-scotch,Loch Lomond,
+Edradour 10,single-malt-scotch,Edradour,
+Glen Garioch 12,single-malt-scotch,Glen Garioch,
+Fettercairn 12,single-malt-scotch,Fettercairn,
+Jura 10,single-malt-scotch,Isle of Jura|Jura Journey,lightly peated components -> single-malt only
+Ardmore Legacy,single-malt-scotch,Ardmore,"lightly peated (~12ppm, 80/20 peated/unpeated) -> single-malt only https://scotchnoob.com/2022/08/15/the-ardmore-legacy/"
+Glen Elgin 12,single-malt-scotch,Glen Elgin,
+Tomintoul 16,single-malt-scotch,Tomintoul,
+Cotswolds Single Malt,whiskey,Cotswolds Signature,world whisky; no country node so mapped to whiskey (English)
+Longrow,single-malt-scotch+peated-scotch,Longrow Peated|Longrow 18,heavily peated Springbank make
+Octomore,single-malt-scotch+peated-scotch,Bruichladdich Octomore,super-heavily peated; numbered editions
+Bunnahabhain Toiteach a Dha,single-malt-scotch+peated-scotch,Toiteach a Dhà|Bunnahabhain Toiteach,peated Bunnahabhain
+Kilchoman Sanaig,single-malt-scotch+peated-scotch,Sanaig,
+Kilchoman Loch Gorm,single-malt-scotch+peated-scotch,Loch Gorm,
+Ardbeg Uigeadail,single-malt-scotch+peated-scotch,Uigeadail|Ugi,
+Ardbeg Corryvreckan,single-malt-scotch+peated-scotch,Corryvreckan,
+Ardbeg An Oa,single-malt-scotch+peated-scotch,An Oa,
+Ardbeg Wee Beastie 5 Year,single-malt-scotch+peated-scotch,Wee Beastie,
+Laphroaig Quarter Cask,single-malt-scotch+peated-scotch,Laphroaig QC,
+Laphroaig 10 Cask Strength,single-malt-scotch+peated-scotch,Laphroaig 10 CS,
+Laphroaig Lore,single-malt-scotch+peated-scotch,Lore,
+Laphroaig Select,single-malt-scotch+peated-scotch,Laphroaig Select Cask,
+Laphroaig PX Cask,single-malt-scotch+peated-scotch,Laphroaig PX,
+Lagavulin 8,single-malt-scotch+peated-scotch,Lagavulin 8 Year,
+Lagavulin Distillers Edition,single-malt-scotch+peated-scotch,Lagavulin DE,
+Lagavulin 12 Cask Strength,single-malt-scotch+peated-scotch,Lagavulin 12,
+Caol Ila Distillers Edition,single-malt-scotch+peated-scotch,Caol Ila DE,
+Caol Ila 18,single-malt-scotch+peated-scotch,Caol Ila 18 Year,
+Bowmore 15,single-malt-scotch+peated-scotch,Bowmore 15 Darkest|Bowmore Darkest,medium-peated Islay; consistent with Bowmore 12
+Bowmore No. 1,single-malt-scotch+peated-scotch,Bowmore No 1,medium-peated Islay; consistent with Bowmore 12
+Talisker Storm,single-malt-scotch+peated-scotch,,
+Talisker 18,single-malt-scotch+peated-scotch,Talisker 18 Year,
+Talisker Distillers Edition,single-malt-scotch+peated-scotch,Talisker DE,
+Talisker Skye,single-malt-scotch+peated-scotch,,
+Talisker Port Ruighe,single-malt-scotch+peated-scotch,Port Ruighe,
+Ledaig 10,single-malt-scotch+peated-scotch,Ledaig,peated Tobermory make
+Arran Machrie Moor,single-malt-scotch+peated-scotch,Machrie Moor,peated Arran ~20ppm
+Benromach Peat Smoke,single-malt-scotch+peated-scotch,Benromach Peat Smoke,
+Smokehead,single-malt-scotch+peated-scotch,Smokehead Islay,undisclosed Islay single malt; heavily peated
+Port Askaig 8,single-malt-scotch+peated-scotch,Port Askaig,undisclosed Islay single malt; peated
+Port Charlotte Islay Barley,single-malt-scotch+peated-scotch,Port Charlotte Islay Barley,
+Kilchoman 100% Islay,single-malt-scotch+peated-scotch,Kilchoman 100 Percent Islay,peated (lighter ~20ppm)
+Yamazaki 18,japanese-whisky,Yamazaki 18 Year,
+Yamazaki Distiller's Reserve,japanese-whisky,Yamazaki DR|Yamazaki NAS,
+Hakushu Distiller's Reserve,japanese-whisky,Hakushu DR|Hakushu NAS,
+Hakushu 18,japanese-whisky,Hakushu 18 Year,
+Hibiki 17,japanese-whisky,Hibiki 17 Year,
+Hibiki 21,japanese-whisky,Hibiki 21 Year,
+Suntory Kakubin,japanese-whisky,Kakubin|Kaku|Suntory Whisky Kakubin,Suntory lists it as meeting JSLMA Japanese whisky standard https://thedailypour.com/?p=53017
+The Chita,japanese-whisky,Chita Single Grain|Suntory Chita,
+Nikka Days,whiskey,,blend includes imported grain whisky so not exclusively Japanese https://punchdrink.com/articles/new-japanese-whisky-rules-regulations/
+Nikka Yoichi Single Malt,japanese-whisky,Yoichi,
+Nikka Miyagikyo Single Malt,japanese-whisky,Miyagikyo,
+Nikka Coffey Malt,japanese-whisky,Coffey Malt,
+Mars Iwai 45,whiskey,Iwai 45|Mars Iwai,blended; Japanese-only content unverified so mapped broadly
+Mars Iwai Tradition,whiskey,Iwai Tradition,blended; Japanese-only content unverified so mapped broadly
+Kirin Fuji Single Grain,japanese-whisky,Fuji Single Grain|Fuji Whisky,
+Suntory World Whisky Ao,whiskey,Ao|Suntory Ao,blend of whiskies from 5 countries; not purely Japanese
+Nikka Session,whiskey,,Japanese malt + Ben Nevis Scotch blend https://thedailypour.com/spirit/nikka-session/
+Ichiro's Malt & Grain,whiskey,Ichiro's Malt and Grain|Chichibu Malt & Grain,world blended whisky; contains non-Japanese whisky
+Kavalan Classic Single Malt,whiskey,Kavalan,world whisky; no country node so mapped to whiskey (Taiwan)
+Amrut Fusion,whiskey,Amrut,world whisky; no country node so mapped to whiskey (India)
+Paul John Brilliance,whiskey,Paul John,world whisky; no country node so mapped to whiskey (India)
+Penderyn Madeira Finish,whiskey,Penderyn Legend|Penderyn,world whisky; no country node so mapped to whiskey (Wales)
+Starward Two-Fold,whiskey,Starward,world whisky; no country node so mapped to whiskey (Australia)
+# ================================================================ researched additions: rum (2026-10-21)
+Appleton Estate Reserve Blend,jamaican-rum+blended-aged-rum,Appleton Reserve,Smuggler's Cove bottle list
+Appleton Special,jamaican-rum,Appleton Special Gold,Jamaican gold blend; broad node
+Wray & Nephew 17 Year,jamaican-rum+aged-rum,J. Wray & Nephew 17,discontinued; original Trader Vic Mai Tai rum
+Hampden Estate HLCF Classic,jamaican-rum+pot-still-lightly-aged-rum+overproof-rum,Hampden Estate Overproof|Hampden HLCF Overproof,"inferred from production, Smuggler's Cove definitions"
+Hampden Great House,jamaican-rum+pot-still-aged-rum,,annual limited release; 100% pot still aged
+Worthy Park Single Estate Reserve,jamaican-rum+pot-still-aged-rum,WP Single Estate Reserve,100% pot still aged 6-10 yrs https://www.skurnik.com/sku/single-estate-reserve-worthy-park/
+Rum-Bar Gold,jamaican-rum+pot-still-lightly-aged-rum,Worthy Park Rum-Bar Gold,Worthy Park pot still aged 4 yrs (rum-x)
+Rum-Bar Silver,jamaican-rum+pot-still-unaged-rum+white-rum,Worthy Park Rum-Bar Silver,"inferred from production, Smuggler's Cove definitions"
+Doctor Bird Jamaica Rum,jamaican-rum,Dr. Bird|Two James Doctor Bird,Worthy Park pot still finished in Moscatel casks; age disputed so broad
+Blackwell Black Gold,jamaican-rum+black-blended-rum,Blackwell Fine Jamaican Rum,Smuggler's Cove bottle list
+Myers's Platinum White,jamaican-rum+white-rum,Myers's Platinum,may be discontinued
+Kingston 62 Gold,jamaican-rum,,J. Wray Jamaican gold (UK)
+El Dorado Single Barrel PM,demerara-rum+pot-still-aged-rum,El Dorado Port Mourant,Port Mourant double wooden pot still; aged
+Wood's Old Navy Rum,navy-rum+demerara-rum,Wood's 100,Guyanese navy rum 57%
+Skipper Demerara Rum,demerara-rum,Skipper,UK Demerara dark rum
+OVD Demerara Rum,demerara-rum,Old Vatted Demerara,UK Demerara dark rum
+Lemon Hart Blackpool Spiced,spiced-rum,Lemon Hart Blackpool Navy Spiced,
+Lamb's Navy Rum,navy-rum,Lamb's Genuine Navy,
+Black Tot Finest Caribbean Rum,navy-rum,Black Tot,navy-style blend of Guyana/Barbados/Jamaica
+Pusser's 15 Year,navy-rum+aged-rum,Pusser's Nelson's Blood 15,aged navy rum
+Pusser's Overproof 151,navy-rum+overproof-rum,Pusser's 75%,
+Captain Morgan Dark,dark-rum,Captain Morgan Dark Rum|Captain Morgan Original Rum,UK dark rum
+Old Monk 7 Year,dark-rum,Old Monk|Old Monk Very Old Vatted XXX,Indian dark molasses rum
+Mount Gay Silver,barbados-rum+blended-lightly-aged-rum+white-rum,Mount Gay Eclipse Silver,"inferred from production, Smuggler's Cove definitions"
+Mount Gay 1703 Master Select,barbados-rum+aged-rum,Mount Gay 1703,pot+column blend 10-30 yrs https://www.caribjournal.com/2017/03/25/rum-journal-mount-gay-1703-master-select/
+Doorly's 12 Year,barbados-rum+aged-rum,,Foursquare pot+column blend
+Doorly's 14 Year,barbados-rum+aged-rum,,Foursquare pot+column blend
+Foursquare 2004,barbados-rum+aged-rum,Foursquare Exceptional Cask Selection 2004,limited ECS; single blended pot+column
+Foursquare Spiced,spiced-rum,Foursquare Spiced Rum,
+Real McCoy 3 Year,barbados-rum+white-rum,Real McCoy Aged 3 Years,Foursquare pot+column aged 3 yrs filtered white https://www.bevnet.com/spirits/2013/the-real-mccoy-rum-expands-portfolio
+Real McCoy 5 Year,barbados-rum+aged-rum,Real McCoy Aged 5 Years,Foursquare pot+column blend
+Real McCoy 12 Year,barbados-rum+aged-rum,Real McCoy Aged 12 Years,Foursquare pot+column blend
+Planteray XO 20th Anniversary,barbados-rum+aged-rum,Plantation XO 20th Anniversary|Plantation XO|Planteray XO,Barbados pot+column blend; Plantation renamed Planteray 2024
+Planteray Isle of Fiji,lightly-aged-rum,Plantation Isle of Fiji,aged 2-3 yrs Fiji + France
+Planteray Stiggins' Fancy Smoky Formula,pineapple-rum,Plantation Stiggins' Fancy Smoky Formula,limited pineapple rum variant
+Cockspur Fine Rum,barbados-rum,Cockspur 5 Star,Barbados (WIRD)
+Chairman's Reserve Original,english-rum+aged-rum,Chairman's Reserve,St Lucia pot+column blend ~5yr https://www.diffordsguide.com/en-au/producer/1217/chairmans-reserve/production
+Chairman's Reserve White,english-rum+white-rum,Chairman's Reserve White Label,pot+column 3-4yr filtered (Lone Caner)
+Chairman's Reserve Forgotten Casks,english-rum+aged-rum,,St Lucia pot+column blend
+Chairman's Reserve Spiced,spiced-rum,,
+Angostura Reserva,english-rum+white-rum,Angostura White,Trinidad column; not pot+column so not blended class
+Angostura 1824,english-rum+aged-rum,,Trinidad aged
+English Harbour 5 Year,english-rum+aged-rum,,Antigua aged
+Gosling's Gold Seal,english-rum,Goslings Gold Seal,Bermuda gold
+Gosling's Family Reserve Old Rum,english-rum+aged-rum,Goslings Family Reserve,Bermuda aged
+Gosling's Black Seal 151,black-blended-overproof-rum,Goslings 151,overproof version of Black Seal (black blended) https://www.diffordsguide.com/beer-wine-spirits/1465/goslings-black-seal-overproof-151
+Probitas White Blended Rum,blended-lightly-aged-rum+white-rum,Probitas|Veritas,"inferred from production, Smuggler's Cove definitions"
+Denizen Aged White,blended-lightly-aged-rum+white-rum,Denizen White,"inferred from production, Smuggler's Cove definitions"
+Denizen Merchant's Reserve,aged-rum,Denizen 8 Year,Jamaican pot + Martinique grand arome blend aged 8 yrs
+Hamilton 87 White 'Stache,white-rum,Hamilton White Stache,aged carbon-filtered multi-island white
+Hamilton Beachbum Berry's Zombie Blend,overproof-rum,Hamilton Zombie Blend,multi-island blend 59% https://www.blackwellswines.com/products/hamilton-beachbum-berrys-zombie-blend-rum-1000ml
+Ten To One White Rum,white-rum,Ten To One White,Caribbean blend white
+Sea Wynde,pot-still-aged-rum,,discontinued; Jamaica+Guyana 100% pot still blend
+Don Papa,rum,Don Papa 7,Philippines sweetened aged; broad
+Dos Maderas PX 5+5,aged-rum,Dos Maderas 5+5,Caribbean rum aged then sherry finished
+Bacardi Gold,spanish-rum+lightly-aged-rum,Bacardi Oro|Bacardi Carta Oro,
+Bacardi Black,spanish-rum+dark-rum,Bacardi Carta Negra|Bacardi Negra,
+Bacardi Añejo Cuatro,spanish-rum+aged-rum,Bacardi 4,column still aged 4 yrs
+Bacardi Gran Reserva Diez,spanish-rum+aged-rum,Bacardi 10,
+Bacardi 151,spanish-rum+overproof-rum,,discontinued 2016
+Bacardi Spiced,spiced-rum,Bacardi Oakheart|Bacardi Caribbean Spiced,Oakheart replaced by Bacardi Spiced
+Ron Rico 151,spanish-rum+overproof-rum,Ronrico 151,discontinued
+Havana Club Añejo Especial,spanish-rum+lightly-aged-rum,Havana Club Especial,Cuban gold
+Havana Club Selección de Maestros,spanish-rum+aged-rum,,Cuban aged
+Havana Club Añejo Blanco,spanish-rum+white-rum,Havana Club Puerto Rico Blanco,Bacardi Puerto Rico-made US version https://bevinfogroup.com/2016/06/03/havana-club-puerto-rican-rum/
+Havana Club Añejo Clásico,spanish-rum+lightly-aged-rum,Havana Club Clasico,Bacardi PR US version; aged 1-3 yrs
+Don Q Gold,spanish-rum+lightly-aged-rum,Don Q Oro,
+Don Q Gran Añejo,spanish-rum+aged-rum,,
+Don Q Reserva 7,spanish-rum+aged-rum,Don Q 7,
+Don Q 151,spanish-rum+overproof-rum,,
+Don Q Oak Barrel Spiced,spiced-rum,,
+Ron del Barrilito 2 Star,spanish-rum+column-still-lightly-aged-rum,Barrilito Two Stars|Ron del Barrilito Dos Estrellas,Smuggler's Cove bottle list
+Ron del Barrilito 4 Star,spanish-rum+aged-rum,Barrilito Four Stars,aged up to 20 yrs
+Brugal Añejo,spanish-rum+aged-rum,,Dominican column aged
+Brugal 1888,spanish-rum+aged-rum,,
+Brugal Extra Viejo,spanish-rum+aged-rum,,
+Brugal Especial Extra Dry,spanish-rum+white-rum,Brugal Extra Dry,
+Barceló Imperial,spanish-rum+aged-rum,Ron Barcelo Imperial,
+Barceló Añejo,spanish-rum+aged-rum,Ron Barcelo Anejo,
+Matusalem Platino,spanish-rum+white-rum,Ron Matusalem Platino,
+Matusalem Clásico,spanish-rum+aged-rum,Ron Matusalem Clasico,
+Ron Abuelo Añejo,spanish-rum+aged-rum,Abuelo Anejo,Panama
+Ron Abuelo 7 Años,spanish-rum+aged-rum,Abuelo 7,
+Ron Abuelo 12 Años,spanish-rum+aged-rum,Abuelo 12,
+Ron Zacapa XO,spanish-rum+aged-rum,Zacapa XO,
+Ron Zacapa Edición Negra,spanish-rum+aged-rum,Zacapa Edicion Negra,
+Botran Solera 1893,spanish-rum+aged-rum,Ron Botran 1893,Guatemala
+Flor de Caña 4 Añejo Oro,spanish-rum+column-still-lightly-aged-rum,Flor de Cana Gold|Flor de Cana 4 Oro,"inferred from production, Smuggler's Cove definitions"
+Flor de Caña 18,spanish-rum+aged-rum,Flor de Cana Centenario 18,
+Flor de Caña 25,spanish-rum+aged-rum,Flor de Cana Centenario 25,
+Diplomático Planas,spanish-rum+white-rum,Diplomatico Planas,filtered; pot+column mix so not column class
+Diplomático Mantuano,spanish-rum+aged-rum,Diplomatico Mantuano|Diplomatico Anejo,pot+column mix so not column class
+Dictador 12,spanish-rum+aged-rum,Dictador 12 Year,Colombia
+Dictador 20,spanish-rum+aged-rum,Dictador 20 Year,
+Caña Brava 7 Year,spanish-rum+column-still-aged-rum,Cana Brava 7,Smuggler's Cove bottle list
+Cruzan Aged Dark,virgin-islands-rum+lightly-aged-rum,Cruzan Dark,
+Cruzan Estate Diamond Dark,virgin-islands-rum+column-still-aged-rum,Cruzan Estate Diamond,column still aged min 5 yrs https://www.cruzanrum.com/our-rums/premium-rums/cruzan-estate-diamond-dark-rum
+Cruzan 151,virgin-islands-rum+overproof-rum,Cruzan 151 Proof,
+Cruzan 9 Spiced,spiced-rum,,
+Captain Morgan White,white-rum,Captain Morgan White Rum,
+Captain Morgan Black Spiced,spiced-rum,,
+Captain Morgan 100 Proof Spiced,spiced-rum,,
+Captain Morgan Private Stock,spiced-rum,,
+Kraken Gold Spiced,spiced-rum,The Kraken Gold,launched 2023
+Bumbu Original,spiced-rum,Bumbu,sweetened spiced rum
+Dead Man's Fingers Spiced,spiced-rum,,
+Old New Orleans Cajun Spice,spiced-rum,,
+Rhum J.M Élevé Sous Bois,rhum-agricole+lightly-aged-rum,J.M Gold|Rhum JM Eleve Sous Bois,~1yr oak aged
+Rhum J.M XO,rhum-agricole-vieux,J.M XO,
+Neisson Élevé Sous Bois,rhum-agricole+lightly-aged-rum,Neisson Eleve Sous Bois,
+Neisson L'Esprit,rhum-agricole-blanc+overproof-rum,Neisson Esprit 70,blanc at 70%
+Rhum Clément Select Barrel,rhum-agricole,Clement Select Barrel,age conflicts (21 months vs 3 yrs) so not ambre/vieux https://www.diffordsguide.com/beer-wine-spirits/6077/rhum-clement-select-barrel
+Rhum Clément XO,rhum-agricole-vieux,Clement XO,
+Saint James Fleur de Canne,rhum-agricole-blanc,St. James Fleur de Canne,
+Saint James Imperial Blanc,rhum-agricole-blanc,St. James Imperial Blanc,
+Saint James Hors d'Âge,rhum-agricole-vieux,St. James Hors d'Age,
+Trois Rivières Blanc,rhum-agricole-blanc,Trois Rivieres Blanc,
+Trois Rivières Cuvée de l'Océan,rhum-agricole-blanc,Trois Rivieres Cuvee de l'Ocean,
+Trois Rivières Ambré,rhum-agricole+lightly-aged-rum,Trois Rivieres Ambre,
+Trois Rivières VSOP,rhum-agricole-vieux,Trois Rivieres VSOP,
+La Mauny Blanc,rhum-agricole-blanc,,
+La Mauny Ambré,rhum-agricole+lightly-aged-rum,La Mauny Ambre,
+Depaz Blanc,rhum-agricole-blanc,,
+Depaz Blue Cane Amber,rhum-agricole+lightly-aged-rum,,
+Depaz VSOP,rhum-agricole-vieux,Depaz VSOP Reserve Speciale,
+HSE Blanc,rhum-agricole-blanc,Habitation Saint-Etienne Blanc,
+Damoiseau Blanc,white-rum,Damoiseau Rhum Blanc 50,"Guadeloupe, not AOC Martinique"
+Damoiseau VSOP,aged-rum,,"Guadeloupe, not AOC Martinique"
+Barbancourt 15 Year Réserve du Domaine,cane-coffey-still-aged-rum,Barbancourt 15,"inferred from production, Smuggler's Cove definitions"
+Clairin Sajous,cane-pot-still-unaged-rum+white-rum,,"inferred from production, Smuggler's Cove definitions"
+Clairin Vaval,cane-pot-still-unaged-rum+white-rum,,"inferred from production, Smuggler's Cove definitions"
+Clairin Casimir,cane-pot-still-unaged-rum+white-rum,,"inferred from production, Smuggler's Cove definitions"
+Pampero Especial,spanish-rum+lightly-aged-rum,Ron Pampero Especial,Venezuelan gold
+Ron Centenario 12,spanish-rum+aged-rum,Centenario 12 Gran Legado,Costa Rica
+Ron Centenario 20 Fundación,spanish-rum+aged-rum,Centenario 20,Costa Rica
+Kirk and Sweeney 12,spanish-rum+aged-rum,Kirk & Sweeney 12,Dominican aged; still not verified
+Zaya Gran Reserva,aged-rum,Zaya 12,Trinidad aged
+Bielle Blanc 59,white-rum+overproof-rum,Rhum Bielle Blanc,"Marie-Galante, not AOC Martinique"
+Lamb's Spiced,spiced-rum,,
+Cruzan Estate Diamond Light,virgin-islands-rum+white-rum,,St Croix light rum
+The Duppy Share,rum,Duppy Share Caribbean Rum,Jamaica+Barbados blend
+St Nicholas Abbey 5 Year,barbados-rum+aged-rum,St. Nicholas Abbey 5,Barbados aged
+Kō Hana Kea,cane-pot-still-unaged-rum+white-rum,Ko Hana Kea Agricole,"inferred from production, Smuggler's Cove definitions"
+Cachaça 51,cachaca,Pirassununga 51|Caninha 51,
+Pitú,cachaca,Pitu,
+Velho Barreiro,cachaca,,
+Ypióca Ouro,cachaca,Ypioca Ouro,
+Novo Fogo Barrel-Aged,cachaca,Novo Fogo Gold,
+Novo Fogo Tanager,cachaca,,
+Avuá Amburana,cachaca,Avua Amburana,
+Avuá Oak,cachaca,Avua Oak,
+Abelha Silver,cachaca,Abelha Prata,
+Abelha Gold,cachaca,Abelha Ouro,
+Leblon Reserva Especial,cachaca,,
+Sagatiba Velha,cachaca,,
+# ================================================================ researched additions: agave & brandy (2026-10-21)
+Tequila Tromba Blanco,tequila-blanco,Tromba Blanco,
+Tequila Tromba Reposado,tequila-reposado,Tromba Reposado,
+Tequila Tromba Añejo,tequila-anejo,Tromba Anejo,añejo 20-24 months https://www.masterofmalt.com/tequila/tromba/tromba-tequila-anejo-tequila/
+Mijenta Blanco,tequila-blanco,Mijenta Tequila Blanco,
+Mijenta Reposado,tequila-reposado,Mijenta Tequila Reposado,
+Mijenta Añejo Gran Reserva,tequila-anejo,Mijenta Anejo,18-month añejo https://www.bevnet.com/news/2023/mijenta-tequila-announces-the-second-release-of-18-month-aged-ultra-premium-anejo-gran-reserva
+Volcán de mi Tierra Blanco,tequila-blanco,Volcan Blanco|Volcan de mi Tierra Blanco,
+Volcán de mi Tierra Reposado,tequila-reposado,Volcan Reposado|Volcan de mi Tierra Reposado,https://traveldistilled.com/volcan-de-mi-tierra-reposado-tequila
+Volcán de mi Tierra Cristalino,tequila,Volcan Cristalino,cristalino -> tequila only
+Cascahuín Blanco,tequila-blanco,Cascahuin Blanco,https://www.masterofmalt.com/distilleries/tequila-cascahuin/
+Cascahuín Plata,tequila-blanco,Cascahuin Plata 48|Cascahuín Plata 48,high-proof blanco https://bottleofitaly.com/en/products/tequila-plata-70cl-cascahuin
+Cascahuín Tahona Blanco,tequila-blanco,Cascahuin Tahona,tahona-milled blanco https://bottleofitaly.com/en-us/products/tequila-tahona-70cl-cascahuin
+Cascahuín Reposado,tequila-reposado,Cascahuin Reposado,
+Cascahuín Añejo,tequila-anejo,Cascahuin Anejo,
+El Tequileño Blanco,tequila-blanco,El Tequileno Blanco,
+El Tequileño Platinum,tequila-blanco,El Tequileno Platinum,blanco rested ~14 days in oak; still blanco class https://www.thethreedrinkers.com/magazine-content/el-tequileno-tequila-from-margarita-magic-to-gran-reserva-greatness
+El Tequileño Reposado,tequila-reposado,El Tequileno Reposado,
+El Tequileño Reposado Gran Reserva,tequila-reposado,El Tequileno Gran Reserva,reposado blended with a little añejo; labelled reposado
+El Tequileño Añejo Gran Reserva,tequila-anejo,El Tequileno Anejo Gran Reserva,
+Fortaleza Blanco Still Strength,tequila-blanco,Fortaleza Still Strength,46% blanco
+G4 Blanco 108,tequila-blanco,G4 108|G4 High Proof Blanco,high-proof blanco
+G4 Añejo,tequila-anejo,G4 Anejo,
+Pasote Blanco,tequila-blanco,,
+Pasote Reposado,tequila-reposado,,
+Pasote Añejo,tequila-anejo,Pasote Anejo,
+Terralta Blanco,tequila-blanco,,https://www.spiritedbiz.com/?p=17050
+Terralta Blanco 110,tequila-blanco,Terralta 110,110-proof blanco https://www.spiritedbiz.com/?p=17050
+Terralta Reposado,tequila-reposado,,
+Terralta Añejo,tequila-anejo,Terralta Anejo,
+Siembra Valles Blanco,tequila-blanco,,
+Siembra Valles High Proof Blanco,tequila-blanco,Siembra Valles High Proof,
+Siembra Valles Reposado,tequila-reposado,,
+Calle 23 Blanco,tequila-blanco,,
+Calle 23 Reposado,tequila-reposado,,
+Calle 23 Añejo,tequila-anejo,Calle 23 Anejo,
+ArteNOM Selección de 1579,tequila-blanco,ArteNOM 1579|Artenom Blanco,blanco from NOM 1579
+ArteNOM Selección de 1414,tequila-reposado,ArteNOM 1414|Artenom Reposado,reposado from NOM 1414
+ArteNOM Selección de 1146,tequila-anejo,ArteNOM 1146|Artenom Anejo,añejo from NOM 1146
+Don Fulano Blanco,tequila-blanco,,
+Don Fulano Fuerte,tequila-blanco,Don Fulano Blanco Fuerte,100-proof blanco
+Don Fulano Reposado,tequila-reposado,,
+Don Fulano Añejo,tequila-anejo,Don Fulano Anejo,
+Lalo Blanco,tequila-blanco,Lalo Tequila,
+La Gritona Reposado,tequila-reposado,La Gritona,
+Chinaco Reposado,tequila-reposado,,
+Chinaco Añejo,tequila-anejo,Chinaco Anejo,
+Tapatio Añejo,tequila-anejo,Tapatío Añejo|Tapatio Anejo,
+Pueblo Viejo Blanco 104,tequila-blanco,Pueblo Viejo 104,104-proof blanco
+Arette Añejo,tequila-anejo,Arette Anejo,
+Centinela Blanco,tequila-blanco,,
+Centinela Añejo,tequila-anejo,Centinela Anejo,
+Gran Dovejo Blanco,tequila-blanco,,
+Tres Agaves Blanco,tequila-blanco,,
+Tres Agaves Reposado,tequila-reposado,,
+Tres Agaves Añejo,tequila-anejo,Tres Agaves Anejo,
+Herradura Directo de Alambique,tequila-blanco,Herradura Directo,unaged blanco straight from the still
+Astral Blanco,tequila-blanco,Astral Tequila,
+Mi Campo Blanco,tequila-blanco,,
+Mi Campo Reposado,tequila-reposado,,
+Casa Dragones Blanco,tequila-blanco,,
+Casa Dragones Joven,tequila,,joven = blanco blended with extra añejo; not a single class
+Olmeca Altos Añejo,tequila-anejo,Altos Añejo|Altos Anejo,
+Milagro Añejo,tequila-anejo,Milagro Anejo,
+Espolòn Añejo,tequila-anejo,Espolon Anejo,
+Lunazul Añejo,tequila-anejo,Lunazul Anejo,
+El Jimador Añejo,tequila-anejo,El Jimador Anejo,
+Cazadores Añejo,tequila-anejo,Cazadores Anejo,
+Cabrito Reposado,tequila-reposado,,
+Gran Centenario Reposado,tequila-reposado,,
+Gran Centenario Añejo,tequila-anejo,Gran Centenario Anejo,
+Herradura Legend,tequila-anejo,,añejo aged in grooved barrels
+Herradura Ultra,tequila,,cristalino añejo -> tequila only
+Don Julio 1942,tequila-anejo,,añejo
+Don Julio 70,tequila,Don Julio 70 Cristalino,cristalino -> tequila only
+Patrón Cristalino,tequila,Patron Cristalino,cristalino -> tequila only
+Casamigos Cristalino,tequila,,cristalino -> tequila only
+1800 Blanco,tequila-blanco,1800 Silver|1800 Tequila Blanco,
+1800 Reposado,tequila-reposado,,
+1800 Añejo,tequila-anejo,1800 Anejo,
+1800 Cristalino,tequila,,cristalino -> tequila only
+Hornitos Plata,tequila-blanco,Sauza Hornitos Plata|Hornitos Blanco,
+Hornitos Reposado,tequila-reposado,Sauza Hornitos Reposado,
+Hornitos Añejo,tequila-anejo,Hornitos Anejo,
+Hornitos Black Barrel,tequila-anejo,,legally añejo then finished in charred barrels
+Hornitos Cristalino,tequila,,cristalino -> tequila only
+Sauza Silver,tequila,Sauza Blanco,mixto blanco
+Sauza Gold,tequila,Sauza Extra Gold,gold mixto: not blanco/reposado
+Sauza Signature Blue Silver,tequila,Sauza Blue Silver|Sauza Blue,
+Sauza Signature Blue Reposado,tequila-reposado,Sauza Blue Reposado,
+Tres Generaciones Plata,tequila-blanco,,
+Tres Generaciones Reposado,tequila-reposado,,
+Tres Generaciones Añejo,tequila-anejo,Tres Generaciones Anejo,
+José Cuervo Especial Silver,tequila,Jose Cuervo Silver|Cuervo Especial Silver,mixto blanco
+José Cuervo Especial Gold,tequila,Jose Cuervo Gold|Cuervo Gold,gold mixto: not blanco/reposado
+José Cuervo Tradicional Plata,tequila-blanco,Jose Cuervo Tradicional Silver|Cuervo Tradicional Blanco,
+José Cuervo Tradicional Añejo,tequila-anejo,Jose Cuervo Tradicional Anejo,
+José Cuervo Tradicional Cristalino,tequila,Cuervo Tradicional Cristalino,cristalino -> tequila only
+Reserva de la Familia Platino,tequila-blanco,Jose Cuervo Reserva de la Familia Platino,
+Reserva de la Familia Reposado,tequila-reposado,Jose Cuervo Reserva de la Familia Reposado,
+Reserva de la Familia Extra Añejo,tequila,Jose Cuervo Reserva de la Familia,extra añejo; >3y oak so serves añejo specs
+Avión Silver,tequila-blanco,Avion Silver,still listed https://www.pernod-ricard.com/en/brands/avion
+Avión Reposado,tequila-reposado,Avion Reposado,
+Avión Añejo,tequila-anejo,Avion Anejo,
+Corralejo Blanco,tequila-blanco,,
+Corralejo Reposado,tequila-reposado,,
+Corralejo Añejo,tequila-anejo,Corralejo Anejo,
+Clase Azul Plata,tequila-blanco,Clase Azul Blanco,
+Clase Azul Reposado,tequila-reposado,,
+Código 1530 Blanco,tequila-blanco,Codigo 1530 Blanco,
+Código 1530 Rosa,tequila,Codigo 1530 Rosa,blanco rested in Cabernet barrels; tinted so -> tequila only
+Código 1530 Reposado,tequila-reposado,Codigo 1530 Reposado,
+Código 1530 Añejo,tequila-anejo,Codigo 1530 Anejo,
+Cincoro Blanco,tequila-blanco,,
+Cincoro Reposado,tequila-reposado,,
+Cincoro Añejo,tequila-anejo,Cincoro Anejo,
+818 Blanco,tequila-blanco,818 Tequila Blanco,
+818 Reposado,tequila-reposado,818 Tequila Reposado,
+818 Añejo,tequila-anejo,818 Anejo,
+Teremana Blanco,tequila-blanco,,
+Teremana Reposado,tequila-reposado,,
+Teremana Añejo,tequila-anejo,Teremana Anejo,
+Casa Noble Blanco,tequila-blanco,Casa Noble Crystal,
+Casa Noble Reposado,tequila-reposado,,
+Casa Noble Añejo,tequila-anejo,Casa Noble Anejo,
+Cabo Wabo Blanco,tequila-blanco,,
+Cabo Wabo Reposado,tequila-reposado,,
+Cabo Wabo Añejo,tequila-anejo,Cabo Wabo Anejo,
+Corazón Blanco,tequila-blanco,Corazon Blanco,
+Corazón Reposado,tequila-reposado,Corazon Reposado,
+Corazón Añejo,tequila-anejo,Corazon Anejo,
+Camarena Silver,tequila-blanco,Familia Camarena Silver|Camarena Blanco,
+Camarena Reposado,tequila-reposado,Familia Camarena Reposado,
+Maestro Dobel Diamante,tequila,Dobel Diamante,cristalino blend -> tequila only
+Gran Coramino Reposado Cristalino,tequila,Gran Coramino,cristalino -> tequila only
+Olmeca Blanco,tequila,Olmeca Silver,mixto blanco (UK staple)
+Olmeca Gold,tequila,,gold mixto: not blanco/reposado
+Sierra Silver,tequila,Sierra Tequila Silver|Sierra Blanco,mixto blanco (UK staple)
+Sierra Gold,tequila,Sierra Tequila Gold,gold mixto: not blanco/reposado
+Sierra Reposado,tequila-reposado,Sierra Tequila Reposado,
+Kirkland Signature Tequila Blanco,tequila-blanco,Kirkland Blanco Tequila,
+Kirkland Signature Tequila Reposado,tequila-reposado,Kirkland Reposado Tequila,
+Kirkland Signature Tequila Añejo,tequila-anejo,Kirkland Anejo Tequila,
+Del Maguey Minero,mezcal,,Santa Catarina Minas https://kindredcocktails.com/ingredient/del-maguey
+Del Maguey Santo Domingo Albarradas,mezcal,,
+Del Maguey Tobala,mezcal,Del Maguey Tobalá,
+Del Maguey Pechuga,mezcal,,
+Del Maguey Vida de Muertos,mezcal,,https://www.bevnet.com/spirits/2021/del-maguey-single-village-mezcal-launches-vida-de-muertos/
+Del Maguey Vida Clásico,mezcal,Del Maguey Vida Clasico,https://www.diffordsguide.com/producer/1267/del-maguey-single-village-mezcals/collections
+Del Maguey Wild Tepextate,mezcal,Del Maguey Tepextate,
+Del Maguey Arroqueño,mezcal,Del Maguey Arroqueno,
+Montelobos Ensamble,mezcal,,https://www.campariacademy.com/en-us/training/montelobos-mezcal/
+Montelobos Tobalá,mezcal,Montelobos Tobala,
+Montelobos Pechuga,mezcal,,
+Ilegal Reposado,mezcal,Mezcal Ilegal Reposado,
+Ilegal Añejo,mezcal,Mezcal Ilegal Anejo,
+Mezcal Vago Elote,mezcal,Vago Elote,https://mezcalistas.com/mezcal-vago-hits-the-us
+Mezcal Vago Espadín,mezcal,Vago Espadin,
+Mezcal Vago Ensamble en Barro,mezcal,Vago Ensamble en Barro,
+Mezcal Vago Mexicano,mezcal,Vago Mexicano,
+Mezcal Vago Tobalá,mezcal,Vago Tobala,
+Fidencio Clásico,mezcal,Fidencio Clasico|Mezcal Fidencio Espadin,
+Fidencio Único,mezcal,Fidencio Unico|Fidencio Sin Humo,unsmoked mezcal; still mezcal
+Nuestra Soledad Espadín,mezcal,Nuestra Soledad Mezcal,
+Mezcal Amarás Espadín,mezcal,Amarás Espadín|Mezcal Amores Espadin,
+Mezcal Amarás Cupreata,mezcal,Amarás Cupreata|Mezcal Amores Cupreata,
+Verde Amarás,mezcal,Verde Momento|Mezcal Verde,
+Dos Hombres Espadín,mezcal,Dos Hombres Mezcal|Dos Hombres Joven,
+400 Conejos Joven,mezcal,400 Conejos Espadin,
+400 Conejos Tobalá,mezcal,400 Conejos Tobala,
+400 Conejos Reposado,mezcal,,
+Ojo de Tigre Joven,mezcal,Ojo de Tigre Mezcal,
+El Silencio Espadín,mezcal,Mezcal El Silencio,
+Rey Campero Espadín,mezcal,Rey Campero Espadin,
+Rey Campero Cuishe,mezcal,,
+Rey Campero Tepextate,mezcal,,
+Pierde Almas Espadín,mezcal,Pierde Almas Puro Espadin,
+Wahaka Espadín,mezcal,Wahaka Joven Espadin,
+Wahaka Madre Cuishe,mezcal,,
+Bruxo No. 1,mezcal,Bruxo Espadin|Bruxo 1,
+Bruxo X,mezcal,,
+Siete Misterios Doba-Yej,mezcal,Los Siete Misterios Doba-Yej,
+Alipús San Juan,mezcal,Alipus San Juan del Rio,
+Alipús San Andrés,mezcal,Alipus San Andres,
+Marca Negra Espadín,mezcal,Marca Negra Espadin,
+Marca Negra Tobalá,mezcal,Marca Negra Tobala,
+Derrumbes Oaxaca,mezcal,Mezcal de Leyendas|Derrumbes,
+Derrumbes San Luis Potosí,mezcal,Derrumbes San Luis Potosi,
+Derrumbes Michoacán,mezcal,Derrumbes Michoacan,
+Mezcal Unión El Viejo,mezcal,Union El Viejo,
+The Lost Explorer Espadín,mezcal,Lost Explorer Espadin,
+The Lost Explorer Tobalá,mezcal,Lost Explorer Tobala,
+The Lost Explorer Salmiana,mezcal,Lost Explorer Salmiana,
+Creyente Joven,mezcal,Mezcal Creyente,
+Contraluz Cristalino,mezcal,Contraluz Mezcal,reposado mezcal filtered clear; still mezcal
+Koch El Mezcal Espadín,mezcal,Koch Espadin,
+Xicaru Silver,mezcal,Xicaru Espadin,
+Xicaru Reposado,mezcal,,
+Quiquiriqui Matatlán,mezcal,Quiquiriqui Matatlan|Quiquiriqui Espadin,
+Madre Mezcal Ensamble,mezcal,Madre Mezcal,
+Casamigos Mezcal Joven,mezcal,Casamigos Mezcal,
+Los Amantes Reposado,mezcal,,
+Mezcal Tosba Espadín,mezcal,Tosba Espadin,
+Yuu Baal Joven Espadín,mezcal,Yuu Baal Espadin,
+Rosaluna Mezcal,mezcal,Rosaluna Joven,
+Monte Alban Mezcal,mezcal,Monte Alban,mainstream mezcal (with worm)
+Gusano Rojo Mezcal,mezcal,Gusano Rojo,
+Pierre Ferrand 10 Générations,cognac,Ferrand 10 Generations,
+Pierre Ferrand Sélection des Anges,cognac,Ferrand Selection des Anges,
+Hine Antique XO,cognac,,
+Rémy Martin XO,cognac,Remy Martin XO,
+Hennessy XO,cognac,,
+Hennessy Fine de Cognac,cognac,Hennessy Fine,
+Courvoisier XO,cognac,,
+Martell Cordon Bleu,cognac,,
+Martell XO,cognac,,
+Camus VSOP,cognac,,
+Camus XO,cognac,,
+Park VSOP,cognac,Cognac Park VSOP,
+Park XO,cognac,Cognac Park XO,
+Louis Royer XO,cognac,,
+Merlet Brothers Blend,cognac,Merlet Brothers Blend Cognac,
+Normandin-Mercier VSOP,cognac,Normandin Mercier VSOP,
+Dudognon Réserve,cognac,Dudognon Reserve,
+Frapin 1270,cognac,Frapin VS 1270,
+Frapin VSOP,cognac,,
+Delamain Pale & Dry XO,cognac,Delamain Pale and Dry,
+D'Ussé VSOP,cognac,D'Usse VSOP|Dusse,
+D'Ussé XO,cognac,D'Usse XO,
+Bisquit & Dubouché VS,cognac,Bisquit VS|Bisquit Dubouche VS,
+Bisquit & Dubouché VSOP,cognac,Bisquit VSOP|Bisquit Dubouche VSOP,
+Baron Otard VSOP,cognac,Otard VSOP,
+Baron Otard XO,cognac,Otard XO,
+ABK6 VSOP,cognac,,
+Meukow VS,cognac,,
+Meukow VSOP,cognac,,
+Maison Rouge VSOP,cognac,,
+Salignac VS,cognac,Salignac Cognac,
+Martell Blue Swift,brandy,,VSOP cognac finished in bourbon casks; labelled eau-de-vie de vin not Cognac AOC
+Château du Tariquet VSOP,armagnac,Tariquet VSOP,
+Château du Tariquet XO,armagnac,Tariquet XO,
+Château de Laubade XO,armagnac,Laubade XO,
+Château de Laubade Intemporel No. 5,armagnac,Laubade Intemporel,
+Marie Duffau Napoléon,armagnac,Marie Duffau Napoleon,
+Larressingle VSOP,armagnac,,
+Janneau VSOP,armagnac,,
+Marquis de Montesquiou VSOP,armagnac,Montesquiou VSOP,
+Clés des Ducs VSOP,armagnac,Cles des Ducs VSOP,
+Baron de Sigognac VSOP,armagnac,Sigognac VSOP,
+Baron de Sigognac 10 Ans,armagnac,Baron de Sigognac 10 Year,
+Castarède VSOP,armagnac,Castarede VSOP,
+Dartigalongue XO,armagnac,,
+Delord XO,armagnac,Delord Bas-Armagnac XO,
+Darroze Les Grands Assemblages 12 Ans,armagnac,Darroze 12 Year,
+Fundador Solera Reserva,brandy-de-jerez,Fundador Brandy|Fundador Sherry Cask,DO Brandy de Jerez https://www.gonzalezbyass.com/en/wineries-brands/fundador
+Fundador Supremo 12,brandy-de-jerez,Fundador Supremo,https://www.gonzalezbyass.com/bodegas-marcas/fundador-supremo
+Carlos I Solera Gran Reserva,brandy-de-jerez,Carlos I|Carlos Primero,Osborne DO Brandy de Jerez
+Magno Solera Reserva,brandy-de-jerez,Osborne Magno,Osborne DO Brandy de Jerez
+Lustau Brandy de Jerez Solera Reserva,brandy-de-jerez,Lustau Solera Reserva,
+Lustau Brandy de Jerez Solera Gran Reserva,brandy-de-jerez,Lustau Solera Gran Reserva|Lustau Finest Selection,
+Soberano,brandy,Soberano Brandy,Jerez-made but DO status unverified -> brandy (conservative)
+Terry Centenario,brandy,,DO status unverified -> brandy (conservative)
+Torres 5,brandy,Torres 5 Imperial,Penedès Spanish brandy; not Jerez DO
+Torres 10,brandy,Torres 10 Gran Reserva|Torres 10 Year,Penedès Spanish brandy; not Jerez DO
+Torres 15,brandy,Torres 15 Reserva Privada,Penedès Spanish brandy; not Jerez DO
+Asbach Uralt,brandy,Asbach,German Weinbrand
+Vecchia Romagna Etichetta Nera,brandy,Vecchia Romagna,Italian brandy
+Stock 84,brandy,Stock Brandy,Italian brandy
+Presidente Brandy,brandy,Presidente,Mexican brandy
+Don Pedro Brandy,brandy,Don Pedro,Mexican brandy
+St-Rémy VSOP,brandy,St Remy VSOP|Saint Remy VSOP,French brandy (not Cognac)
+St-Rémy XO,brandy,St Remy XO|Saint Remy XO,French brandy (not Cognac)
+Raynal VSOP,brandy,Raynal,French brandy (not Cognac)
+Three Barrels VSOP,brandy,Three Barrels,French brandy (not Cognac)
+KWV 10 Year,brandy,KWV 10,South African brandy
+KWV 5 Year,brandy,KWV 5,South African brandy
+Klipdrift Export,brandy,Klipdrift,South African brandy
+Ararat 5 Year,brandy,Ararat Five Stars|Ararat 5 Stars,Armenian brandy
+E&J VS,brandy,E&J Brandy|E and J VS,
+E&J XO,brandy,E and J XO,
+Paul Masson Grande Amber VS,brandy,Paul Masson VS|Paul Masson Brandy,
+Paul Masson Grande Amber VSOP,brandy,Paul Masson VSOP,
+Korbel California Brandy,brandy,Korbel Brandy,
+Christian Brothers Sacred Bond,brandy,Sacred Bond Brandy,bottled-in-bond California brandy (Heaven Hill)
+Bertoux Brandy,brandy,Bertoux,California brandy built for cocktails
+Argonaut Saloon Strength,brandy,Argonaut Brandy,https://www.drinkhacker.com/2026/04/04/review-argonaut-brandies-plus-amarena-cherries/
+Argonaut Speculator,brandy,Argonaut The Speculator,
+Argonaut Fat Thumb,brandy,,
+Osocalis Rare Alambic Brandy,brandy,Osocalis,California alembic brandy
+BarSol Selecto Acholado,pisco,Barsol Acholado,Peruvian pisco
+BarSol Selecto Italia,pisco,Barsol Italia,Peruvian pisco
+BarSol Mosto Verde Italia,pisco,Barsol Supremo Mosto Verde,Peruvian pisco
+Santiago Queirolo Quebranta,pisco,Pisco Queirolo|Queirolo Pisco,Peruvian pisco
+Pisco 100 Acholado,pisco,Pisco Cien,Peruvian pisco
+Viñas de Oro Quebranta,pisco,Vinas de Oro Pisco,Peruvian pisco
+Tabernero Pisco Quebranta,pisco,Tabernero Pisco,Peruvian pisco
+Alto del Carmen Pisco,pisco,Alto del Carmen,Chilean pisco
+Pisco Mistral,pisco,Mistral Pisco,Chilean pisco
+Pisco ABA,pisco,ABA Pisco,Chilean pisco
+Pisco Control C,pisco,Control C,Chilean pisco
+Pisco El Gobernador,pisco,El Gobernador,Chilean pisco
+Pisco Espíritu de Elqui,pisco,Espiritu de Elqui,Chilean pisco
+Père Magloire Fine,calvados,Pere Magloire VS|Pere Magloire Fine,
+Père Magloire VSOP,calvados,Pere Magloire VSOP,
+Boulard Grand Solage,calvados,Boulard Pays d'Auge Grand Solage,
+Boulard VSOP,calvados,,
+Christian Drouin Sélection,calvados,Drouin Selection,
+Christian Drouin VSOP,calvados,Drouin VSOP,
+Roger Groult Réserve 3 Ans,calvados,Roger Groult 3 Year,
+Château du Breuil VSOP,calvados,Chateau du Breuil VSOP,
+Busnel Fine,calvados,Busnel Fine Calvados,
+Lecompte Originel,calvados,Lecompte Calvados,
+Lecompte 5 Ans,calvados,Lecompte 5 Year,
+Dupont Fine Réserve,calvados,Domaine Dupont Fine Reserve,
+Coquerel Fine,calvados,Coquerel VS,
+Coquerel VSOP,calvados,,
+Berneroy Fine,calvados,Berneroy Calvados,
+Avallen Calvados,calvados,Avallen,
+Christian Drouin Blanche de Normandie,apple-brandy,Drouin Blanche,unaged apple eau de vie; not AOC Calvados
+Laird's 7 1/2 Year Apple Brandy,applejack,Laird's 7.5 Year|Lairds 7 1/2,Laird's straight apple brandy; same family as Straight 86 already mapped applejack
+Laird's 12 Year Rare Apple Brandy,applejack,Laird's 12 Year,Laird's straight apple brandy; same family as Straight 86
+Laird's Jersey Lightning,apple-brandy,Jersey Lightning,unaged apple brandy -> generic apple-brandy
+Black Dirt Apple Jack,applejack,Black Dirt Applejack,bottled-in-bond apple brandy (NY)
+Harvest Spirits Cornelius Applejack,applejack,Cornelius Applejack,aged NY applejack
+Tom's Foolery Applejack,applejack,Toms Foolery Applejack,bottled-in-bond Ohio applejack
+Somerset Cider Brandy 3 Year,apple-brandy,Somerset Cider Brandy,UK PGI cider brandy
+Somerset Cider Brandy 5 Year,apple-brandy,,UK PGI cider brandy
+Trimbach Kirsch,kirsch,Trimbach Kirschwasser,https://kindredcocktails.com/ingredient/trimbach
+Trimbach Poire William,pear-eau-de-vie,Trimbach Poire Williams,eau de vie not the liqueur https://kindredcocktails.com/ingredient/trimbach
+Trimbach Framboise,framboise,Trimbach Framboise Grande Reserve,eau de vie not the liqueur
+Trimbach Mirabelle,mirabelle,,https://67wine.com/products/trimbach-mirabelle-plum-eau-de-vie-375ml-half-bottle
+Etter Zuger Kirsch,kirsch,Etter Kirsch,Swiss AOP kirsch
+Dettling Kirsch,kirsch,Dettling Kirsch Classic,Swiss kirsch
+Kammer Kirschwasser,kirsch,Kammer Kirsch,Black Forest kirsch
+St. George Pear Brandy,pear-eau-de-vie,St George Pear,https://www.skurnik.com/sku/pear-brandy-st-george/
+St. George Raspberry Brandy,framboise,St George Raspberry,https://distiller.com/spirits/st-george-raspberry-brandy/tastes
+Schladerer Williams Birne,pear-eau-de-vie,Schladerer Williams Pear,
+Schladerer Himbeergeist,framboise,Schladerer Raspberry,raspberry geist (macerated then distilled)
+Schladerer Zwetschgenwasser,plum-brandy,Schladerer Plum,plum eau de vie
+Morand Williamine,pear-eau-de-vie,Williamine,Swiss Valais pear eau de vie
+R. Jelinek Williams Pear,pear-eau-de-vie,Jelinek Williams,
+Massenez Framboise Sauvage,framboise,Massenez Framboise,eau de vie (not Massenez crème de framboise)
+Massenez Mirabelle,mirabelle,,
+Clear Creek Mirabelle Plum Brandy,mirabelle,Clear Creek Mirabelle,
+Clear Creek Blue Plum Brandy,plum-brandy,Clear Creek Slivovitz,slivovitz-style
+Zwack Kosher Szilva Pálinka,plum-brandy,Zwack Slivovitz|Zwack Szilva,plum pálinka
+Peach Street Distillers Peach Brandy,peach-brandy,Peach Street Peach Brandy,true distilled peach brandy https://www.tastingtable.com/cook/recipes/rum-cocktail-recipes-fish-house-punch-jim-meehan
+Sarpa di Poli,grappa,Poli Sarpa|Jacopo Poli Sarpa,
+Nonino Tradizione,grappa,Nonino Grappa Tradizione,
+Nonino Il Merlot,grappa,Nonino Merlot,
+Nardini Riserva,grappa,Nardini Grappa Riserva,
+Marolo Grappa di Barolo,grappa,Marolo Barolo,
+Berta Grappa,grappa,Distillerie Berta,
+Bocchino Grappa,grappa,Bocchino Cantina Privata,
+Sibona Grappa,grappa,Sibona,
+Alexander Grappa,grappa,Bottega Alexander|Bottega Grappa,
+Grappa Julia,grappa,Julia Grappa Superiore,
+Mazzetti d'Altavilla Grappa,grappa,Mazzetti Grappa,
+# ================================================================ researched additions: liqueurs (2026-10-21)
+Giffard Triple Sec,triple-sec,,Giffard triple sec https://www.drinkfinder.co.uk/collections/giffard
+Marie Brizard Triple Sec,triple-sec,,MB range https://mariebrizard.com
+Bols Triple Sec,triple-sec,,Bols range https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Triple Sec,triple-sec,De Kuyper Triple Sec,clear triple sec https://cwspirits.com/collections/dekuyper
+Hiram Walker Triple Sec,triple-sec,,60 proof triple sec https://www.saratogawine.com (Hiram Walker listings)
+Drillaud Triple Sec,triple-sec,,https://www.totalwine.com/spirits/liqueurscordialsschnapps/citrus-triple-sec/triple-sec/drillaud-triple-sec/p/110054750
+Merlet Trois Citrus,triple-sec,Merlet Triple Sec,bitter orange triple sec (orange/lime/mandarin) https://www.tastings.com/Spirits-Review/Merlet-Trois-Citrus-Liqueur-France-700-ml-09-02-2026.aspx
+Massenez Curaçao Triple Sec,triple-sec,Massenez Triple Sec,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Triple Sec,triple-sec,Boudier Triple Sec,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Curaçao Triple Sec,triple-sec,Cartron Triple Sec,https://www.diffordsguide.com/beer-wine-spirits/8311/joseph-cartron-triple-sec-liqueur
+Grand Marnier Cordon Jaune,triple-sec,,Grand Marnier's neutral-spirit triple sec (not cognac based)
+Giffard Orange Curaçao,orange-curacao,Giffard Curaçao Orange,matches existing Marie Brizard Orange Curaçao mapping https://catalog.lwc.co.uk/brands/Giffard.html
+Bols Dry Orange Curaçao,orange-curacao,Bols Orange Curaçao,Bols range https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Orange Curaçao,orange-curacao,,sweet orange curaçao https://cwspirits.com/collections/dekuyper
+Grand Marnier Cuvée du Centenaire,grand-marnier,Grand Marnier Centenaire,cognac-based Grand Marnier prestige bottling
+Grand Marnier Cuvée 1880,grand-marnier,,cognac-based Grand Marnier prestige bottling
+Grand Marnier Quintessence,grand-marnier,,cognac-based Grand Marnier prestige bottling
+Grand Marnier Cuvée Louis-Alexandre,grand-marnier,Grand Marnier Louis Alexandre,cognac-based Grand Marnier bottling; discontinued
+Cointreau Noir,orange-liqueur,,Cointreau blended with Rémy Martin cognac; not GM so generic node
+Gran Gala,orange-liqueur,Stock Gran Gala,Italian brandy-based orange liqueur
+Harlequin Orange Liqueur,orange-liqueur,Harlequin,cognac-based orange liqueur
+Mathilde Orange XO,orange-liqueur,Mathilde XO,cognac-based orange liqueur
+Patrón Citrónge Orange,orange-liqueur,Patron Citronge,discontinued
+Marie Brizard Finesse Orange,orange-liqueur,,style unclear so generic node https://mariebrizard.com
+Giffard Blue Curaçao,blue-curacao,Giffard Curaçao Bleu,https://www.drinkfinder.co.uk/collections/giffard
+Marie Brizard Blue Curaçao,blue-curacao,,https://mariebrizard.com
+DeKuyper Blue Curaçao,blue-curacao,,https://cwspirits.com/collections/dekuyper
+Hiram Walker Blue Curaçao,blue-curacao,,https://www.saratogawine.com (Hiram Walker listings)
+Massenez Curaçao Blue,blue-curacao,Massenez Blue Curaçao,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Curaçao Blue,blue-curacao,Gabriel Boudier Blue Curaçao,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Rhum J.M Shrubb,creole-shrubb,Rhum JM Liqueur d'Orange Shrubb|JM Shrubb,rhum agricole orange shrubb https://www.diffordsguide.com/beer-wine-spirits/6078/rhum-jm-shrubb
+Van der Hum,mandarine-liqueur,,South African naartjie (tangerine) liqueur
+Massenez Mandarine,mandarine-liqueur,Massenez Mandarin,https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Tangerine,mandarine-liqueur,,https://mariebrizard.com
+Pür Likör Spice Blood Orange,blood-orange-liqueur,Pur Likor Blood Orange|Pür Blood Orange,https://www.diffordsguide.com/en-au/beer-wine-spirits/4402/pur-likor-spice-blood-orange
+Bols Red Orange,blood-orange-liqueur,,blood (red) orange liqueur https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Cointreau Blood Orange,blood-orange-liqueur,,Cointreau with Corsican blood orange; discontinued
+Lazzaroni Maraschino,maraschino,,distilled Marasca cherries with pits https://www.lairdandcompany.com/products/lazzaroni-maraschino
+Giffard Cherry Brandy,cherry-liqueur,,https://www.drinkfinder.co.uk/collections/giffard
+Bols Cherry Brandy,cherry-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Cherry Brandy,cherry-liqueur,De Kuyper Cherry Brandy,https://www.mcgrocer.ae/products/de-kuyper-cherry-brandy-liqueur-50cl
+Gabriel Boudier Cherry Brandy,cherry-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Gabriel Boudier Guignolet,cherry-liqueur,,guignolet = cherry liqueur https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Combier Guignolet d'Anjou,cherry-liqueur,Guignolet Combier,guignolet = cherry liqueur https://www.combier.fr/en/all-products/
+Massenez Crème de Griotte,cherry-liqueur,Massenez Griotte,morello cherry liqueur https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Jolie Cherry,cherry-liqueur,,https://mariebrizard.com
+Cherry Marnier,cherry-liqueur,,discontinued
+Giffard Apricot Brandy,apricot-liqueur,,https://catalog.lwc.co.uk/brands/Giffard.html
+Bols Apricot Brandy,apricot-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Apricot Brandy,apricot-liqueur,De Kuyper Apricot Brandy,apricot liqueur https://brydenstt.com/?p=963
+Hiram Walker Apricot Brandy,apricot-liqueur,,sweet apricot-flavored brandy liqueur https://www.saratogawine.com (Hiram Walker listings)
+Massenez Apricot Brandy,apricot-liqueur,Massenez Liqueur d'Abricot,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Apricot Brandy,apricot-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Abricot Brandy,apricot-liqueur,Cartron Apricot Brandy,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Merlet Lune d'Abricot,apricot-liqueur,,https://www.tastings.com/Spirits-Review/Merlet-Lune-DAbricot-Fruit-Liqueur-France-700-ml-09-02-2026.aspx
+Drillaud Apricot Liqueur,apricot-liqueur,,https://distiller.com/profile/anttirg/lists/fruit-liqueur
+Luxardo Apricot,apricot-liqueur,Luxardo Apricot Liqueur,https://www.masterofmalt.com/distilleries/luxardo-liqueur-brand/
+Briottet Crème de Pêche de Vigne,peach-liqueur,Briottet Crème de Pêche,https://www.hotalingandco.com/portfolio/briottet/
+Lejay Crème de Pêche,peach-liqueur,,https://www.diffordsguide.com/beer-wine-spirits/liqueurs-alc-cordials/fruit-liqueurs/BWS002860/lejay-creme-de-peche
+Joseph Cartron Crème de Pêche de Vigne,peach-liqueur,Cartron Pêche de Vigne,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Gabriel Boudier Crème de Pêche de Vigne,peach-liqueur,Gabriel Boudier Vineyard Peach,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Massenez Vineyard Peach,peach-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Peach,peach-liqueur,Marie Brizard Crème de Pêche,French crème de pêche (not schnapps) https://woodencork.com/products/marie-brizard-peach-liqueur
+Drillaud Crème de Pêche,peach-liqueur,Drillaud Peach,https://distiller.com/profile/anttirg/lists/fruit-liqueur
+Giffard Poire William,pear-liqueur,Giffard Poire Williams,https://www.drinkfinder.co.uk/collections/giffard
+St. George Spiced Pear Liqueur,pear-liqueur,St. George Spiced Pear,pear liqueur with spices (pear-forward)
+Pür Likör Williams Pear,pear-liqueur,Pur Likor Williams Pear,https://www.diffordsguide.com/en-au/beer-wine-spirits/4400/pur-likor-williams-pear
+Massenez Poire William Liqueur,pear-liqueur,Massenez Liqueur de Poire William,liqueur (not the eau-de-vie) https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Pear William,pear-liqueur,,https://mariebrizard.com
+Gabriel Boudier Pear Liqueur,pear-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Xanté,pear-liqueur,Xante,pear liqueur with cognac
+Massenez Crème de Pomme Verte,apple-liqueur,Massenez Pomme Verte,green apple liqueur https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Pomme Verte,apple-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Pomme Verte,apple-liqueur,,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Marie Brizard Manzanita,apple-liqueur,,green apple liqueur https://mariebrizard.com
+Bols Banana,banana-liqueur,Bols Crème de Banane,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Crème de Banana,banana-liqueur,,https://cwspirits.com/collections/dekuyper
+Hiram Walker Crème de Banana,banana-liqueur,,
+Marie Brizard Banana,banana-liqueur,Marie Brizard Crème de Banane,https://mariebrizard.com
+Massenez Crème de Banane,banana-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Briottet Crème de Banane,banana-liqueur,,https://www.hotalingandco.com/portfolio/briottet/
+Joseph Cartron Crème de Banane,banana-liqueur,,https://www.diffordsguide.com/producer/1214/joseph-cartron/production
+Gabriel Boudier Banana,banana-liqueur,Gabriel Boudier Crème de Banane,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Clément Mahina Coco,coconut-liqueur,Clement Mahina Coco,coconut liqueur on rhum agricole base
+Bols Coconut,coconut-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Marie Brizard Coconut,coconut-liqueur,,https://mariebrizard.com
+Briottet Crème de Mûre,blackberry-liqueur,,https://www.hotalingandco.com/portfolio/briottet/
+Lejay Crème de Mûre,blackberry-liqueur,,https://www.masterofmalt.com/distilleries/lejay-branded-liqueurs/
+Merlet Crème de Mûre Sauvage,blackberry-liqueur,Merlet Crème de Mûre,https://tastings.com/Spirits-Review/Merlet-Creme-De-Mure-Sauvage-Liqueur-France-375-ml-09-02-2022.aspx
+Gabriel Boudier Crème de Mûre,blackberry-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Crème de Mûre des Roncières,blackberry-liqueur,Cartron Crème de Mûre,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Marie Brizard Blackberry,blackberry-liqueur,Marie Brizard Crème de Mûre,https://mariebrizard.com
+Bols Raspberry,raspberry-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Massenez Crème de Framboise,raspberry-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Lejay Crème de Framboise,raspberry-liqueur,,https://www.diffordsguide.com/beer-wine-spirits/3065/lejay-creme-de-framboise
+Briottet Crème de Framboise,raspberry-liqueur,,https://www.hotalingandco.com/portfolio/briottet/
+Gabriel Boudier Crème de Framboise,raspberry-liqueur,Gabriel Boudier Raspberry,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Drillaud Crème de Framboise,raspberry-liqueur,,https://www.tastings.com/Spirits-Review/Drillaud-Creme-De-Framboise-Liqueur-France-09-02-2023.aspx
+Joseph Cartron Crème de Framboise,raspberry-liqueur,,https://www.diffordsguide.com/producer/1214/joseph-cartron/production
+Combier Pure Folie,strawberry-liqueur,Combier Liqueur Pure Folie,strawberry liqueur https://www.combier.fr/en/all-products/
+Massenez Crème de Fraise des Bois,strawberry-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Strawberry,strawberry-liqueur,Gabriel Boudier Crème de Fraise,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Marie Brizard Strawberry,strawberry-liqueur,,https://mariebrizard.com
+Bols Strawberry,strawberry-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Giffard Cassis Noir de Bourgogne,creme-de-cassis,Giffard Premium Cassis,https://www.drinkfinder.co.uk/collections/giffard
+Massenez Crème de Cassis,creme-de-cassis,,https://caravanwinesandspirits.com.au/collections/massenez
+Briottet Crème de Cassis de Dijon,creme-de-cassis,Edmond Briottet Cassis,https://www.hotalingandco.com/portfolio/briottet/
+Gabriel Boudier Crème de Cassis de Dijon,creme-de-cassis,Boudier Cassis,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Double Crème de Cassis,creme-de-cassis,Cartron Cassis,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Marie Brizard Cassis,creme-de-cassis,Marie Brizard Crème de Cassis,https://mariebrizard.com
+Bols Crème de Cassis,creme-de-cassis,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Drillaud Crème de Cassis,creme-de-cassis,Drillaud Blackcurrant,https://distiller.com/profile/anttirg/lists/fruit-liqueur
+Mathilde Cassis,creme-de-cassis,,
+L'Héritier-Guyot Crème de Cassis,creme-de-cassis,L'Heritier Guyot Cassis,
+Védrenne Crème de Cassis,creme-de-cassis,Vedrenne Cassis|Védrenne Supercassis,
+Sisca Crème de Cassis,creme-de-cassis,,Lejay-Lagoute's second label https://www.diffordsguide.com/forum/LqxrVK
+Leopold Bros. New England Cranberry,cranberry-liqueur,Leopold Bros Cranberry Liqueur,https://en.wikipedia.org/wiki/Leopold_Bros. ; availability limited
+DeKuyper Pomegranate,pomegranate-liqueur,,https://cwspirits.com/collections/dekuyper
+Bols Pink Grapefruit,grapefruit-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Massenez Pamplemousse,grapefruit-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Briottet Pamplemousse Rose,grapefruit-liqueur,,https://www.hotalingandco.com/portfolio/briottet/
+Gabriel Boudier Pamplemousse,grapefruit-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Bols Elderflower,elderflower-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Drillaud Elderflower,elderflower-liqueur,,https://www.tastings.com/Spirits-Review/Drillaud-Elderflower-Liqueur-France-09-02-2023.aspx
+Massenez Fleur de Sureau,elderflower-liqueur,Massenez Elderflower,https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Elderflower,elderflower-liqueur,,https://mariebrizard.com
+Gabriel Boudier Elderflower,elderflower-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Joseph Cartron Sureau,elderflower-liqueur,Cartron Elderflower,https://boothby.com.au/product-dive-joseph-cartron-liqueur-range
+Fiorente Elderflower,elderflower-liqueur,,Italian elderflower liqueur
+Chase Elderflower Liqueur,elderflower-liqueur,,
+Tempus Fugit Liqueur de Violettes,creme-de-violette,Tempus Fugit Violette,https://www.tempusfugitspirits.com/
+Briottet Liqueur de Violette,creme-de-violette,Briottet Violette,https://farehamwinecellar.co.uk/?p=42850
+Massenez Liqueur de Violette,creme-de-violette,Massenez Violette,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Violet,creme-de-violette,Gabriel Boudier Violette,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Marie Brizard Violet,creme-de-violette,Marie Brizard Violette,https://mariebrizard.com
+Benoit Serres Liqueur de Violette,creme-de-violette,Benoit Serres Violette,
+Bols Parfait Amour,parfait-amour,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Giffard Crème de Rose,rose-liqueur,Giffard Rose,https://www.drinkfinder.co.uk/collections/giffard
+Massenez Rose,rose-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Lanique Spirit of Rose,rose-liqueur,Lanique,rose petal liqueur
+Fruitlab Hibiscus,hibiscus-liqueur,Greenbar Hibiscus Liqueur,https://www.wine.com/product/greenbar-fruitlab-hibiscus-liqueur/530200
+Giffard Crème de Cacao Brown,creme-de-cacao,Giffard Crème de Cacao Brun,https://www.drinkfinder.co.uk/collections/giffard
+Bols Cacao Brown,creme-de-cacao,Bols Brown Crème de Cacao,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Crème de Cacao,creme-de-cacao,DeKuyper Dark Crème de Cacao,dark/unspecified https://cwspirits.com/collections/dekuyper
+DeKuyper White Crème de Cacao,creme-de-cacao-white,,https://cwspirits.com/collections/dekuyper
+Hiram Walker White Crème de Cacao,creme-de-cacao-white,,https://www.saratogawine.com (Hiram Walker listings)
+Hiram Walker Dark Crème de Cacao,creme-de-cacao,,
+Massenez Cacao Blanc,creme-de-cacao-white,Massenez White Cacao,https://caravanwinesandspirits.com.au/collections/massenez
+Massenez Crème de Cacao,creme-de-cacao,Massenez Dark Cacao,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Crème de Cacao Blanc,creme-de-cacao-white,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Gabriel Boudier Crème de Cacao Noir,creme-de-cacao,Gabriel Boudier Dark Cacao,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Godiva Chocolate Liqueur,chocolate-liqueur,Godiva,
+Mozart Chocolate Cream,chocolate-liqueur,Mozart Chocolate Liqueur,
+Mozart Dark Chocolate,chocolate-liqueur,,
+Marie Brizard Chocolat Royal,chocolate-liqueur,,https://mariebrizard.com
+Tempus Fugit Crème de Moka,coffee-liqueur,Tempus Fugit Creme de Moka,https://www.tempusfugitspirits.com/
+Combier Amboka,coffee-liqueur,,coffee liqueur https://www.combier.fr/en/all-products/
+Massenez Café,coffee-liqueur,Massenez Liqueur de Café,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Crème de Café,coffee-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Giffard Coffee Liqueur,coffee-liqueur,Giffard Honduras Coffee,https://catalog.lwc.co.uk/brands/Giffard.html
+Bols Coffee,coffee-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Luxardo Espresso,coffee-liqueur,Luxardo Caffè,https://vinepair.com/articles/luxardo-holiday-hosting/
+Kamora,coffee-liqueur,,
+Allen's Coffee Brandy,coffee-liqueur,,sweet coffee liqueur (Maine)
+Firelit Coffee Liqueur,coffee-liqueur,Firelit,
+Café Lolita,coffee-liqueur,Cafe Lolita,
+Patrón XO Cafe,coffee-liqueur,Patron XO Cafe,tequila-based coffee liqueur; discontinued
+Licor 43 Baristo,coffee-liqueur,,Licor 43 blended with espresso; coffee-forward
+Bols Peppermint Green,creme-de-menthe,Bols Green Crème de Menthe,Bols crème de menthe https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Bols Peppermint White,creme-de-menthe,Bols White Crème de Menthe,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Green Crème de Menthe,creme-de-menthe,,https://cwspirits.com/collections/dekuyper
+DeKuyper White Crème de Menthe,creme-de-menthe,,https://cwspirits.com/collections/dekuyper
+Hiram Walker Crème de Menthe,creme-de-menthe,,https://www.saratogawine.com (Hiram Walker listings)
+Marie Brizard Green Crème de Menthe,creme-de-menthe,Marie Brizard Green Mint,https://mariebrizard.com
+Get 27,creme-de-menthe,Pippermint Get 27,green peppermint crème de menthe
+Get 31,creme-de-menthe,Pippermint Get 31,white peppermint crème de menthe
+Massenez Crème de Menthe Verte,creme-de-menthe,,https://caravanwinesandspirits.com.au/collections/massenez
+Massenez Menthe Blanche,creme-de-menthe,,https://caravanwinesandspirits.com.au/collections/massenez
+Gabriel Boudier Crème de Menthe Verte,creme-de-menthe,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Combier White Mint,creme-de-menthe,Combier Menthe Blanche,https://www.combier.fr/en/all-products/
+Bols Amaretto,amaretto,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+DeKuyper Amaretto,amaretto,,https://cwspirits.com/collections/dekuyper
+Hiram Walker Amaretto,amaretto,,
+Gozio Amaretto,amaretto,,
+Adriatico Amaretto,amaretto,Adriatico Roasted Almond,
+Giffard Amaretto,amaretto,,https://catalog.lwc.co.uk/brands/Giffard.html
+Marie Brizard Amaretto,amaretto,,https://mariebrizard.com
+Tempus Fugit Crème de Noyaux,creme-de-noyaux,,https://www.tempusfugitspirits.com/
+Hiram Walker Crème de Noyaux,creme-de-noyaux,,https://en.wikipedia.org/wiki/Cr%C3%A8me_de_Noyaux
+Bols Crème de Noyaux,creme-de-noyaux,,https://en.wikipedia.org/wiki/Cr%C3%A8me_de_Noyaux
+Noyau de Poissy,creme-de-noyaux,Noyau de Poissy Blanc|Noyau de Poissy Ambré,apricot-kernel noyau https://en.wikipedia.org/wiki/Cr%C3%A8me_de_Noyaux
+Toschi Nocino,nocino,Nocino Toschi,https://www.masterofmalt.com/distilleries/toschi-branded-liqueurs/
+Watershed Nocino,nocino,,https://www.watersheddistillery.com/nocino
+Don Ciccio & Figli Nocino,nocino,Don Ciccio Nocino,https://www.creamwine.com/product.php?id=15482
+Dumante Verdenoce,pistachio-liqueur,Dumante Pistachio,https://www.diffordsguide.com/beer-wine-spirits/554/dumante-verdenoce
+Bols Vanilla,vanilla-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Massenez Vanilla,vanilla-liqueur,,https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Vanilla,vanilla-liqueur,,https://mariebrizard.com
+Combier Vanilla,vanilla-liqueur,,https://www.combier.fr/en/all-products/
+Navan,vanilla-liqueur,Grand Marnier Navan,vanilla cognac liqueur; discontinued
+Krupnik,honey-liqueur,Krupnik Old Polish Honey Liqueur,Polish honey liqueur
+Chartreuse V.E.P. Green,green-chartreuse,Green Chartreuse VEP,extended-aged Green Chartreuse recipe
+Chartreuse V.E.P. Yellow,yellow-chartreuse,Yellow Chartreuse VEP,extended-aged Yellow Chartreuse recipe
+Chartreuse 1605,herbal-liqueur,Chartreuse Liqueur d'Élixir 1605,distinct recipe; not a sub for green
+Chartreuse Élixir Végétal,herbal-liqueur,Elixir Vegetal de la Grande-Chartreuse,69% elixir used in dashes
+Chartreuse 9° Centenaire,herbal-liqueur,Chartreuse 9th Centenaire,distinct (sweeter) recipe
+Bénédictine B&B,herbal-liqueur,B&B|B and B,Bénédictine pre-blended with brandy; not a 1:1 Bénédictine sub
+Izarra Verte,herbal-liqueur,Izarra Green,Basque herbal liqueur
+Izarra Jaune,herbal-liqueur,Izarra Yellow,Basque herbal liqueur
+Licor Beirão,herbal-liqueur,,Portuguese herbal liqueur
+Elixir d'Anvers,herbal-liqueur,,Belgian herbal liqueur
+Toro Centerba,herbal-liqueur,Centerbe Toro,Abruzzo hundred-herb liqueur
+Faccia Brutto Centerbe,herbal-liqueur,,Brooklyn centerbe
+Leopold Bros. Three Pins,herbal-liqueur,Three Pins Alpine Herbal Liqueur,
+Génépi des Pères Chartreux,genepy,Chartreuse Génépi,https://www.thewhiskyexchange.com/p/81076/le-genepi-des-peres-chartreux-traditionnel
+The Bitter Truth Golden Falernum,falernum,Bitter Truth Falernum,18% ABV liqueur https://www.diffordsguide.com/beer-wine-spirits/1001/the-bitter-truth-falernum
+Maggie's Farm Falernum,falernum,,25% ABV rum-based https://cocktailwonk.com/2024/11/the-falernum-files.html
+Brovo Lucky Falernum,falernum,Lucky Falernum,35% ABV https://cocktailwonk.com/2024/11/the-falernum-files.html
+Marie Brizard Falernum,falernum,,15% ABV liqueur https://www.thewhiskyexchange.com/p/58305/marie-brizard-falernum
+Cockspur Falernum,falernum,,11% ABV Barbados https://cocktailwonk.com/2024/11/the-falernum-files.html
+Avua Falernum,falernum,,22% ABV cachaça base https://cocktailwonk.com/2024/11/the-falernum-files.html
+Barrow's Intense Ginger,ginger-liqueur,Barrows Intense,
+Combier Ginger,ginger-liqueur,Combier Liqueur de Gingembre,https://www.combier.fr/en/all-products/
+Bols Ginger,ginger-liqueur,,https://www.diffordsguide.com/producer/1248/lucas-bols/liqueurs
+Massenez Crème de Gingembre,ginger-liqueur,Massenez Ginger,https://caravanwinesandspirits.com.au/collections/massenez
+Marie Brizard Ginger,ginger-liqueur,,https://mariebrizard.com
+Giffard Piment d'Espelette,chile-liqueur,Giffard Espelette,https://www.drinkfinder.co.uk/collections/giffard
+Massenez Piment Oiseau,chile-liqueur,Massenez Birdseye Chilli,https://caravanwinesandspirits.com.au/collections/massenez
+Ancho Reyes Barrica,chile-liqueur,,barrel-aged Ancho Reyes https://www.bevnet.com/spirits/2023/ancho-reyes-launches-barrica-barrel-aged-chile-liqueur
+Gabriel Boudier Chipotle,chile-liqueur,,https://caravanwinesandspirits.com.au/collections/gabriel-boudier
+Mentzendorff Kümmel,kummel,Mentzendorff Kummel,https://www.diffordsguide.com/g/1137/kummel/mentzendorff-kummel
+Wolfschmidt Kümmel,kummel,Wolfschmidt Kummel,revived 2024 https://www.diffordsguide.com/beer-wine-spirits/1559/wolfschmidt-kummel
+Gilka Kaiser Kümmel,kummel,Gilka Kummel,https://theliquorbarn.com/collections/spirits/products/gilka-kaiser-kummel-1l
+Molinari Sambuca Extra,sambuca,Molinari,
+Luxardo Sambuca dei Cesari,sambuca,Luxardo Sambuca,
+Ramazzotti Sambuca,sambuca,,
+Opal Nera,sambuca,,black sambuca
+Romana Black,sambuca,Sambuca Romana Black,black sambuca
+Luxardo Passione Nera,sambuca,,black sambuca
+DeKuyper Anisette,anisette,,https://cwspirits.com/collections/dekuyper
+Meletti Anisetta,anisette,Anisetta Meletti,
+Anís del Mono Dulce,anise-liqueur,Anis del Mono,sweet Spanish anís
+Xtabentún,anise-liqueur,Xtabentun,Mayan anise and honey liqueur
+Legendre Ojen,anise-liqueur,Ojen,https://www.diffordsguide.com/en-au/beer-wine-spirits/7905/legendre-ojen
+Grönstedts Blå Punsch,swedish-punsch,Gronstedts Bla Punsch,https://en.wikipedia.org/wiki/Punsch
+Cederlunds Caloric,swedish-punsch,Caloric Punsch,https://en.wikipedia.org/wiki/Punsch
+La Navarra Pacharán,pacharan,La Navarra Patxaran,https://www.alimarket.es/alimentacion/noticia/257248/grupo-la-navarra-se-consolida-en-la-categoria-de-pacharan
+Etxeko Pacharán,pacharan,Etxeko Patxaran,https://www.alimarket.es/alimentacion/noticia/257248/grupo-la-navarra-se-consolida-en-la-categoria-de-pacharan
+Baines Pacharán,pacharan,Baines Patxaran,https://en.wikipedia.org/wiki/Patxaran
+# ================================================================ researched additions: amari, vermouth, fortified wine & bitters (2026-10-21)
+Picon Bière,amer-picon,Picon Biere|Amer Picon Biere,current French Picon expression commonly specified for Amer Picon
+Golden Moon Amer dit Picon,amer-picon,Amer dit Picon,discontinued; Amer Picon recreation https://www.diffordsguide.com/beer-wine-spirits/4194/golden-moon-amer-dit-picon
+Amaro Cora,amaro-cora,Cora Amaro,discontinued; vintage bottles only https://astorwines.com/item/51655
+Luxardo Fernet,fernet,,fernet-style amaro by Luxardo
+Fernet Francisco Manzanilla,fernet,Fernet Francisco,SF fernet https://www.wine.com/product/fernet-francisco-manzanilla/529013
+Letherbee Fernet,fernet,,Chicago fernet by Letherbee Distillers
+R. Jelínek Fernet,fernet,Jelinek Fernet|Fernet Jelinek,Czech fernet
+Leopold Bros. Fernet Leopold Highland Amaro,fernet,Fernet Leopold|Leopold Fernet,Leopold Bros fernet-style
+Bittermens Amère Sauvage,gentian-liqueur,Amere Sauvage,gentian liqueur https://www.diffordsguide.com/en-au/beer-wine-spirits/2298/bittermens-amere-sauvage
+Suze Saveur d'Autrefois,gentian-liqueur,Suze Saveur dAutrefois,Suze gentian variant; mapped to gentian parent not suze
+Contratto Bitter,red-bitter,,red bitter aperitivo; no own node https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Select Aperitivo,red-bitter,Select Spritz|Select,Venetian red bitter https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Cappelletti Aperitivo Americano Rosso,red-bitter,Cappelletti|Aperitivo Cappelletti,wine-based red aperitivo https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Leopold Bros. Aperitivo,red-bitter,Leopold Aperitivo,red bitter https://cocktail-society.com/liqueur/campari-substitutes/
+St. George Bruto Americano,red-bitter,Bruto Americano,red bitter https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Martini & Rossi Riserva Speciale Bitter,red-bitter,Martini Bitter|Martini Riserva Bitter,red bitter https://www.diffordsguide.com/beer-wine-spirits/6123/martini-riserva-speciale-bitter
+Carpano Botanic Bitter,red-bitter,,red bitter https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Forthave Spirits Red Aperitivo,red-bitter,Forthave Red,red bitter https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+Faccia Brutto Aperitivo,red-bitter,,red bitter https://punchdrink.com/articles/guide-to-red-bitters-italian-aperitivo-liqueurs/
+St. Agrestis Inferno Bitter,red-bitter,Inferno Bitter,red bitter https://www.skurnik.com/sku/inferno-bitter-st-agrestis
+Peychaud's Aperitivo,red-bitter,Peychauds Aperitivo,Sazerac Co red bitter aperitivo
+Galliano L'Aperitivo,red-bitter,Galliano Aperitivo,red bitter aperitivo by Galliano
+Meletti 1870 Bitter,red-bitter,Meletti Bitter,red bitter by Meletti
+Cinzano 1757 Rosso,sweet-vermouth,Cinzano 1757 Vermouth di Torino Rosso,premium Cinzano rosso
+Mancino Vecchio,sweet-vermouth,Mancino Vermouth Vecchio,barrel-aged Mancino rosso
+Del Professore Vermouth Rosso,sweet-vermouth,Vermouth del Professore Rosso,https://marketwinestore.com.au/products/del-professore-rosso-vermouth
+Alessio Vermouth di Torino Rosso,sweet-vermouth,Alessio Rosso,Tempus Fugit import
+Antica Torino Vermouth di Torino Rosso,sweet-vermouth,Antica Torino Rosso,
+Bordiga Vermouth di Torino Rosso,sweet-vermouth,Bordiga Rosso,https://www.wine.com/list/wine/bordiga/italy/7155-125269-107185
+Drapò Vermouth Rosso,sweet-vermouth,Drapo Rosso|Turin Vermouth Drapo Rosso,https://www.drinkhacker.com/2017/03/28/review-drapo-vermouth-complete-lineup/
+La Quintinye Vermouth Royal Rouge,sweet-vermouth,La Quintinye Rouge,French rouge vermouth
+Yzaguirre Vermouth Rojo,sweet-vermouth,Yzaguirre Rojo,Spanish red vermouth
+Miró Vermouth Rojo,sweet-vermouth,Miro Rojo,Spanish red vermouth
+Padró & Co. Rojo Amargo,sweet-vermouth,Padro Rojo Amargo,Spanish red vermouth https://vermouthpadro.com/en/
+González Byass La Copa Rojo,sweet-vermouth,La Copa Rojo|La Copa Vermouth Rojo,sherry-based red vermouth
+Ransom Sweet Vermouth,sweet-vermouth,,https://www.wine.com/product/ransom-sweet-vermouth-375ml-half-bottle/542437
+Lo-Fi Sweet Vermouth,sweet-vermouth,Lo-Fi Aperitifs Sweet Vermouth,labelled sweet vermouth (gold color) https://www.drinkhacker.com/2024/04/12/review-lo-fi-aperitifs-vermouth-and-amaro-complete-lineup/
+Regal Rogue Bold Red,sweet-vermouth,,Australian red vermouth
+Asterley Bros. Estate Vermouth,sweet-vermouth,Asterley Estate,English red vermouth https://pageandsons.co.uk/spirits/asterley-bros-estate-vermouth
+Belsazar Red,sweet-vermouth,Belsazar Vermouth Red,German red vermouth
+Boissiere Sweet Vermouth,sweet-vermouth,Boissiere Sweet|Boissiere Rosso,common US well vermouth
+Stock Sweet Vermouth,sweet-vermouth,Stock Rosso,common US well vermouth
+Gallo Sweet Vermouth,sweet-vermouth,Gallo Vermouth Sweet,common US well vermouth
+Tribuno Sweet Vermouth,sweet-vermouth,Tribuno Sweet,common US well vermouth
+Carpano Dry,dry-vermouth,Carpano Dry Vermouth,https://www.carpano.com/en/prodotto/carpano-dry-2/
+Cocchi Extra Dry,dry-vermouth,Cocchi Vermouth di Torino Extra Dry,Cocchi dry vermouth
+Cinzano 1757 Extra Dry,dry-vermouth,Cinzano 1757 Dry,https://www.diffordsguide.com/en-au/beer-wine-spirits/7133/cinzano-1757-extra-dry
+Vya Whisper Dry,dry-vermouth,Vya Whisper Dry Vermouth,Quady dry vermouth
+Bordiga Extra Dry,dry-vermouth,Bordiga Extra Dry Bianco,https://creamwine.com/product.php?id=12869
+Antica Torino Dry,dry-vermouth,Antica Torino Vermouth Dry,
+Drapò Dry,dry-vermouth,Drapo Dry Vermouth,https://www.diffordsguide.com/beer-wine-spirits/4894/drapo-dry-vermouth
+La Quintinye Vermouth Royal Extra Dry,dry-vermouth,La Quintinye Extra Dry,
+González Byass La Copa Extra Seco,dry-vermouth,La Copa Extra Seco|La Copa Extra Dry,sherry-house dry vermouth
+Ransom Dry Vermouth,dry-vermouth,,https://theliquorbarn.com/products/ransom-dry-vermouth-750ml
+Lo-Fi Dry Vermouth,dry-vermouth,Lo-Fi Aperitifs Dry Vermouth,
+Regal Rogue Daring Dry,dry-vermouth,,
+Belsazar Dry,dry-vermouth,Belsazar Vermouth Dry,
+Boissiere Extra Dry,dry-vermouth,Boissiere Dry,common US well vermouth
+Stock Extra Dry Vermouth,dry-vermouth,Stock Dry,common US well vermouth
+Gallo Extra Dry Vermouth,dry-vermouth,Gallo Dry,common US well vermouth
+Tribuno Dry Vermouth,dry-vermouth,Tribuno Extra Dry,common US well vermouth
+Lustau Vermut Blanco,blanc-vermouth,Lustau Vermouth Blanco,
+González Byass La Copa Blanco,blanc-vermouth,La Copa Blanco,
+Del Professore Vermouth Bianco,blanc-vermouth,Vermouth del Professore Bianco,https://www.callmewine.com/en/vermouth-bianco-del-professore-P6889.htm
+Alessio Vermouth Bianco,blanc-vermouth,Alessio Bianco,
+La Quintinye Vermouth Royal Blanc,blanc-vermouth,La Quintinye Blanc,
+Belsazar White,blanc-vermouth,Belsazar Vermouth White,
+Regal Rogue Lively White,blanc-vermouth,,
+Bordiga Vermouth Bianco,blanc-vermouth,Bordiga Bianco,https://www.wine.com/list/wine/bordiga/italy/7155-125269-107185
+Drapò Bianco,blanc-vermouth,Drapo Bianco,sweet bianco style https://www.drinkhacker.com/2017/03/28/review-drapo-vermouth-complete-lineup/
+Padró & Co. Blanco Reserva,blanc-vermouth,Padro Blanco Reserva,https://vermouthpadro.com/en/
+Yzaguirre Vermouth Blanco Reserva,blanc-vermouth,Yzaguirre Blanco,
+Pierre Ferrand Pineau des Charentes,pineau-des-charentes,Ferrand Pineau,
+Château de Beaulon Pineau des Charentes,pineau-des-charentes,Beaulon Pineau,
+Lustau Puerto Fino,fino-sherry,Lustau Fino del Puerto,
+Tio Pepe En Rama,fino-sherry,Tío Pepe En Rama,
+Valdespino Inocente Fino,fino-sherry,Inocente Fino,
+La Ina Fino,fino-sherry,La Ina,
+Williams & Humbert Pando Fino,fino-sherry,Pando Fino,
+Sandeman Don Fino,fino-sherry,,https://www.libertywines.co.uk/our-portfolio/SA133-don-fino
+Osborne Fino Quinta,fino-sherry,,
+Fernando de Castilla Classic Fino,fino-sherry,Fernando de Castilla Fino Classic,https://www.bowlerwine.com/producer/fernando-de-castilla
+Fernando de Castilla Antique Fino,fino-sherry,,
+Garvey San Patricio Fino,fino-sherry,San Patricio Fino,
+El Maestro Sierra Fino,fino-sherry,,
+Hidalgo Pastrana Manzanilla Pasada,manzanilla-sherry,Pastrana Manzanilla Pasada,https://www.sherrynotes.com/2013/bodegas/hidalgo-la-gitana/
+Valdespino Deliciosa Manzanilla,manzanilla-sherry,Deliciosa Manzanilla,https://wineonline.ie/products/valdespino-manzanilla-deliciosa-en-rama-1
+Williams & Humbert Alegría Manzanilla,manzanilla-sherry,Alegria Manzanilla,
+Barbadillo Pastora Manzanilla Pasada,manzanilla-sherry,Pastora Manzanilla,
+Delgado Zuleta La Goya Manzanilla Pasada,manzanilla-sherry,La Goya Manzanilla,
+La Guita Manzanilla,manzanilla-sherry,,
+Fernando de Castilla Classic Manzanilla,manzanilla-sherry,,https://www.bowlerwine.com/producer/fernando-de-castilla
+Lustau Escuadrilla Amontillado,amontillado-sherry,Escuadrilla,
+González Byass Viña AB Amontillado,amontillado-sherry,Viña AB|Vina AB Amontillado,
+González Byass Del Duque Amontillado VORS,amontillado-sherry,Del Duque,
+Hidalgo Napoleón Amontillado,amontillado-sherry,Napoleon Amontillado,https://www.sherrynotes.com/2013/bodegas/hidalgo-la-gitana/
+Valdespino Tío Diego Amontillado,amontillado-sherry,Tio Diego,
+Williams & Humbert Jalifa Amontillado VORS,amontillado-sherry,Jalifa Amontillado,
+El Maestro Sierra Amontillado,amontillado-sherry,,
+Lustau Emperatriz Eugenia Oloroso,oloroso-sherry,Emperatriz Eugenia,
+González Byass Alfonso Oloroso,oloroso-sherry,Alfonso Oloroso,
+Hidalgo Faraón Oloroso,oloroso-sherry,Faraon Oloroso,https://www.sherrynotes.com/2013/bodegas/hidalgo-la-gitana/
+Valdespino Don Gonzalo Oloroso VOS,oloroso-sherry,Don Gonzalo Oloroso,
+Osborne Bailén Oloroso,oloroso-sherry,Bailen Oloroso,
+El Maestro Sierra Oloroso 15 Años,oloroso-sherry,El Maestro Sierra Oloroso,
+Fernando de Castilla Antique Oloroso,oloroso-sherry,,
+González Byass Leonor Palo Cortado,palo-cortado-sherry,Leonor Palo Cortado,
+González Byass Apóstoles Palo Cortado VORS,palo-cortado-sherry,Apostoles Palo Cortado,
+Hidalgo Wellington Palo Cortado,palo-cortado-sherry,Hidalgo Jerez Cortado Wellington|Wellington Palo Cortado,https://www.sherrynotes.com/2013/bodegas/hidalgo-la-gitana/
+Williams & Humbert Dos Cortados Palo Cortado,palo-cortado-sherry,Dos Cortados,https://www.sherrynotes.com/2014/reviews/palo-cortado/dos-cortados-vos-williams-humbert
+Fernando de Castilla Antique Palo Cortado,palo-cortado-sherry,,https://www.grandcruwijnen.nl/en/rey-fernando-de-castilla-palo-cortado-antique-0-5-ltr
+González Byass Néctar Pedro Ximénez,px-sherry,Nectar PX|Gonzalez Byass Nectar,
+González Byass Noé Pedro Ximénez VORS,px-sherry,Noe PX,
+Lustau Murillo Pedro Ximénez,px-sherry,Lustau PX Murillo,https://www.nicks.com.au/products/lustau-murillo-pedro-ximenez-500ml
+Osborne 1827 Pedro Ximénez,px-sherry,Osborne PX 1827,
+Valdespino El Candado Pedro Ximénez,px-sherry,El Candado PX,https://libertywines.co.uk/our-portfolio/VA804-pedro-ximenez-el-candado
+Barbadillo La Cilla Pedro Ximénez,px-sherry,La Cilla PX,
+Alvear Solera 1927 Pedro Ximénez,px-sherry,Alvear PX 1927,Montilla-Moriles PX; same treatment as existing Toro Albalá row
+Fernando de Castilla Classic Pedro Ximénez,px-sherry,,https://www.falstaff.com/en/wineries/rey-fernando-de-castilla
+Williams & Humbert Canasta Cream,cream-sherry,Canasta Cream,
+González Byass Solera 1847 Cream,cream-sherry,Solera 1847,
+Sandeman Armada Rich Cream,cream-sherry,Sandeman Armada Superior Cream,https://www.libertywines.co.uk/our-portfolio/SA135-armada-superior-cream-sherry
+Osborne Santa Maria Cream,cream-sherry,,
+Hidalgo Alameda Cream,cream-sherry,Alameda Cream,https://www.sherrynotes.com/2013/bodegas/hidalgo-la-gitana/
+Barbadillo Eva Cream,cream-sherry,,
+Lustau Capataz Andrés Deluxe Cream,cream-sherry,Lustau Deluxe Cream,https://winelibrary.com/wines/sherry-varieties/lustau-deluxe-cream-sherry-capataz-andres-14934
+Croft Original Pale Cream,pale-cream-sherry,Croft Original,
+Taylor Fladgate Select Reserve,ruby-port,Taylor's Select Reserve,reserve ruby
+Taylor Fladgate First Estate,ruby-port,Taylor's First Estate,reserve ruby
+Cockburn's Special Reserve,ruby-port,Cockburns Special Reserve,reserve ruby
+Cockburn's Fine Ruby,ruby-port,Cockburns Fine Ruby,
+Warre's Warrior,ruby-port,Warres Warrior,reserve ruby
+Warre's Heritage Ruby,ruby-port,Warres Heritage Ruby,
+Sandeman Founders Reserve,ruby-port,Sandeman Founder's Reserve,reserve ruby
+Smith Woodhouse Lodge Reserve,ruby-port,,reserve ruby
+Niepoort Ruby,ruby-port,,
+Croft Reserve Ruby,ruby-port,Croft Distinction,
+Taylor Fladgate Late Bottled Vintage,port,Taylor's LBV,LBV
+Warre's Late Bottled Vintage,port,Warre's LBV|Warres Traditional LBV,LBV
+Fonseca Unfiltered Late Bottled Vintage,port,Fonseca LBV,LBV
+Dow's Late Bottled Vintage,port,Dow's LBV,LBV
+Cockburn's Late Bottled Vintage,port,Cockburns LBV,LBV
+Sandeman Late Bottled Vintage,port,Sandeman LBV,LBV
+Niepoort Late Bottled Vintage,port,Niepoort LBV,LBV
+Quinta do Noval Unfiltered LBV,port,Noval LBV,LBV
+Taylor Fladgate Fine Tawny,tawny-port,Taylor's Tawny Port,tawny without age statement -> generic port
+Sandeman Fine Tawny,tawny-port,Sandeman Tawny Porto,tawny without age statement -> generic port
+Cockburn's Fine Tawny,tawny-port,Cockburns Fine Tawny,tawny without age statement -> generic port
+Taylor Fladgate 20 Year Tawny,tawny-port,Taylor's 20 Year Old Tawny,
+Graham's 10 Year Tawny,tawny-port,Grahams 10 Year Old Tawny,
+Graham's 20 Year Tawny,tawny-port,Grahams 20 Year Old Tawny,
+Sandeman 10 Year Tawny,tawny-port,,
+Sandeman 20 Year Tawny,tawny-port,,
+Fonseca 10 Year Tawny,tawny-port,,
+Fonseca 20 Year Tawny,tawny-port,,
+Warre's Otima 10 Year Tawny,tawny-port,Warres Otima 10,
+Ferreira Duque de Bragança 20 Year Tawny,tawny-port,Duque de Braganca 20,
+Ferreira Quinta do Porto 10 Year Tawny,tawny-port,,
+Quinta do Noval 10 Year Tawny,tawny-port,Noval 10 Year Tawny,
+Niepoort 10 Year Tawny,tawny-port,,
+Dow's 20 Year Tawny,tawny-port,,
+Cockburn's 10 Year Tawny,tawny-port,,https://www.diffordsguide.com/beer-wine-spirits/9885/cockburns-10-year-old-tawny-port
+Ramos Pinto Quinta do Bom Retiro 20 Year Tawny,tawny-port,Ramos Pinto 20 Year Tawny,
+Blandy's 5 Year Bual,madeira,Blandys 5 Year Old Bual,
+Blandy's 10 Year Malmsey,madeira,Blandys 10 Year Old Malmsey,
+Blandy's 10 Year Bual,madeira,,
+Blandy's Duke of Clarence,madeira,Duke of Clarence Rich Madeira,
+Blandy's Alvada 5 Year,madeira,Alvada Madeira,
+Blandy's Rainwater,madeira,Blandys Rainwater Medium Dry,https://www.danmurphys.com.au/product/DM_6001669
+Leacock's Rainwater,madeira,Leacocks Rainwater,https://wine.com/product/Leacocks-Rainwater-Madeira/28248
+Cossart Gordon 5 Year Malmsey,madeira,,
+Broadbent 10 Year Malmsey,madeira,,
+Henriques & Henriques 10 Year Sercial,madeira,H&H 10 Year Sercial,https://haywines.co.uk/products/henriques-henriques-madeira-10-yo-sercial
+Henriques & Henriques 10 Year Verdelho,madeira,H&H 10 Year Verdelho,
+Henriques & Henriques 10 Year Boal,madeira,H&H 10 Year Bual,
+Henriques & Henriques 10 Year Malvasia,madeira,H&H 10 Year Malmsey,
+Justino's 10 Year Fine Rich,madeira,Justinos Old Reserve Fine Rich,https://www.richardmayson.com/madeira-wine-notes/blog-post-title-four-tcm8y-d8ymc-c3xyb
+Barbeito Rainwater Reserva,madeira,Barbeito Rainwater,
+Rare Wine Co. Charleston Sercial,madeira,RWC Charleston Sercial,Historic Series bottling
+Rare Wine Co. Boston Bual,madeira,RWC Boston Bual,Historic Series bottling
+Rare Wine Co. New York Malmsey,madeira,RWC New York Malmsey,Historic Series bottling
+Rare Wine Co. Baltimore Rainwater,madeira,RWC Baltimore Rainwater,Historic Series bottling
+Rare Wine Co. Savannah Verdelho,madeira,RWC Savannah Verdelho,Historic Series bottling
+Angostura Cocoa Bitters,chocolate-bitters,Angostura Cocoa,cocoa-flavoured bitters
+Fee Brothers Grapefruit Bitters,grapefruit-bitters,,https://www.thewhiskyexchange.com/b/345/fee-brothers-bitters-and-sprays
+Fee Brothers Lemon Bitters,lemon-bitters,,
+Fee Brothers Celery Bitters,celery-bitters,,
+Fee Brothers Gin Barrel-Aged Orange Bitters,orange-bitters,,
+The Bitter Truth Grapefruit Bitters,grapefruit-bitters,Bitter Truth Grapefruit,https://www.diffordsguide.com/beer-wine-spirits/6249/the-bitter-truth-grapefruit-bitters
+The Bitter Truth Chocolate Bitters,chocolate-bitters,Bitter Truth Chocolate,
+The Bitter Truth Peach Bitters,peach-bitters,Bitter Truth Peach,
+The Bitter Truth Bogart's Bitters,bokers-bitters,Bogarts Bitters,Boker's recreation https://www.diffordsguide.com/beer-wine-spirits/category/1150/bokers-bogarts-bitters
+Bittermens Orchard Street Celery Shrub,celery-bitters,Orchard Street Celery Shrub,celery bitters/shrub by Bittermens
+Scrappy's Orange Bitters,orange-bitters,,
+Scrappy's Aromatic Bitters,aromatic-bitters,,
+Scrappy's Chocolate Bitters,chocolate-bitters,,
+Bittercube Orange Bitters,orange-bitters,,https://www.totalwine.com/theme/bittercube-bitters
+Bittercube Bolivar Bitters,aromatic-bitters,Bolivar Bitters,light aromatic; Angostura homage https://www.timeout.com/chicago/food-drink/ira-koplowitz-and-nick-kosevich-discuss-bittering-agents
+Bittercube Blackstrap Bitters,aromatic-bitters,Blackstrap Bitters,molasses aromatic bitters https://kindredcocktails.com/node/572
+Dashfire Old Fashioned Bitters,aromatic-bitters,Dashfire Old Fashioned Aromatic,https://www.bostongeneralstore.com/products/old-fashioned-aromatic-bitters
+Dashfire Vintage Orange Bitters,orange-bitters,Dashfire Vintage Orange No. 1|Dashfire Orange,https://www.bevnet.com/news/spirits/2019/dashfire-adds-to-bitters-line/
+Dashfire Lavender Bitters,lavender-bitters,,https://www.bostongeneralstore.com/products/dashfire-lavender-bitters
+Hella Aromatic Bitters,aromatic-bitters,Hella Bitters Aromatic,
+Hella Orange Bitters,orange-bitters,Hella Bitters Orange,https://hellacocktail.co/products/orange-cocktail-bitters-5oz
+Woodford Reserve Aromatic Bitters,aromatic-bitters,Woodford Reserve Bourbon Barrel Aged Aromatic Bitters,https://shop.woodfordreserve.com/bourbon-barrel-aged-bitters-set
+Woodford Reserve Orange Bitters,orange-bitters,,
+Woodford Reserve Chocolate Bitters,chocolate-bitters,,
+Bob's Abbotts Bitters,abbotts-bitters,Bobs Abbotts Bitters,Abbott's recreation https://www.thewhiskyexchange.com/b/345/bobs-bitters-and-sprays
+Bob's Grapefruit Bitters,grapefruit-bitters,,
+Bob's Lavender Bitters,lavender-bitters,,
+Bob's Chocolate Bitters,chocolate-bitters,,
+Bob's Orange & Mandarin Bitters,orange-bitters,Bobs Orange and Mandarin,https://www.diffordsguide.com/beer-wine-spirits/7054/bobs-orange--mandarin-bitters
+Dr. Adam Elmegirab's Orinoco Aromatic Bitters,aromatic-bitters,Orinoco Bitters,https://www.thewhiskyexchange.com/p/71747/dr-adam-elmegirabs-orinoco-aromatic-bitters
+Amargo Chuncho Bitters,amargo-bitters,Amargo Chuncho,Peruvian Pisco Sour bitters
