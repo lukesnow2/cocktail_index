@@ -1,0 +1,22 @@
+need,use,direction,note
+# Curated swaps shown when a recipe's exact requirement isn't owned.
+# need: what the recipe asks for; use: what you can reach for instead.
+# direction: both (swap works either way) or one-way (only use -> need).
+#
+# The bar is deliberately high: same style, different label, and most people couldn't
+# tell the difference in the glass (Plymouth for Ford's, Cocchi for Lillet). A swap that
+# changes the drink's character (Campari for Aperol, Cointreau for dry curaçao, one rum
+# category for another) does not belong here, even if it "works".
+#
+# A swap applies to everything under `use` in the taxonomy. Notes are our own guidance,
+# not book text.
+london-dry-gin,plymouth-gin,both,
+bourbon,tennessee-whiskey,both,
+cognac,armagnac,both,
+lillet-blanc,cocchi-americano,both,The usual stand-in for the discontinued Kina Lillet; slightly more bitter
+campari,luxardo-bitter,both,
+campari,casoni-1814,both,
+amer-picon,amaro-ciociaro,one-way,The common US stand-in; Amer Picon isn't sold in the US
+fino-sherry,manzanilla-sherry,both,Manzanilla is a fino aged in Sanlúcar
+creme-de-cacao-white,creme-de-cacao,one-way,Same flavour; the drink will be darker
+demerara-syrup,cane-syrup,both,

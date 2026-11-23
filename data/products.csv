@@ -1,0 +1,102 @@
+pattern,node,basis
+# Product -> taxonomy rules, used when aliases.csv says @notes/@any. pattern is a
+# case-insensitive regex matched against an accent-stripped note segment; the
+# first matching row wins, so list specific patterns before general ones. Keep patterns
+# as narrow as the bottles the books actually name: build_catalog.py checks every entry
+# in bottles.csv against these, so a broad brand pattern will clash with real bottles.
+# ---- rum: each named bottle -> its Smuggler's Cove class. basis: "SC" = the book's own
+# bottle list (via reproductions; see scratchpad research), "inferred" = not listed, placed
+# by still type and age using the book's definitions. Bottles with no class are omitted
+# so their lines keep the book's own label.
+lemon hart (151|overproof),black-blended-overproof-rum,SC
+el dorado (high-strength )?151,black-blended-overproof-rum,inferred
+hamilton 151,black-blended-overproof-rum,inferred
+lemon hart (original|80|demerara),black-blended-rum,SC
+el dorado 3,blended-lightly-aged-rum,SC
+el dorado 12,blended-aged-rum,SC
+el dorado 15,blended-long-aged-rum,SC
+wray (&|and) nephew.*overproof,pot-still-unaged-rum,SC
+smith (&|and) cross,pot-still-lightly-aged-rum,SC
+hamilton jamaican pot still gold,pot-still-unaged-rum,SC
+appleton white,blended-lightly-aged-rum,inferred
+appleton (estate )?(v/?x|signature),blended-lightly-aged-rum,SC
+appleton (estate )?(reserve|8),blended-aged-rum,SC
+myers?'?s?'? (original )?dark,black-blended-rum,inferred
+gosling'?s black seal(?! 151),black-blended-rum,SC
+blackwell,black-blended-rum,SC
+pampero aniversario,black-blended-rum,SC
+cruzan black ?strap,blackstrap-rum,own category
+cruzan single,column-still-aged-rum,SC
+banks (5|7),blended-lightly-aged-rum,SC
+mount gay eclipse,blended-lightly-aged-rum,SC
+mount gay xo,blended-aged-rum,SC
+plantation (original dark rum )?73,black-blended-overproof-rum,inferred
+plantation original dark(?!.*(73|overproof)),black-blended-rum,inferred
+plantation (barbados|5|grande),blended-aged-rum,SC
+plantation pineapple,pineapple-rum,own category
+scarlet ibis,column-still-lightly-aged-rum,SC
+angostura 5,column-still-aged-rum,SC
+flor de cana (silver|extra[- ]dry|extra seco|white|4 extra),column-still-lightly-aged-rum,SC
+flor de cana 4,column-still-lightly-aged-rum,inferred
+flor de cana 7,column-still-aged-rum,inferred
+flor de cana 12,column-still-aged-rum,SC
+bacardi (8|ocho),column-still-aged-rum,SC
+bacardi (ron )?(superior|silver|white),column-still-lightly-aged-rum,inferred
+cana brava(?! 7),column-still-lightly-aged-rum,SC
+havana club 7,column-still-aged-rum,inferred
+zacapa (23|centenario),column-still-aged-rum,SC
+matusalem gran reserva,column-still-aged-rum,SC
+santa teresa 1796,blended-long-aged-rum,SC
+santa teresa orange,orange-liqueur,
+diplomatico (reserva )?exclusiva,blended-aged-rum,SC
+barrilito (3|three),column-still-aged-rum,SC
+pusser'?s (navy|blue label|gunpowder),blended-aged-rum,SC
+sailor jerry,spiced-rum,own category
+# ---- rhum agricole and cane rum
+(rhum )?clement.*(vsop|vieux|xo),rhum-agricole-vieux,SC
+(rhum )?(jm|j\.m\.?) vsop,rhum-agricole-vieux,SC
+barbancourt.*(8|15|5 star),cane-coffey-still-aged-rum,SC
+barbancourt 3,cane-coffey-still-aged-rum,inferred
+neisson.*(reserve|vieux),rhum-agricole-vieux,SC
+la favorite.*ambre,rhum-agricole-vieux,SC
+st\.? james.*ambre,rhum-agricole-vieux,inferred
+(j\.?m\.?|neisson|la favorite|rhum jm).*(blanc|white),rhum-agricole-blanc,SC
+# ---- other spirits (Death & Co "au choix")
+plymouth(?!.*(navy|sloe)),plymouth-gin
+beefeater(?!.*(burrough|blood|pink)),london-dry-gin
+bernheim,wheat-whiskey
+rittenhouse,rye-whiskey
+laird'?s (bonded|bottled|applejack|straight|100|7|12),applejack
+calvados,calvados
+hine|cognac,cognac
+famous grouse|compass box asyla,blended-scotch
+siembra azul blanco|blanco tequila,tequila-blanco
+el tesoro reposado|reposado tequila,tequila-reposado
+# ---- liqueurs
+maras?chino,maraschino
+heering,cherry-heering
+roi rene|rothman (&|and) winter cherry|cherry liqueur,cherry-liqueur
+mandarine,mandarine-liqueur
+cointreau(?! (noir|blood))|triple sec,triple-sec
+grand marnier(?! (cordon jaune|navan)),grand-marnier
+creole shrubb,creole-shrubb
+royal combier,orange-liqueur
+blue curacao|curacao.*(blue|bleu),blue-curacao
+curacao,orange-curacao
+genepy,genepy
+pacharan,pacharan
+sapins,pine-liqueur
+elixir combier|combier elixir|punch a la fiamma,herbal-liqueur
+# ---- fortified
+palo cortado,palo-cortado-sherry
+(?<!francisco )manzanilla,manzanilla-sherry
+amontillado,amontillado-sherry
+oloroso,oloroso-sherry
+pedro ximenez,px-sherry
+fino,fino-sherry
+pale cream,pale-cream-sherry
+east india|cream sherry|lustau cream|medium sherry|dry sack|bristol cream,cream-sherry
+tawny,tawny-port
+ruby(?! red)|noval black,ruby-port
+# ---- shrubs
+hellfire,hellfire-bitters

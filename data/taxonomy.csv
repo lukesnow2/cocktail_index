@@ -1,0 +1,441 @@
+id,name,parents,section,flags
+# Each row is an ingredient a recipe can call for. Owning an ingredient satisfies
+# any recipe that asks for it or for any of its ancestors (parents, grandparents...).
+# So a parent link is a silent substitution: only put X under Y if anyone asking for
+# Y would happily accept X (Cointreau under orange liqueur: yes; Punt e Mes under
+# sweet vermouth: no). Near-misses belong in substitutes.csv, where they're shown.
+# parents: "|"-separated; a node may have several (e.g. 151 Demerara is both a
+# Demerara rum and a black blended overproof rum). Raw ingredients sit *under* what
+# they can be turned into (lemon -> lemon juice, whole egg -> egg white), so owning
+# the raw thing satisfies the derived requirement.
+# flags: staple (assumed on hand), fresh (perishable produce), garnish (ignorable),
+# housemade (a simple prep the book gives a recipe for: syrups, tinctures, shrubs),
+# batch (a pre-batched mix that holds spirits; never assumed, owned or bought),
+# qualifier (an origin / colour / strength tag a bottle carries next to its class; when a
+# named bottle's class replaces a coarse label, only qualifiers carry over).
+#
+# ---------------------------------------------------------------- gin
+gin,Gin,,gin,
+london-dry-gin,London Dry Gin,gin,gin,
+plymouth-gin,Plymouth Gin,gin,gin,
+old-tom-gin,Old Tom Gin,gin,gin,
+navy-strength-gin,Navy Strength Gin,gin,gin,
+contemporary-gin,Contemporary / New Western Gin,gin,gin,
+genever,Genever,,gin,
+aged-genever,Barrel-Aged Genever,,gin,
+sloe-gin,Sloe Gin,,gin,
+orange-gin,Orange Gin,,gin,
+# ---------------------------------------------------------------- whiskey
+whiskey,Whiskey,,whiskey,
+american-whiskey,American Whiskey,whiskey,whiskey,
+bourbon,Bourbon,american-whiskey,whiskey,
+rye-whiskey,Rye Whiskey,american-whiskey,whiskey,
+wheat-whiskey,Wheat Whiskey,american-whiskey,whiskey,
+corn-whiskey,Corn Whiskey,american-whiskey,whiskey,
+oat-whiskey,Oat Whiskey,american-whiskey,whiskey,
+tennessee-whiskey,Tennessee Whiskey,american-whiskey,whiskey,
+scotch,Scotch Whisky,whiskey,whiskey,
+blended-scotch,Blended Scotch,scotch,whiskey,
+single-malt-scotch,Single Malt Scotch,scotch,whiskey,
+peated-scotch,Peated / Islay Scotch,scotch,whiskey,
+irish-whiskey,Irish Whiskey,whiskey,whiskey,
+japanese-whisky,Japanese Whisky,whiskey,whiskey,
+# ---------------------------------------------------------------- rum
+# Backbone: Smuggler's Cove's 21 production classes (Cate, 2016). A bottle carries
+# its class plus separate tags for origin, colour (white) and strength (overproof),
+# so a requirement like "Jamaican + Blended Lightly Aged" is met only by one bottle
+# that is both. Generic terms (white, aged, dark...) are what recipes without a
+# named bottle ask for; each class sits under the generic term it always implies.
+rum,Rum,,rum,
+white-rum,White / Light Rum,rum,rum,qualifier
+lightly-aged-rum,Lightly Aged / Gold Rum,rum,rum,
+aged-rum,Aged Rum,rum,rum,
+dark-rum,Dark Rum,rum,rum,
+overproof-rum,Overproof Rum,rum,rum,qualifier
+# origins and styles
+jamaican-rum,Jamaican Rum,rum,rum,qualifier
+demerara-rum,Demerara Rum (Guyana),rum,rum,qualifier
+english-rum,English-Style Rum (Barbados / Trinidad / Bermuda),rum,rum,
+barbados-rum,Barbados Rum,english-rum,rum,qualifier
+spanish-rum,Spanish-Style Rum (Cuba / Puerto Rico / Central America),rum,rum,
+virgin-islands-rum,Virgin Islands Rum,rum,rum,qualifier
+# Smuggler's Cove classes
+pot-still-unaged-rum,Pot Still Unaged Rum,rum,rum,
+pot-still-lightly-aged-rum,Pot Still Lightly Aged Rum,lightly-aged-rum,rum,
+pot-still-aged-rum,Pot Still Aged Rum,aged-rum,rum,
+pot-still-long-aged-rum,Pot Still Long Aged Rum,aged-rum,rum,
+blended-lightly-aged-rum,Blended Lightly Aged Rum,lightly-aged-rum,rum,
+blended-aged-rum,Blended Aged Rum,aged-rum,rum,
+blended-long-aged-rum,Blended Long Aged Rum,aged-rum,rum,
+column-still-lightly-aged-rum,Column Still Lightly Aged Rum,lightly-aged-rum,rum,
+column-still-aged-rum,Column Still Aged Rum,aged-rum,rum,
+column-still-long-aged-rum,Column Still Long Aged Rum,aged-rum,rum,
+black-pot-still-rum,Black Pot Still Rum,dark-rum,rum,
+black-blended-rum,Black Blended Rum,dark-rum,rum,
+black-blended-overproof-rum,Black Blended Overproof Rum,dark-rum|overproof-rum,rum,
+cane-coffey-still-aged-rum,Cane Coffey Still Aged Rum,aged-rum,rum,
+cane-pot-still-unaged-rum,Cane Pot Still Unaged Rum,rum,rum,
+cane-pot-still-aged-rum,Cane Pot Still Aged Rum,aged-rum,rum,
+rhum-agricole,Rhum Agricole (AOC Martinique),rum,rum,
+rhum-agricole-blanc,Rhum Agricole Blanc,rhum-agricole|white-rum,rum,
+rhum-agricole-vieux,Rhum Agricole Vieux,rhum-agricole|aged-rum,rum,
+rhum-agricole-long-aged,Rhum Agricole Long Aged,rhum-agricole|aged-rum,rum,
+cachaca,Cachaça,,rum,
+cachaca-unaged,Unaged Cachaça,cachaca,rum,
+cachaca-aged,Aged Cachaça,cachaca,rum,
+# their own things, outside the classes
+blackstrap-rum,Blackstrap Rum (e.g. Cruzan Black Strap),,rum,
+navy-rum,Navy Rum,,rum,
+spiced-rum,Spiced Rum,,rum,
+pineapple-rum,Pineapple Rum,,rum,
+batavia-arrack,Batavia Arrack,,rum,
+# ---------------------------------------------------------------- agave
+tequila,Tequila,,agave,
+tequila-blanco,Tequila Blanco,tequila,agave,
+tequila-reposado,Tequila Reposado,tequila,agave,
+tequila-anejo,Tequila Añejo,tequila,agave,
+mezcal,Mezcal,,agave,
+# ---------------------------------------------------------------- brandy
+brandy,Brandy,,brandy,
+cognac,Cognac,brandy,brandy,
+armagnac,Armagnac,brandy,brandy,
+brandy-de-jerez,Brandy de Jerez,brandy,brandy,
+pisco,Pisco,,brandy,
+apple-brandy,Apple Brandy,,brandy,
+applejack,Applejack / Bonded Apple Brandy,apple-brandy,brandy,
+calvados,Calvados,apple-brandy,brandy,
+eau-de-vie,Eau de Vie (Fruit Brandy),,brandy,
+kirsch,Kirsch,eau-de-vie,brandy,
+pear-eau-de-vie,Pear Eau de Vie (Poire Williams),eau-de-vie,brandy,
+framboise,Framboise (Raspberry Eau de Vie),eau-de-vie,brandy,
+apricot-eau-de-vie,Apricot Eau de Vie,eau-de-vie,brandy,
+mirabelle,Mirabelle (Plum Eau de Vie),eau-de-vie,brandy,
+plum-brandy,Plum Brandy / Slivovitz,eau-de-vie,brandy,
+douglas-fir-eau-de-vie,Douglas Fir Eau de Vie,eau-de-vie,brandy,
+peach-brandy,Peach Brandy,,brandy,
+grappa,Grappa,,brandy,
+# ---------------------------------------------------------------- vodka
+vodka,Vodka,,vodka,
+citrus-vodka,Citrus Vodka,,vodka,
+grapefruit-vodka,Grapefruit Vodka,,vodka,
+chocolate-vodka,Chocolate Vodka,,vodka,
+bison-grass-vodka,Bison Grass Vodka (Żubrówka),,vodka,
+# ---------------------------------------------------------------- other spirits
+absinthe,Absinthe,,other-spirits,
+pastis,Pastis,,other-spirits,
+herbsaint,Herbsaint,pastis,other-spirits,
+aquavit,Aquavit,,other-spirits,
+sake,Sake,,other-spirits,
+# ---------------------------------------------------------------- liqueurs
+orange-liqueur,Orange Liqueur,,liqueurs,
+triple-sec,Triple Sec (e.g. Cointreau),orange-liqueur,liqueurs,
+orange-curacao,Orange Curaçao (e.g. Ferrand Dry),orange-liqueur,liqueurs,
+grand-marnier,Grand Marnier,orange-liqueur,liqueurs,
+blue-curacao,Blue Curaçao,,liqueurs,
+creole-shrubb,Créole Shrubb,orange-liqueur,liqueurs,
+mandarine-liqueur,Mandarin Liqueur,,liqueurs,
+blood-orange-liqueur,Blood Orange Liqueur,,liqueurs,
+maraschino,Maraschino Liqueur,,liqueurs,
+cherry-liqueur,Cherry Liqueur,,liqueurs,
+cherry-heering,Cherry Heering,cherry-liqueur,liqueurs,
+apricot-liqueur,Apricot Liqueur,,liqueurs,
+peach-liqueur,Peach Liqueur (Crème de Pêche),,liqueurs,
+pear-liqueur,Pear Liqueur,,liqueurs,
+apple-liqueur,Apple Liqueur,,liqueurs,
+banana-liqueur,Banana Liqueur (Crème de Banane),,liqueurs,
+coconut-liqueur,Coconut Liqueur,,liqueurs,
+blackberry-liqueur,Blackberry Liqueur (Crème de Mûre),,liqueurs,
+raspberry-liqueur,Raspberry Liqueur (Crème de Framboise),,liqueurs,
+strawberry-liqueur,Strawberry Liqueur (Crème de Fraise),,liqueurs,
+creme-de-cassis,Crème de Cassis,,liqueurs,
+cranberry-liqueur,Cranberry Liqueur,,liqueurs,
+pomegranate-liqueur,Pomegranate Liqueur,,liqueurs,
+grapefruit-liqueur,Grapefruit Liqueur (Pamplemousse),,liqueurs,
+elderflower-liqueur,Elderflower Liqueur (e.g. St-Germain),,liqueurs,
+creme-de-violette,Crème de Violette,,liqueurs,
+creme-yvette,Crème Yvette,,liqueurs,
+parfait-amour,Parfait Amour,,liqueurs,
+rose-liqueur,Rose Liqueur,,liqueurs,
+hibiscus-liqueur,Hibiscus Liqueur,,liqueurs,
+creme-de-cacao,Crème de Cacao,,liqueurs,
+creme-de-cacao-white,White Crème de Cacao,creme-de-cacao,liqueurs,
+chocolate-liqueur,Chocolate Liqueur (e.g. Godiva),,liqueurs,
+coffee-liqueur,Coffee Liqueur,,liqueurs,
+creme-de-menthe,Crème de Menthe,,liqueurs,
+amaretto,Amaretto,,liqueurs,
+creme-de-noyaux,Crème de Noyaux,,liqueurs,
+nocino,Nocino (Walnut Liqueur),,liqueurs,
+pistachio-liqueur,Pistachio Liqueur,,liqueurs,
+vanilla-liqueur,Vanilla Liqueur,,liqueurs,
+licor-43,Licor 43,,liqueurs,
+galliano,Galliano,,liqueurs,
+galliano-ristretto,Galliano Ristretto,coffee-liqueur,liqueurs,
+tuaca,Tuaca,,liqueurs,
+honey-liqueur,Honey Liqueur (e.g. Bärenjäger),,liqueurs,
+drambuie,Drambuie,,liqueurs,
+benedictine,Bénédictine,,liqueurs,
+green-chartreuse,Green Chartreuse,,liqueurs,
+yellow-chartreuse,Yellow Chartreuse,,liqueurs,
+strega,Strega,,liqueurs,
+genepy,Génépy,,liqueurs,
+herbal-liqueur,Herbal Liqueur (other),,liqueurs,
+pine-liqueur,Pine Liqueur,,liqueurs,
+falernum,Falernum,,liqueurs,
+allspice-dram,Allspice Dram,,liqueurs,
+ginger-liqueur,Ginger Liqueur,,liqueurs,
+chile-liqueur,Chile Liqueur (e.g. Ancho Reyes),,liqueurs,
+kummel,Kümmel,,liqueurs,
+anise-liqueur,Anise Liqueur,,liqueurs,
+anisette,Anisette,anise-liqueur,liqueurs,
+sambuca,Sambuca,anise-liqueur,liqueurs,
+goldwasser,Goldwasser,,liqueurs,
+pimms,Pimm's No. 1,,liqueurs,
+swedish-punsch,Swedish Punsch,,liqueurs,
+pacharan,Pacharán,,liqueurs,
+becherovka,Becherovka,,liqueurs,
+dimmi,Dimmi,,liqueurs,
+verveine,Verveine du Velay,,liqueurs,
+# ---------------------------------------------------------------- amari & bitter aperitifs
+campari,Campari,red-bitter,amari,
+aperol,Aperol,,amari,
+red-bitter,Red Bitter Apéritif,,amari,
+gran-classico,Gran Classico,,amari,
+luxardo-bitter,Luxardo Bitter,red-bitter,amari,
+amaro,Amaro (any),,amari,
+averna,Averna,amaro,amari,
+cynar,Cynar,amaro,amari,
+fernet-branca,Fernet-Branca,fernet,amari,
+fernet,Fernet,amaro,amari,
+branca-menta,Branca Menta,amaro,amari,
+amaro-nonino,Amaro Nonino,amaro,amari,
+amaro-montenegro,Amaro Montenegro,amaro,amari,
+amaro-ciociaro,Amaro CioCiaro,amaro,amari,
+amaro-meletti,Amaro Meletti,amaro,amari,
+amaro-ramazzotti,Ramazzotti,amaro,amari,
+amaro-lucano,Amaro Lucano,amaro,amari,
+amaro-nardini,Amaro Nardini,amaro,amari,
+amaro-abano,Amaro Abano,amaro,amari,
+amaro-sibilla,Amaro Sibilla,amaro,amari,
+cardamaro,Cardamaro,amaro,amari,
+zucca,Zucca Rabarbaro,amaro,amari,
+amaro-di-angostura,Amaro di Angostura,amaro,amari,
+bitter-truth-amaro,Bitter Truth Amaro,amaro,amari,
+amer-picon,Amer Picon / Amer Boudreau,,amari,
+amer-nouvelle,Amer Nouvelle,,amari,
+suze,Suze,gentian-liqueur,amari,
+gentian-liqueur,Gentian Apéritif,,amari,
+salers,Salers Gentiane,gentian-liqueur,amari,
+china-china,China-China,,amari,
+amaro-cora,Amaro Cora,amaro,amari,
+torani-amer,Torani Amer,,amari,
+zwack,Zwack / Unicum,amaro,amari,
+casoni-1814,Casoni 1814,red-bitter,amari,
+# ---------------------------------------------------------------- vermouth & aromatized wine
+sweet-vermouth,Sweet Vermouth,,vermouth,
+dry-vermouth,Dry Vermouth,,vermouth,
+blanc-vermouth,Blanc / Bianco Vermouth,,vermouth,
+punt-e-mes,Punt e Mes,,vermouth,
+lillet-blanc,Lillet Blanc,,vermouth,
+lillet-rose,Lillet Rosé,,vermouth,
+lillet-rouge,Lillet Rouge,,vermouth,
+cocchi-americano,Cocchi Americano,,vermouth,
+dubonnet,Dubonnet Rouge,,vermouth,
+bonal,Bonal Gentiane-Quina,,vermouth,
+byrrh,Byrrh,,vermouth,
+pineau-des-charentes,Pineau des Charentes,,vermouth,
+# ---------------------------------------------------------------- fortified wine
+sherry,Sherry,,fortified,
+fino-sherry,Fino Sherry,sherry,fortified,
+manzanilla-sherry,Manzanilla Sherry,sherry,fortified,
+amontillado-sherry,Amontillado Sherry,sherry,fortified,
+oloroso-sherry,Oloroso Sherry,sherry,fortified,
+palo-cortado-sherry,Palo Cortado Sherry,sherry,fortified,
+px-sherry,Pedro Ximénez Sherry,sherry,fortified,
+cream-sherry,Cream / Medium Sherry,sherry,fortified,
+pale-cream-sherry,Pale Cream Sherry,sherry,fortified,
+port,Port,,fortified,
+ruby-port,Ruby Port,port,fortified,
+tawny-port,Tawny Port,port,fortified,
+madeira,Madeira,,fortified,
+# ---------------------------------------------------------------- wine, beer, cider
+sparkling-wine,Sparkling Wine,,wine-beer,
+champagne,Champagne,sparkling-wine,wine-beer,
+prosecco,Prosecco,sparkling-wine,wine-beer,
+sparkling-rose,Sparkling Rosé,sparkling-wine,wine-beer,
+red-wine,Red Wine,,wine-beer,
+white-wine,White Wine,,wine-beer,
+rose-wine,Rosé Wine,,wine-beer,
+dessert-wine,Dessert Wine (Moscato / Muscat / Tokaji),,wine-beer,
+beer,Beer,,wine-beer,
+ale,Ale,beer,wine-beer,
+lager,Lager / Pilsner,beer,wine-beer,
+ipa,IPA,ale,wine-beer,
+stout,Stout / Porter,ale,wine-beer,
+wheat-beer,Wheat Beer / Witbier,ale,wine-beer,
+fruit-beer,Fruit Beer,beer,wine-beer,
+hard-cider,Hard Cider,,wine-beer,
+pear-cider,Pear Cider (Perry),,wine-beer,
+# ---------------------------------------------------------------- bitters
+aromatic-bitters,Aromatic Bitters (e.g. Angostura),,bitters,
+angostura-bitters,Angostura Bitters,aromatic-bitters,bitters,
+peychauds-bitters,Peychaud's Bitters,,bitters,
+orange-bitters,Orange Bitters,,bitters,
+chocolate-bitters,Chocolate / Mole Bitters,,bitters,
+celery-bitters,Celery Bitters,,bitters,
+grapefruit-bitters,Grapefruit Bitters,,bitters,
+lemon-bitters,Lemon Bitters,,bitters,
+lime-bitters,Lime Bitters,,bitters,
+peach-bitters,Peach Bitters,,bitters,
+rhubarb-bitters,Rhubarb Bitters,,bitters,
+lavender-bitters,Lavender Bitters,,bitters,
+cherry-bitters,Cherry Bark Vanilla Bitters,,bitters,
+apple-bitters,Apple Bitters,,bitters,
+absinthe-bitters,Absinthe Bitters,,bitters,
+tiki-bitters,Tiki Bitters,,bitters,
+burlesque-bitters,Bittermens Burlesque Bitters,,bitters,
+hellfire-bitters,Bittermens Hellfire Habanero Shrub,,bitters,
+herbstura,Herbstura (Herbsaint + Angostura),,bitters,housemade
+boston-bitters,Bittermens Boston Bittahs,,bitters,
+dandelion-burdock-bitters,Dandelion & Burdock Bitters,,bitters,
+bokers-bitters,Boker's Bitters,aromatic-bitters,bitters,
+abbotts-bitters,Abbott's Bitters,aromatic-bitters,bitters,
+jerry-thomas-bitters,Jerry Thomas' Decanter Bitters,aromatic-bitters,bitters,
+barrel-aged-bitters,Whiskey Barrel-Aged Bitters,aromatic-bitters,bitters,
+pimento-bitters,Pimento / Allspice Bitters,,bitters,
+verbena-bitters,Lemon Verbena Bitters,,bitters,
+amargo-bitters,Amargo Chuncho Bitters,,bitters,
+# ---------------------------------------------------------------- sweeteners
+sugar,Sugar,simple-syrup,sweeteners,staple
+superfine-sugar,Superfine Sugar,sugar,sweeteners,staple
+powdered-sugar,Powdered Sugar,sugar,sweeteners,staple
+brown-sugar,Brown / Demerara Sugar,sugar,sweeteners,
+sugar-cube,Sugar Cubes,sugar,sweeteners,
+coconut-sugar,Coconut Palm Sugar,,sweeteners,
+simple-syrup,Simple Syrup,,sweeteners,staple
+rich-simple-syrup,Rich Simple Syrup,simple-syrup,sweeteners,staple
+demerara-syrup,Demerara Syrup,,sweeteners,housemade
+cane-syrup,Cane Sugar Syrup,,sweeteners,housemade
+gum-syrup,Gum Syrup,simple-syrup,sweeteners,housemade
+honey,Honey,honey-syrup,sweeteners,
+honey-syrup,Honey Syrup,,sweeteners,housemade
+agave-syrup,Agave Syrup / Nectar,,sweeteners,
+maple-syrup,Maple Syrup,,sweeteners,
+molasses,Molasses,,sweeteners,
+sorghum-syrup,Sorghum Syrup,,sweeteners,
+grenadine,Grenadine,,sweeteners,housemade
+orgeat,Orgeat,,sweeteners,housemade
+passion-fruit-syrup,Passion Fruit Syrup,,sweeteners,housemade
+cinnamon-syrup,Cinnamon Syrup,,sweeteners,housemade
+ginger-syrup,Ginger Syrup,,sweeteners,housemade
+vanilla-syrup,Vanilla Syrup,,sweeteners,housemade
+pomegranate-molasses,Pomegranate Molasses,,sweeteners,
+flavored-syrup,Other Syrup (house-made),,sweeteners,housemade
+# ---------------------------------------------------------------- juices
+lemon-juice,Lemon Juice,,juice,fresh
+lime-juice,Lime Juice,,juice,fresh
+orange-juice,Orange Juice,,juice,fresh
+grapefruit-juice,Grapefruit Juice,,juice,fresh
+blood-orange-juice,Blood Orange Juice,,juice,fresh
+pineapple-juice,Pineapple Juice,,juice,
+apple-juice,Apple Juice / Cider (non-alcoholic),,juice,
+cranberry-juice,Cranberry Juice,,juice,
+pomegranate-juice,Pomegranate Juice,,juice,
+tomato-juice,Tomato Juice,,juice,
+watermelon-juice,Watermelon Juice,,juice,fresh
+celery-juice,Celery Juice,,juice,fresh
+cucumber-juice,Cucumber Juice,,juice,fresh
+tangerine-juice,Tangerine / Clementine Juice,,juice,fresh
+other-juice,Other Juice,,juice,fresh
+clarified-juice,Clarified Citrus Juice,,juice,housemade
+# ---------------------------------------------------------------- produce
+lemon,Lemon,lemon-juice|citrus-twist|citrus-wheel,produce,fresh
+lime,Lime,lime-juice|citrus-twist|citrus-wheel,produce,fresh
+orange,Orange,orange-juice|citrus-twist|citrus-wheel,produce,fresh
+grapefruit,Grapefruit,grapefruit-juice|citrus-twist|citrus-wheel,produce,fresh
+pineapple,Pineapple,pineapple-juice,produce,fresh
+apple,Apple,,produce,fresh
+pear,Pear,,produce,fresh
+peach,Peach / Nectarine,,produce,fresh
+berries,Berries (strawberry / raspberry / blackberry),,produce,fresh
+cherries,Cherries,,produce,fresh
+grapes,Grapes,,produce,fresh
+melon,Melon,,produce,fresh
+citrus-other,Other Citrus (kumquat / tangerine),,produce,fresh
+tomato,Tomato,,produce,fresh
+cucumber,Cucumber,,produce,fresh
+chile-pepper,Fresh Chile (jalapeño etc.),,produce,fresh
+mint,Mint,,produce,fresh
+basil,Basil,,produce,fresh
+herbs-other,Other Fresh Herbs,,produce,fresh
+fruit-other,Other Fruit,,produce,fresh
+# ---------------------------------------------------------------- dairy & eggs
+egg-white,Egg White,,dairy-eggs,
+egg-yolk,Egg Yolk,,dairy-eggs,
+egg,Whole Egg,egg-white|egg-yolk,dairy-eggs,
+heavy-cream,Heavy Cream,,dairy-eggs,
+half-and-half,Half & Half,,dairy-eggs,
+milk,Milk,,dairy-eggs,
+coconut-cream,Coconut Cream / Milk,,dairy-eggs,
+butter,Butter,,dairy-eggs,
+ice-cream,Ice Cream / Sorbet,,dairy-eggs,
+yogurt,Yogurt,,dairy-eggs,
+condensed-milk,Sweetened Condensed Milk,,dairy-eggs,
+# ---------------------------------------------------------------- mixers
+soda-water,Soda Water,,mixers,staple
+tonic-water,Tonic Water,,mixers,
+ginger-beer,Ginger Beer,,mixers,
+ginger-ale,Ginger Ale,,mixers,
+cola,Cola,,mixers,
+lemon-lime-soda,Lemon-Lime Soda,,mixers,
+grapefruit-soda,Grapefruit Soda,,mixers,
+flavored-soda,Other Soda,,mixers,
+root-beer,Root Beer,,mixers,
+coconut-water,Coconut Water,,mixers,
+coffee,Coffee / Espresso,,mixers,
+tea,Tea,,mixers,
+lemonade,Lemonade,,mixers,
+# ---------------------------------------------------------------- pantry
+water,Water,,pantry,staple
+ice,Crushed / Shaved Ice,,pantry,staple
+salt,Salt,saline,pantry,staple
+saline,Saline Solution,,pantry,staple
+spices,Whole / Ground Spices,,pantry,
+nutmeg,Nutmeg,spices,pantry,
+cinnamon,Cinnamon,spices,pantry,
+black-pepper,Black Pepper,spices,pantry,
+vanilla,Vanilla (bean / extract),,pantry,
+extract,Extracts & Essences,,pantry,
+orange-flower-water,Orange Flower Water,,pantry,
+rose-water,Rose Water,,pantry,
+acid-phosphate,Acid Phosphate,,pantry,
+acid-powder,Citric / Malic / Ascorbic Acid,,pantry,
+verjus,Verjus,,pantry,
+vinegar,Vinegar,,pantry,
+hot-sauce,Hot Sauce,,pantry,
+worcestershire,Worcestershire Sauce,,pantry,
+preserves,Jam / Preserves / Marmalade,,pantry,
+fruit-puree,Fruit Purée,,pantry,
+food-coloring,Food Coloring,,pantry,
+liquid-nitrogen,Liquid Nitrogen,,pantry,
+li-hing-mui,Li Hing Mui Powder,,pantry,
+horchata,Horchata,,pantry,
+hot-chocolate,Hot Chocolate,,pantry,
+clamato,Clamato / Bloody Mary Mix,,pantry,
+caffeine,Caffeine Pill,,pantry,
+rim-mix,Salt / Sugar Rim Mix,,pantry,housemade
+# ---------------------------------------------------------------- garnish
+garnish,Garnish,,garnish,garnish
+citrus-twist,Citrus Twist / Peel,garnish,garnish,garnish
+citrus-wheel,Citrus Wheel / Wedge / Slice,garnish,garnish,garnish
+cocktail-cherry,Cocktail Cherry,garnish,garnish,garnish
+olive,Olive,garnish,garnish,garnish
+garnish-other,Other Garnish,garnish,garnish,garnish
+# ---------------------------------------------------------------- house-made preparations
+tincture,Tincture,,housemade,housemade
+house-mix,House Batch (see book),,housemade,batch
+cordial,Cordial,,housemade,housemade
+shrub,Shrub,,housemade,housemade
+foam,Foam,,housemade,housemade
+sherbet,Oleo / Sherbet,,housemade,housemade
+butter-batter,Spiced Butter / Batter,,housemade,housemade
+lime-cordial,Lime Cordial,cordial,housemade,

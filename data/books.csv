@@ -1,0 +1,10 @@
+id,title,short,author,year,source,credit
+pdt,The PDT Cocktail Book,PDT,Jim Meehan,2011,pdt_recipes.csv,r/cocktails volunteer index
+dnc,Death & Co: Modern Classic Cocktails,D&C,"David Kaplan, Nick Fauchald, Alex Day",2014,death_and_co_recipes.csv,r/cocktails volunteer index
+sc,Smuggler's Cove,SC,Martin & Rebecca Cate,2016,smugglers_cove_recipes.csv,r/cocktails volunteer index
+vs,Vintage Spirits & Forgotten Cocktails,VS,Ted Haigh,2009,vs_and_fc_recipes.csv,r/cocktails volunteer index
+dr,The Dead Rabbit Drinks Manual,DR,"Sean Muldoon, Jack McGarry",2015,dead_rabbits_drinks_manual.csv,r/cocktails volunteer index
+li,Liquid Intelligence,LI,Dave Arnold,2014,liquid_intelligence.csv,r/cocktails volunteer index
+db,The Drunken Botanist,DB,Amy Stewart,2013,the_drunken_botanist.csv,r/cocktails volunteer index
+cc,The Canon Cocktail Book,CC,Jamie Boudreau,2016,canon_cocktail_book.csv,r/cocktails volunteer index
+se,Speakeasy: The Employees Only Guide,SE,"Jason Kosmas, Dushan Zaric",2010,speakeasy.csv,r/cocktails volunteer index

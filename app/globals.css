@@ -1,0 +1,234 @@
+@import "tailwindcss";
+
+/* Cocktail Index design system: tokens from tokens.json (names kept exactly), type styles,
+   and the component styles from components/bundle.css. The only place colors and sizes live. */
+
+:root {
+  --surface: #F6F7F9;
+  --surface-raised: #FFFFFF;
+  --ink: #13213C;
+  --on-ink: #F6F7F9;
+  --muted: #4F5B73;
+  --rule: #DEE2EA;
+  --rule-soft: #E9ECF1;
+  --brass: #8B5E1A;
+  --focus-ring: var(--brass);
+  color-scheme: light;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --radius-none: 0px;
+  --size-touch: 44px;
+  --size-row: 48px;
+  --size-tabbar: 80px;
+  --border-hairline: 1px;
+  --border-active: 2px;
+
+  /* next/font exposes --font-caslon, --font-hanken, --font-dm-mono on <html> */
+  --font-display: var(--font-caslon), "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-hanken), "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: var(--font-dm-mono), "DM Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --surface: #0E1626; --surface-raised: #152037; --ink: #E9EDF5; --on-ink: #0E1626;
+    --muted: #A7B1C4; --rule: #26324A; --rule-soft: #1C2840; --brass: #D9A94E;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --surface: #0E1626; --surface-raised: #152037; --ink: #E9EDF5; --on-ink: #0E1626;
+  --muted: #A7B1C4; --rule: #26324A; --rule-soft: #1C2840; --brass: #D9A94E;
+  color-scheme: dark;
+}
+
+@theme inline {
+  --color-surface: var(--surface);
+  --color-surface-raised: var(--surface-raised);
+  --color-ink: var(--ink);
+  --color-on-ink: var(--on-ink);
+  --color-muted: var(--muted);
+  --color-rule: var(--rule);
+  --color-rule-soft: var(--rule-soft);
+  --color-brass: var(--brass);
+  --font-display: var(--font-display);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
+  --radius-none: 0px;
+  --spacing-gutter: 20px;
+  --spacing-touch: 44px;
+  --spacing-tabbar: 80px;
+}
+
+body { background: var(--surface); color: var(--ink); font-family: var(--font-sans); }
+
+:where(a, button, input, [role="tab"]):focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+}
+
+/* ---------------------------------------------------------------- type styles */
+@utility title-drink   { font-family: var(--font-display); font-size: 36px; line-height: 38px; font-weight: 700; letter-spacing: -0.01em; }
+@utility title-page    { font-family: var(--font-display); font-size: 30px; line-height: 34px; font-weight: 700; letter-spacing: -0.01em; }
+@utility title-section { font-family: var(--font-display); font-size: 22px; line-height: 28px; font-weight: 700; }
+@utility row-title     { font-size: 17px; line-height: 22px; font-weight: 600; }
+@utility item          { font-size: 16px; line-height: 21px; font-weight: 600; }
+@utility body          { font-size: 15px; line-height: 22px; }
+@utility secondary     { font-size: 13px; line-height: 18px; }
+@utility caption       { font-size: 12px; line-height: 16px; }
+@utility tab-label     { font-size: 11px; line-height: 14px; font-weight: 500; }
+@utility label         { font-family: var(--font-mono); font-size: 10px; line-height: 14px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+@utility ref           { font-family: var(--font-mono); font-size: 11px; line-height: 16px; letter-spacing: 0.02em; }
+@utility stat          { font-family: var(--font-mono); font-size: 18px; line-height: 22px; font-weight: 500; }
+@utility page-number   { font-family: var(--font-mono); font-size: 30px; line-height: 32px; font-weight: 500; }
+
+/* ---------------------------------------------------------------- components (bundle.css) */
+.ci-screen { background: var(--surface); color: var(--ink); font-family: var(--font-sans); }
+.ci-gutter { padding-left: var(--space-5); padding-right: var(--space-5); }
+.ci-sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.ci-icon { width: 22px; height: 22px; flex: none; }
+.ci-icon-sm { width: 16px; height: 16px; flex: none; }
+
+:where(.ci-screen) a:focus-visible, :where(.ci-screen) button:focus-visible, :where(.ci-screen) input:focus-visible,
+.ci-btn:focus-visible, .ci-tab:focus-visible, .ci-tabbar a:focus-visible, .ci-rail a:focus-visible, .ci-row-link:focus-visible {
+  outline: var(--border-active) solid var(--focus-ring); outline-offset: 2px;
+}
+
+/* PageHeader */
+.ci-header { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); }
+.ci-header h1 { margin: 0; font-family: var(--font-display); color: var(--ink); }
+.ci-header-meta { font-family: var(--font-mono); color: var(--ink); white-space: nowrap; }
+.ci-header-intro { margin: var(--space-1) 0 0; color: var(--muted); }
+
+/* Button */
+.ci-btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-1);
+  min-height: var(--size-touch); padding: 0 var(--space-4); border: var(--border-hairline) solid var(--ink);
+  border-radius: var(--radius-none); font-family: var(--font-sans); font-size: 14px; font-weight: 600; cursor: pointer; }
+.ci-btn-primary { background: var(--ink); color: var(--on-ink); }
+.ci-btn-secondary { background: transparent; color: var(--ink); }
+.ci-btn-compact { min-height: 36px; padding: 0 var(--space-3); font-size: 13px; }
+.ci-btn-quiet { border-color: transparent; background: transparent; color: var(--ink); font-weight: 500; }
+.ci-btn-mono { font-family: var(--font-mono); font-size: 11px; font-weight: 400; }
+
+/* SearchField */
+.ci-search { border: var(--border-hairline) solid var(--ink); background: var(--surface-raised); }
+.ci-search-field { display: flex; align-items: center; gap: 10px; min-height: var(--size-touch); padding: 0 var(--space-3); color: var(--ink); }
+.ci-search-field input { flex: 1; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: inherit; font-size: 15px; }
+.ci-search-field input::placeholder { color: var(--muted); }
+.ci-search-field input::-webkit-search-cancel-button { display: none; }
+.ci-search-clear { width: 32px; height: 32px; border: 0; background: transparent; color: var(--muted); display: flex; align-items: center; justify-content: center; cursor: pointer; }
+.ci-search-results { list-style: none; margin: 0; padding: 0; border-top: var(--border-hairline) solid var(--ink); }
+.ci-search-result { display: flex; align-items: center; gap: 10px; padding: var(--space-2) var(--space-2) var(--space-2) var(--space-3); border-bottom: var(--border-hairline) solid var(--rule); }
+.ci-search-result:last-child { border-bottom: 0; }
+.ci-search-result-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.ci-search-note { padding: var(--space-3); color: var(--muted); }
+
+/* Tabs */
+.ci-tabs { display: flex; gap: 18px; border-bottom: var(--border-hairline) solid var(--rule); }
+.ci-tabs-fill { display: grid; grid-template-columns: repeat(var(--ci-tab-count, 3), minmax(0, 1fr)); gap: 0; }
+.ci-tabs-inline { overflow-x: auto; scrollbar-width: none; }
+.ci-tab { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 1px;
+  min-height: var(--size-touch); padding: 0; margin-bottom: -1px; border: 0; border-bottom: var(--border-active) solid transparent;
+  background: transparent; color: var(--muted); font-family: var(--font-sans); font-size: 14px; font-weight: 500; text-align: left; cursor: pointer; }
+.ci-tab[aria-selected="true"] { color: var(--ink); font-weight: 700; border-bottom-color: var(--brass); }
+.ci-tab-count { font-family: var(--font-mono); font-size: 11px; font-weight: 400; }
+.ci-tabs-inline .ci-tab { flex-direction: row; align-items: center; gap: var(--space-1); flex: none; }
+
+/* GroupHeader */
+.ci-group { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--space-3);
+  padding: var(--space-3) 0 var(--space-1); border-bottom: var(--border-hairline) solid var(--ink); }
+.ci-group-letter { font-family: var(--font-mono); font-size: 11px; font-weight: 500; color: var(--brass); }
+.ci-group-name { font-size: 13px; font-weight: 700; color: var(--ink); }
+.ci-group-meta { font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+/* IndexRail */
+.ci-rail { display: flex; flex-direction: column; align-items: center; width: 24px; font-family: var(--font-mono); font-size: 10px; line-height: 16px; }
+.ci-rail a { color: var(--ink); text-decoration: none; }
+.ci-rail a[aria-disabled="true"] { color: var(--muted); pointer-events: none; }
+
+/* DrinkRow */
+.ci-list { list-style: none; margin: 0; padding: 0; }
+.ci-row-link { display: flex; flex-direction: column; gap: 3px; padding: 11px 0; border-bottom: var(--border-hairline) solid var(--rule); color: var(--ink); text-decoration: none; }
+.ci-row-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.ci-row-name { display: flex; align-items: center; gap: var(--space-2); min-width: 0; }
+.ci-row-ref { flex: none; font-family: var(--font-mono); font-size: 11px; color: var(--ink); white-space: nowrap; }
+.ci-row-ref span { color: var(--muted); }
+.ci-row-ings { color: var(--muted); }
+.ci-row-swap { display: flex; align-items: center; gap: 6px; font-size: 12px; color: var(--ink); }
+.ci-row-missing { font-size: 12px; font-weight: 600; color: var(--brass); }
+
+/* StatusMark */
+.ci-mark { display: inline-block; flex: none; width: 10px; height: 10px; box-sizing: border-box; }
+.ci-mark-have { background: var(--ink); }
+.ci-mark-swap { border: 1.5px solid var(--ink); background: linear-gradient(135deg, var(--ink) 50%, transparent 50%); }
+.ci-mark-missing { border: var(--border-active) solid var(--brass); }
+
+/* SwapBadge */
+.ci-badge { display: inline-flex; align-items: center; padding: 1px 5px; background: var(--ink); color: var(--on-ink);
+  font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
+
+/* CheckRow */
+.ci-check { display: flex; align-items: center; gap: var(--space-3); min-height: var(--size-row); padding: 6px 0; box-sizing: border-box; border-bottom: var(--border-hairline) solid var(--rule-soft); cursor: pointer; }
+.ci-check input { flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--ink); }
+.ci-check-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.ci-check-name { font-size: 15px; }
+.ci-check[data-owned="true"] .ci-check-name { font-weight: 600; }
+.ci-check-hint { font-size: 12px; color: var(--muted); }
+.ci-check-hint-covered { color: var(--brass); }
+.ci-check-count { flex: none; font-family: var(--font-mono); font-size: 11px; color: var(--muted); }
+
+/* IngredientRow */
+.ci-ing { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: var(--border-hairline) solid var(--rule); }
+.ci-ing .ci-mark { margin-top: 6px; }
+.ci-ing-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.ci-ing-detail { color: var(--muted); }
+.ci-ing-status { flex: none; padding-top: 3px; font-family: var(--font-mono); font-size: 11px; color: var(--ink); }
+.ci-ing-status-missing { color: var(--brass); font-weight: 500; }
+
+/* SourceBox */
+.ci-source { display: grid; grid-template-columns: minmax(0, 1fr) 88px; border: var(--border-hairline) solid var(--ink); }
+.ci-source-book { display: flex; flex-direction: column; gap: 2px; padding: var(--space-3); border-right: var(--border-hairline) solid var(--ink); }
+.ci-source-label { font-family: var(--font-mono); font-size: 10px; font-weight: 500; letter-spacing: 0.06em; color: var(--muted); }
+.ci-source-page { display: flex; flex-direction: column; align-items: center; justify-content: center; }
+.ci-source-also { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); min-height: var(--size-touch);
+  padding: 0 var(--space-3); border-top: var(--border-hairline) solid var(--ink); color: var(--ink); text-decoration: none; font-size: 14px; }
+.ci-source-note { margin: var(--space-2) 0 0; font-size: 12px; color: var(--muted); }
+
+/* RankRow */
+.ci-rank { display: grid; grid-template-columns: 26px minmax(0, 1fr) auto; column-gap: var(--space-2); align-items: start; padding: 10px 0; border-bottom: var(--border-hairline) solid var(--rule); }
+.ci-rank-n { padding-top: 3px; font-family: var(--font-mono); font-size: 11px; color: var(--brass); }
+.ci-rank-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ci-rank-side { display: flex; flex-direction: column; align-items: flex-end; gap: var(--space-1); }
+.ci-rank-open { all: unset; cursor: pointer; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.ci-rank-drinks { grid-column: 2 / -1; margin-top: var(--space-2); }
+
+/* BookRow */
+.ci-book { display: flex; align-items: center; gap: var(--space-3); min-height: 58px; padding: var(--space-2) 0; box-sizing: border-box; border-bottom: var(--border-hairline) solid var(--rule); cursor: pointer; }
+.ci-book input { flex: none; width: 20px; height: 20px; margin: 0; accent-color: var(--ink); }
+.ci-book-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 1px; }
+.ci-book-count { flex: none; font-family: var(--font-mono); font-size: 12px; text-align: right; }
+.ci-book-count span { color: var(--muted); }
+
+/* TabBar */
+.ci-tabbar { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); height: var(--size-tabbar); padding: var(--space-2) var(--space-2) 22px;
+  box-sizing: border-box; background: var(--surface); border-top: var(--border-hairline) solid var(--ink); }
+.ci-tabbar a { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 3px; color: var(--ink);
+  text-decoration: none; font-size: 11px; line-height: 14px; font-weight: 500; }
+.ci-tabbar a[aria-current="page"] { color: var(--brass); font-weight: 700; }
+
+/* ---------------------------------------------------------------- app shell (composes the tokens) */
+/* the page scrolls behind nothing: bottom padding clears the fixed tab bar and the safe area */
+.ci-page { padding-top: var(--space-6); padding-bottom: calc(var(--size-tabbar) + env(safe-area-inset-bottom) + var(--space-6)); }
+.ci-tabbar-dock { position: fixed; left: 0; right: 0; bottom: 0; z-index: 20; background: var(--surface); padding-bottom: env(safe-area-inset-bottom);
+  border-top: var(--border-hairline) solid var(--ink); }
+/* the dock draws the full-width rule, so the bar inside the content column doesn't repeat it */
+.ci-tabbar-dock .ci-tabbar { border-top: 0; }
+.ci-colhead { display: flex; justify-content: space-between; gap: var(--space-3); padding-bottom: 6px; border-bottom: var(--border-hairline) solid var(--ink); color: var(--muted); }
+.ci-sheet-backdrop { position: fixed; inset: 0; z-index: 30; background: color-mix(in srgb, var(--ink) 35%, transparent); }
+.ci-sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; max-height: 80vh; overflow-y: auto;
+  background: var(--surface); border-top: var(--border-hairline) solid var(--ink); padding: var(--space-4) var(--space-5) var(--space-6); }
